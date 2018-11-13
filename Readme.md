@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Степан Кожевников](https://up.htmlacademy.ru/htmlcss/23/user/615301).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Власов](https://htmlacademy.ru/profile/amaringo)
 
 ---
 
