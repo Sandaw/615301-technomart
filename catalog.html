@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1>
-      <a class="main-header-logo">
+      <a class="main-header-logo" href="index.html">
           <img src="img/index-logo.svg" width="100" height="50" alt="Логотип интернет-магазина Техномарт"><!--размеры позже-->
       </a>
       <p>Поиск</p>
@@ -44,10 +44,39 @@
     </header>
     <main class="container">
         <ul class="breadcrumbs">
-            <li><a href="index.html">Главная</a></li><!--текст скрыт-->
+            <li>
+                <a href="index.html">
+                    <img src="img/home.svg" width="50" height="50" alt="Логотип интернет-магазина Техномарт">
+                </a>
+            </li><!--текста нет только иконка-->
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="instruments.html">Инструмент</a></li>
             <li class="breadcrumbs-current">Перфораторы</li>
         </ul>
-        <h1 class="page-title">Перфораторы</h1>       
+        <h1 class="page-title">Перфораторы</h1>
+        <section class="filters">
+            <h2 class="visually-hidden">Фильтр товаров</h2>
+            <!-- Здесь будет форма -->    
+        </section>
+        <section class="catalog">
+            <h2 class="visually-hidden">Список перфораторов</h2>
+            <ul class="catalog-list">
+                <li class="catalog-item">
+                    <h3>
+                        <a href="catalog-item.html">                          
+                          <span class="catalog-item-title">Перфоратор Bosch BFG 3000</span>
+                        </a>
+                    </h3>
+                    <p class="catalog-item-image">
+                        <a href="catalog-item.html">
+                          <img src="img/bfg3000.jpg" width="220" height="165" alt="Bosch BFG 3000">
+                        </a>
+                    </p>
+                    <b>22 500 ₽</b>
+                    <a class="button" href="#">Купить</a>
+                    <b>15 500 ₽</b>
+                </li>
+            </ul>
+        </section>
+             
     </main>
