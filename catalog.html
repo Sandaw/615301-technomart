@@ -27,7 +27,7 @@
                 <ul class="site-navigation">
                     <li><a href="index.html">Главная</a></li>
                     <li><a href="company.html"></a>Компания</li>
-                    <li><a></a>Каталог</li>
+                    <li><a href="catalog.html"></a>Каталог</li>
                     <li><a href="news.html"></a>Новости</li>
                     <li><a href="special.html"></a>Спецпредложения</li>
                     <li><a href="delivery.html"></a>Доставка</li>
@@ -38,16 +38,43 @@
         <main class="container">
             <ul class="breadcrumbs">
                 <li><a href="index.html"><img src="home.svg" alt="Домой"></a></li>
-                <!--текста нет только иконка-->
                 <li><a href="catalog.html">Каталог</a></li>
                 <li><a href="instruments.html">Инструмент</a></li>
                 <li class="breadcrumbs-current">Перфораторы</li>
             </ul>
             <h1 class="page-title">Перфораторы</h1>
+            <!--здесь будет фильтр цены или он в секции filters ?-->
             <section class="filters">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
-                <!-- Здесь будет форма -->    
+                <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                    <fieldset>
+                        <legend>Производители:</legend>
+                        <ul class="brands">
+                            <li>
+                                <input type="checkbox" name="Bosch" id="bosch-brand-filters" checked>
+                                <label for="bosch-brand-filters"></label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="Интерскол" id="interskol-brand-filters">
+                                <label for="interskol-brand-filters"></label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="Makita" id="makita-brand-filters" checked>
+                                <label for="makita-brand-filters"></label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="Dewalt" id="dewalt-brand-filters">
+                                <label for="dewalt-brand-filters"></label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="Hitachi" id="hitachi-brand-filters">
+                                <label for="hitachi-brand-filters"></label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>  
             </section>
+            <!--потенциально ненужные section-->
             <section class="brand-list">
                 <h3>Производители:</h3>
                 <ul class="brands">
