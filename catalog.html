@@ -43,10 +43,32 @@
                 <li class="breadcrumbs-current">Перфораторы</li>
             </ul>
             <h1 class="page-title">Перфораторы</h1>
-            <!--здесь будет фильтр цены или он в секции filters ?-->
             <section class="filters">
-                <h2 class="visually-hidden">Фильтр товаров</h2>
+                <h2 class="visually-hidden">Фильтр товаров</h2>                
                 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                    <span>Фильтр:</span>
+                    <div class="filter-by-price">
+                        <h3>Цена:</h3>
+                        <!--<input type="range">не знаю надо ли-->
+                        <div class="filter-price-range">
+                            <div class="filter-toggle filter-min-toggle"></div>
+                            <div class="filter-toggle filter-max-toggle"></div>
+                        </div>
+                        <div class="filter-price-control">
+							<input class="filter-price-min" type="text" name="price-min" value="0"><span>-</span>
+							<input class="filter-price-max" type="text" name="price-max" value="30000">
+						</div>
+                    </div>
+                    <div class="sorting"><!--сортировка-->
+                        <h3>Сортровка:</h3>
+                        <div class="sorting-list"><!--списком сделать или так пойдет ?-->
+                            <a class="active-sorting-list">По цене</a>
+                            <a href="#">По типу</a>
+                            <a href="#">По функционалу</a>
+                            <a class="active-sort-by-increase sort-by-increase">По возрастанию</a>
+                            <a class="sort-by-decrease" href="#">по убыванию</a>
+                        </div>
+                    </div>
                     <fieldset>
                         <legend>Производители:</legend>
                         <ul class="brands">
@@ -90,16 +112,6 @@
             </section>
             <section class="catalog">
                 <h2 class="visually-hidden">Список перфораторов</h2>
-                <div class="sorting"><!--здесь будет сортировка-->
-                    <h3>Сортровка:</h3>
-                    <div class="sorting-list">
-                        <a href="#">по цене</a>
-                        <a href="#">по типу</a>
-                        <a href="#">по функционалу</a>
-                        <a class="sort-by-increase" href="#">по возрастанию</a>
-                        <a class="sort-by-decrease" href="#">по убыванию</a>
-                    </div>
-                </div>
                 <ul class="catalog-list">
                     <li class="catalog-item">
                         <p class="catalog-item-image"><img src="img/bfg3000.jpg" width="127" height="112" alt="Перфоратор Bosch BFG 3000"></p>
