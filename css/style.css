@@ -16,8 +16,8 @@ a {
 }
 
 .site-navigation a,
-.user-navigation a,
-.header-top a {
+.header-top a,
+.main-header {
     color: #ffffff;
 }
 
@@ -25,16 +25,11 @@ a {
     list-style: none;
     background-color: #f3f7f9;
     color: #ffffff;
-    width: 1200px;
-    height: 320px;
 }
 
 .header-top {
     list-style: none;    
-    font-size: 17px;
-    line-height: 18px;
     background-color: #293449;
-    text-align: left;
     color: #ffffff;
 }
 
@@ -50,9 +45,7 @@ a {
     width: 220px;      
     height: 47px;
     background-color: #ee3643;
-}
-
-.main-header-logo a {
+    font-size: 18px;
     text-transform: uppercase;
     color: #ffffff;
 }
@@ -63,16 +56,14 @@ a {
 }
 
 .search  {
-
+    background-color: #293449;
 }
 
 .order {
-    width: 150px;
-    height: 42px;
     background-color: #63a63e;
 }
 
-.order a:hover
+.order a:hover,
 .order a:focus {
     background-color: #5fbb2d;
 }
@@ -101,15 +92,35 @@ h1 {
     color: #32425c;
 }
 
-.main-navigation {
-    font-size: 17px;
-    background-color: #32425c;
-    color: #ffffff;
-    width: 940px;
-    height: 60px;
+.user-navigation a {
+    list-style: none;
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
 }
 
-.user-navigation {
+.user-navigation a:hover,
+.user-navigation a:focus {
+    color: #ee3643;
+}
+
+.main-navigation {
     list-style: none;
+    font-size: 17px;
+    line-height: 17px;
+    background-color: #32425c;
+    color: #ffffff;
+}
+
+.site-navigation a {
+    font-size: 17px;
+    line-height: 17px;
+    color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    background-color: #293449;
+
 }
 
