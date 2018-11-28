@@ -4,18 +4,27 @@
         <meta charset="utf-8">
         <title>HTML Academy: Техномарт</title>
         <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet"> 
     </head>
     <body>
         <header class="main-header">
-            <h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1>
-            <a class="main-header-logo" href="index.html">Техномарт</a>
-            <p>Поиск</p>
-            <a class="bookmark" href="bookmark.html">Закладки</a>
-            <a class="cart" href="cart.html">Корзина</a>
-            <a class="order" href="order.html">Оформить заказ</a>
+            <div class="header-top">
+                <a class="main-header-logo">Техномарт</a>
+                <div class="search">
+                    <form action="https://echo.htmlacademy.ru/" method="post" enctype="multipart/form-data">
+                        <label class="search-label">
+                            <input type="search" name="search" id="search" placeholder="Поиск:">
+                        </label>
+                    </form>
+                </div>
+                <a class="bookmark" href="bookmark.html">Закладки</a>
+                <a class="cart" href="cart.html">Корзина</a>
+                <a class="order" href="order.html">Оформить заказ</a>
+            </div>
             <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
             <ul class="header-adress-phone">
-                <li class="header-phone">+7 812 555 05 55</li>
+                <li class="header-phone">+7 (812) 555-05-55</li>
                 <li class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</li>
             </ul>
             <div class="user-navigation">

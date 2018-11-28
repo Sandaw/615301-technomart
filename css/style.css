@@ -6,6 +6,111 @@ body {
     font-size: 14px;
     line-height: 17px;
     font-weight: 400;
+    text-align: left;
     color: #ffffff;
     background-color: #ffffff;
 }
+
+a {
+    text-decoration: none;
+}
+
+.site-navigation a,
+.user-navigation a,
+.header-top a {
+    color: #ffffff;
+}
+
+.main-header {
+    list-style: none;
+    background-color: #f3f7f9;
+    color: #ffffff;
+    width: 1200px;
+    height: 320px;
+}
+
+.header-top {
+    list-style: none;    
+    font-size: 17px;
+    line-height: 18px;
+    background-color: #293449;
+    text-align: left;
+    color: #ffffff;
+}
+
+.bookmark a:hover,
+.bookmark a:focus,
+.cart a:hover,
+.cart a:focus {
+    background-color: #212a3a;
+}
+
+.main-header-logo {
+    list-style: none;
+    width: 220px;      
+    height: 47px;
+    background-color: #ee3643;
+}
+
+.main-header-logo a {
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.main-header-logo a:hover,
+.main-header-logo a:focus {
+    background-color: #ca2c37;
+}
+
+.search  {
+
+}
+
+.order {
+    width: 150px;
+    height: 42px;
+    background-color: #63a63e;
+}
+
+.order a:hover
+.order a:focus {
+    background-color: #5fbb2d;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 23px;
+    color: #ee3643;
+}
+
+.header-phone {
+    list-style: none;
+    font-size: 21px;
+    line-height: 21px;
+    border-color: white;
+    color: #ee3643;
+}
+
+.header-adress {
+    list-style: none;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #32425c;
+}
+
+.main-navigation {
+    font-size: 17px;
+    background-color: #32425c;
+    color: #ffffff;
+    width: 940px;
+    height: 60px;
+}
+
+.site-navigation,
+.user-navigation {
+    list-style: none;
+}
+
