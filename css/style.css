@@ -73,7 +73,10 @@ a {
     background-color: #5fbb2d;
 }
 
+/*средняя часть хедера*/
+
 h1 {
+    font-family: "Cuprum", Arial, sans-serif;
     font-style: italic;
     font-size: 16px;
     font-weight: normal;
@@ -83,6 +86,7 @@ h1 {
 
 .header-phone {
     list-style: none;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 21px;
     line-height: 21px;
     border-color: white;
@@ -91,22 +95,35 @@ h1 {
 
 .header-adress {
     list-style: none;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     text-align: center;
     color: #32425c;
 }
 
-.main-navigation {
-    font-size: 17px;
-    background-color: #32425c;
-    color: #ffffff;
-}
-
 .user-navigation {
     list-style: none;
+    
 }
 
-.site-navigation a {
-    color: #ffffff;
+.user-navigation a {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 21px;
+    color: #000000;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus {
+    color: #ee3643;
+}
+
+.user-navigation .my-orders:hover,
+.user-navigation .my-orders:focus {
+    color: #000000;
+}
+
+
+.main-navigation {    
+    background-color: #32425c;
 }
