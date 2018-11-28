@@ -16,47 +16,45 @@ a {
 }
 
 .site-navigation a,
-.user-navigation a,
 .header-top a {
     color: #ffffff;
 }
 
 .main-header {
-    list-style: none;
     background-color: #f3f7f9;
     color: #ffffff;
-    width: 1200px;
-    height: 320px;
 }
 
 .header-top {
-    list-style: none;    
+    list-style: none;
     font-size: 17px;
     line-height: 18px;
     background-color: #293449;
     text-align: left;
-    color: #ffffff;
 }
 
 .bookmark a:hover,
 .bookmark a:focus,
 .cart a:hover,
-.cart a:focus {
+.cart a:focus, 
+.search-label input:focus {
     background-color: #212a3a;
 }
 
-.main-header-logo {
-    list-style: none;
-    width: 220px;      
-    height: 47px;
+.search-label input {
+    background-color: #293449;
+    border: none;
+}
+
+.main-header-logo {    
     background-color: #ee3643;
 }
 
 .main-header-logo a {
+    font-size: 18px;
     text-transform: uppercase;
     color: #ffffff;
 }
-
 .main-header-logo a:hover,
 .main-header-logo a:focus {
     background-color: #ca2c37;
@@ -105,8 +103,6 @@ h1 {
     font-size: 17px;
     background-color: #32425c;
     color: #ffffff;
-    width: 940px;
-    height: 60px;
 }
 
 .user-navigation {
