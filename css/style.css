@@ -15,35 +15,37 @@ a {
     text-decoration: none;
 }
 
-.site-navigation a,
-.header-top a {
-    color: #ffffff;
-}
-
 .main-header {
     background-color: #f3f7f9;
-    color: #ffffff;
 }
 
-.header-top {
+.header-top {      
+    background-color: #293449;    
+}
+
+.header-top a {
     list-style: none;
+    color: #ffffff;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     line-height: 18px;
-    background-color: #293449;
     text-align: left;
-}
-
-.bookmark a:hover,
-.bookmark a:focus,
-.cart a:hover,
-.cart a:focus, 
-.search-label input:focus {
-    background-color: #212a3a;
 }
 
 .search-label input {
     background-color: #293449;
     border: none;
+    font-size: 17px;
+    line-height: 18px;
+    font-family: "Cuprum", Arial, sans-serif;
+    color: #ffffff;/*как убрать прозрачность с placeholder*/
+}
+
+.header-top a:hover,
+.header-top a:focus, 
+.search-label input:hover,
+.search-label input:focus {
+    background-color: #212a3a;
 }
 
 .main-header-logo {    
@@ -52,6 +54,8 @@ a {
 
 .main-header-logo a {
     font-size: 18px;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-weight: 500;
     text-transform: uppercase;
     color: #ffffff;
 }
@@ -61,12 +65,10 @@ a {
 }
 
 .order {
-    width: 150px;
-    height: 42px;
     background-color: #63a63e;
 }
 
-.order a:hover
+.order a:hover,
 .order a:focus {
     background-color: #5fbb2d;
 }
@@ -105,3 +107,6 @@ h1 {
     list-style: none;
 }
 
+.site-navigation a {
+    color: #ffffff;
+}
