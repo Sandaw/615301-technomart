@@ -210,3 +210,57 @@ h1 {
 }
 
 /*футер*/
+/*верхняя часть футера*/
+.footer-links {
+    background-color: #32425c; /*цвет проверить в фотошопе*/
+}
+
+/*по стайлгайду это не ссылка*/
+.main-footer-logo {
+    background-color: #ee3643;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 23px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    width: 220px;
+    height: 68px;
+}
+
+.adress-footer {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.footer-navigation-short a {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    color: #f1f5f7;
+}
+
+.footer-navigation-short li,
+.footer-catalog-links li {
+    list-style: none;
+}
+.footer-navigation-short a:hover,
+.footer-navigation-short a:focus {
+    text-decoration: underline;
+}
+
+.footer-catalog-links a {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    color: #ffd180;
+}
+
+.footer-catalog-links a:hover,
+.footer-catalog-links a:focus {
+    text-decoration: underline;
+}
