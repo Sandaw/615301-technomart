@@ -113,18 +113,22 @@ h1 {
     color: #000000;
 }
 
-/*не пойму */
-.user-navigation-catalog a,
-.user-navigation-catalog a {
+.user-navigation .my-orders,
+.user-navigation .my-cabinet {
+    font-size: 16px;
+    line-height: 1.13;
+    text-decoration: underline;
     color: #32425c;
 }
 
-
+.user-navigation .log-out {
+    font-size: 0;
+}
 
 .user-navigation a:hover,
 .user-navigation a:focus,
-.user-navigation .my-orders:hover,
-.user-navigation .my-orders:focus {
+.my-orders:hover,
+.my-orders:focus {
     color: #ee3643;
 }
 
@@ -140,7 +144,6 @@ h1 {
 }
 
 .site-navigation a {
-    list-style: none;    
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     text-align: left;
