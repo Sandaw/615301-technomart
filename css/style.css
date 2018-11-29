@@ -300,3 +300,72 @@ h1 {
 .footer-social a:focus {
     background-color: #ee3643;
 }
+
+/*конец нижнего футера*/
+
+/*модальные окна*/
+.modal {
+    background-color: #ffffff;
+}
+
+.modal-write-us .write-form {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 17.5px;
+    line-height: 17.5px;
+    text-align: left;
+    color: #000000;
+}
+
+.modal-write .button {
+    color: #ffffff;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 17.5px;
+    text-align: center;
+    background-color: #ee3643;
+}
+
+.modal-close {
+    background-image: url("img/svg/icon-close.svg");
+}
+
+.modal-add-cart p {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.add-product-button {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.add-product-button a:first-child {
+    background-color: #ee3643;
+    color: #ffffff;
+}
+
+.add-product-button a:last-child {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.modal-add-cart p::before {
+    content: "";
+    background-image: url("img/svg/icon-mark.svg");  /*доработать*/
+}
+
+.write-form input[type="text"],
+.write-form textarea {
+    border: 2px solid #dee3e4; /*не работает*/
+}
+
+.write-form input:focus {
+    border-color: ##ee3643; /*не работает*/
+}
