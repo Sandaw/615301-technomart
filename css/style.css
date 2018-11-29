@@ -132,6 +132,16 @@ h1 {
     color: #ee3643;
 }
 
+.logged-in::before {
+    content: "";
+    background-image: url("img.svg/icon-login.svg")
+}
+
+.logged-in::after {
+    content: "";
+    background-image: url("img.svg/icon-logout.svg")
+}
+
 .user-navigation .logged-in:hover,
 .user-navigation .logged-in:focus {
     color: #000000;
@@ -207,6 +217,37 @@ h1 {
     text-align: center;
     color: #ffffff;
     background-color: #ee3643;
+}
+
+/*каталог*/
+.container {    
+    background-color: #ffffff;
+}
+
+.breadcrumbs a {
+    list-style: none;
+    text-decoration: none;
+    color: #000000;
+}
+
+.breadcrumbs,
+.breadcrumbs-current {
+    list-style: none;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;  
+    line-height: 1.38;
+    text-align: left;
+    text-transform: uppercase;
+    color: #32425c;
+}
+
+.container h1 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    line-height: 30px;
+    color: #000000;
+    text-transform: uppercase;
 }
 
 /*футер*/
