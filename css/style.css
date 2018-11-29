@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
   
-    font-family: "PT Sans", "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
     line-height: 17px;
     font-weight: 400;
@@ -113,17 +113,41 @@ h1 {
     color: #000000;
 }
 
+/*не пойму */
+.user-navigation-catalog a,
+.user-navigation-catalog a {
+    color: #32425c;
+}
+
+
+
 .user-navigation a:hover,
-.user-navigation a:focus {
+.user-navigation a:focus,
+.user-navigation .my-orders:hover,
+.user-navigation .my-orders:focus {
     color: #ee3643;
 }
 
-.user-navigation .my-orders:hover,
-.user-navigation .my-orders:focus {
+.user-navigation .logged-in:hover,
+.user-navigation .logged-in:focus {
     color: #000000;
 }
 
+/*нижняя часть хедера главные ссылки*/
 
 .main-navigation {    
     background-color: #32425c;
 }
+
+.site-navigation a {
+    list-style: none;    
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 17px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.site-navigation a:hover {
+    background-color: #293449;
+}
+
