@@ -291,3 +291,12 @@ h1 {
     list-style: none;
     font-size: 0; /*правильно ?*/    
 }
+
+.social-button {
+    background-color: #212a3a;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+    background-color: #ee3643;
+}
