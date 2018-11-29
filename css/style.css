@@ -264,3 +264,30 @@ h1 {
 .footer-catalog-links a:focus {
     text-decoration: underline;
 }
+
+/*нижний футер*/
+.footer-copyright-social {
+    background-color: #293449;
+}
+
+.footer-copyright-social p {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.13;
+    text-align: left;
+    color: #ffffff;
+}
+
+.footer-copyright-social a {
+    color: #ffd180;
+}
+
+.footer-copyright-social a:hover,
+.footer-copyright-social a:focus {
+    text-decoration: underline;
+}
+
+.footer-social {
+    list-style: none;
+    font-size: 0; /*правильно ?*/    
+}
