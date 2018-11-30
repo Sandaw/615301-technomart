@@ -41,8 +41,10 @@ a {
     color: #ffffff;/*как убрать прозрачность с placeholder*/
 }
 
-.bookmark a:hover,
-.bookmark a:focus, 
+.bookmark:hover,
+.bookmark:focus,
+.cart:hover,
+.cart:focus,
 .search-label input:hover,
 .search-label input:focus {
     background-color: #212a3a;
@@ -56,7 +58,7 @@ a {
     text-transform: uppercase;
     color: #ffffff;
 }
-/*
+
 .main-header-logo a {
     font-size: 18px;
     font-family: "Cuprum", Arial, sans-serif;
@@ -64,7 +66,7 @@ a {
     text-transform: uppercase;
     color: #ffffff;
 }
-*/
+
 .main-header-logo:hover,
 .main-header-logo:focus {
     background-color: #ca2c37;
@@ -74,8 +76,8 @@ a {
     background-color: #63a63e;
 }
 
-.order a:hover,
-.order a:focus {
+.order:hover,
+.order:focus {
     background-color: #5fbb2d;
 }
 
@@ -254,6 +256,117 @@ h1 {
     line-height: 30px;
     color: #000000;
     text-transform: uppercase;
+}
+
+.filter legend {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.76;
+    text-align: left;
+    color: #000000;
+}
+
+.filter p {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.38;
+    text-align: left;
+    color: #000000;
+}
+
+.brands li,
+.supply li {
+    list-style: none;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.33;
+    text-align: left;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.filter-button {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.38;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+
+/*---------карточка товара-----------*/
+
+.catalog-item {
+    border: 1px solid #e5e5e5;
+}
+
+.catalog-item h3 {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;  
+    font-weight: bold; 
+    line-height: 1.11; 
+    text-align: center;  
+    color: #000000;
+}
+
+.old {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.06;
+    color: #999999;
+    text-decoration: line-through;
+}
+
+.button-price {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 17px;  
+    font-weight: bold;  
+    line-height: 1.06;  
+    text-align: center;
+    color: #ffffff;
+    background: #ee3643;/*пока так*/
+}
+
+.buy-item {
+    background-color: #63a63e;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.29;  
+    text-align: center;
+    color: #ffffff;
+}
+
+.in-bookmark {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    color: #32425c;
+    background-color: #ffffff;
+}
+
+/*--------кнопки страниц-----------*/
+
+.pagination-item {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.38;
+    text-align: center;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #e5e5e5;
+    text-transform: uppercase;
+}
+
+.pagination-list li {
+    list-style: none;
+}
+
+.pagination-item-current {
+    background-color: #ee3643;
 }
 
 /*футер*/
