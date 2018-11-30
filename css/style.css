@@ -41,8 +41,8 @@ a {
     color: #ffffff;/*как убрать прозрачность с placeholder*/
 }
 
-.header-top a:hover,
-.header-top a:focus, 
+.bookmark a:hover,
+.bookmark a:focus, 
 .search-label input:hover,
 .search-label input:focus {
     background-color: #212a3a;
@@ -50,8 +50,13 @@ a {
 
 .main-header-logo {    
     background-color: #ee3643;
+    font-size: 18px;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #ffffff;
 }
-
+/*
 .main-header-logo a {
     font-size: 18px;
     font-family: "Cuprum", Arial, sans-serif;
@@ -59,8 +64,9 @@ a {
     text-transform: uppercase;
     color: #ffffff;
 }
-.main-header-logo a:hover,
-.main-header-logo a:focus {
+*/
+.main-header-logo:hover,
+.main-header-logo:focus {
     background-color: #ca2c37;
 }
 
