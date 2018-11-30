@@ -527,5 +527,5 @@ h1 {
 }
 
 .write-form input:focus {
-    border-color: ##ee3643; /*не работает*/
+    border-color: #ee3643; /*не работает*/
 }
