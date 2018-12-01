@@ -199,6 +199,11 @@ h1 {
     height: 38px;
 }
 
+.main-tile .button-categories-block:hover,
+.main-tile .button-categories-block:focus {
+    background: rgba(0, 0, 0, 0.2);
+}
+
 .main-tile a {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;  
@@ -260,16 +265,68 @@ h1 {
 }
 
 .button-slider-categories {
-    
+    background-color: #ee3643;   
 }
 
+.slider a:hover,
+.slider a:focus {
+    background-color: #ca2c37;
+}
 
+/*-----------популярные товары-----------------*/
+
+.popular-goods h3,
+.brand-list-popular h3 { 
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 1;
+    text-align: left;
+    color: #32425c;
+    text-transform: uppercase;
+}
+
+.popular-header {
+    background-color: #f9f5f0;
+}
+
+.popular-list li:last-child {
+    background-image: url("img/svg/new-flag.svg") /*или нарисовать*/
+
+}
+
+.popular-brands a {
+    background-color: #ffffff; /*в макете #e5e5e5*/
+    border: 1px solid #eaeaea;
+}
+
+.popular-brands a:hover,
+.popular-brands a:focus {
+    box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+/*--------сервисы--------------------------*/
 
 .services h2 {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
     line-height: 30px;
     color: #000000;
+    text-transform: uppercase;
+}
+
+.services p {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: left;
+    color: #000000;
+}
+
+.services h3 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    color: #32425c;
     text-transform: uppercase;
 }
 
@@ -301,7 +358,9 @@ h1 {
 }
 
 .about .button,
-.modal-write-us .button {
+.modal-write-us .button,
+.drills-slide a,
+.popular-header a {
     list-style: none;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
