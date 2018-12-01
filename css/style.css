@@ -176,7 +176,63 @@ h1 {
     background-color: #293449;
 }
 
-/*позже
+/*--------основной контент на главной-------*/
+
+.main-tile .categories-block {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold; 
+    line-height: 1.25;
+    text-align: left;
+    color: #ffffff;
+    /*временно наверное*/
+    display: block;
+    width: 300px;
+    height: 123px;
+}
+
+.main-tile .button-categories-block {
+    background: rgba(0, 0, 0, 0.1);
+    /*временно наверное*/
+    display: block;
+    width: 135px;
+    height: 38px;
+}
+
+.main-tile a {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;  
+    line-height: 1.25;  
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;    
+}
+
+.categories-material {
+    background-color: #ffbf47;
+    background-image: url("img/svg/material-icon.svg");
+    background-image: url("img/svg/new-flag.svg")/*картинка или рисовать ?*/
+}
+
+.categories-instrument {
+    background-color: #3bbce3;
+    background-image: url("img/svg/instrument-icon.svg");
+}
+
+.categories-technics {
+    background-color: #dc91d8;
+    background-image: url("img/svg/technics-icon.svg");
+}
+
+.categories-discount {
+    background-color: #8ed78f;
+    background-image: url("img/svg/discount-icon.svg");
+}
+
+.categories-delivery {
+    background-color: #ffc047;
+    background-image: url("img/svg/delivery-icon.svg");
+}
 
 .services h2 {
     font-family: "Cuprum", Arial, sans-serif;
@@ -185,8 +241,6 @@ h1 {
     color: #000000;
     text-transform: uppercase;
 }
-
-*/
 
 /*заголовок выглядит толще, чем в макете*/
 .about h2,
