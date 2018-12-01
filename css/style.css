@@ -492,10 +492,19 @@ h1 {
     color: #ee3643;
 }
 
-.sorting-list a:nth-child(4),
-.sorting-list a:last-child {
+.sorting-list a:last-child,
+.sorting-list a:nth-child(4) {    
     font-size: 0;
 }
+
+.sort-by-increase {
+    background-image: url("img/svg/icon-up-dir.svg");
+}
+
+.sort-by-decrease {
+    background-image: url("img/svg/icon-down-dir.svg");
+}
+
 
 /*---------карточка товара-----------*/
 
