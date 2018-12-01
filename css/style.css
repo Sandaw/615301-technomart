@@ -234,6 +234,37 @@ h1 {
     background-image: url("img/svg/delivery-icon.svg");
 }
 
+.slider h3 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 36px;  
+    font-weight: bold;  
+    line-height: 1;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.slider p {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;  
+    line-height: 1.33;  
+    text-align: left;
+    color: #ffffff;
+}
+
+.perforators-slide {
+    background-image: url("img/slider-perf.jpg")
+}
+
+.drills-slide {
+    background-image: url("img/slider-drill.jpg")
+}
+
+.button-slider-categories {
+    
+}
+
+
+
 .services h2 {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
