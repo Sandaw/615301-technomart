@@ -1,0 +1,531 @@
+body {
+    margin: 0;
+    padding: 0;
+  
+    font-family: "PT Sans", "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    text-align: left;
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-header {
+    background-color: #f3f7f9;
+}
+
+.header-top {      
+    background-color: #293449;    
+}
+
+.header-top a {
+    list-style: none;
+    color: #ffffff;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    text-align: left;
+}
+
+.search-label input {
+    background-color: #293449;
+    border: none;
+    font-size: 17px;
+    line-height: 18px;
+    font-family: "Cuprum", Arial, sans-serif;
+    color: #ffffff;/*как убрать прозрачность с placeholder*/
+}
+
+.bookmark:hover,
+.bookmark:focus,
+.cart:hover,
+.cart:focus,
+.search-label input:hover,
+.search-label input:focus {
+    background-color: #212a3a;
+}
+
+.main-header-logo {    
+    background-color: #ee3643;
+    font-size: 18px;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.main-header-logo a {
+    font-size: 18px;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus {
+    background-color: #ca2c37;
+}
+
+.order {
+    background-color: #63a63e;
+}
+
+.order:hover,
+.order:focus {
+    background-color: #5fbb2d;
+}
+
+/*средняя часть хедера*/
+
+h1 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 23px;
+    color: #ee3643;
+}
+
+.header-phone {
+    list-style: none;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 21px;
+    line-height: 21px;
+    border-color: white;
+    color: #ee3643;
+}
+
+.header-adress {
+    list-style: none;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #32425c;
+}
+
+.user-navigation {
+    list-style: none;
+    
+}
+
+.user-navigation a {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 21px;
+    color: #000000;
+}
+
+.user-navigation .my-orders,
+.user-navigation .my-cabinet {
+    font-size: 16px;
+    line-height: 1.13;
+    text-decoration: underline;
+    color: #32425c;
+}
+
+.user-navigation .log-out {
+    font-size: 0;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus,
+.my-orders:hover,
+.my-orders:focus {
+    color: #ee3643;
+}
+
+.logged-in::before {
+    content: "";
+    background-image: url("img.svg/icon-login.svg")
+}
+
+.logged-in::after {
+    content: "";
+    background-image: url("img.svg/icon-logout.svg")
+}
+
+.user-navigation .logged-in:hover,
+.user-navigation .logged-in:focus {
+    color: #000000;
+}
+
+/*нижняя часть хедера главные ссылки*/
+
+.main-navigation {    
+    background-color: #32425c;
+}
+
+.site-navigation a {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 17px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.site-navigation li {
+    list-style: none;
+}
+.site-navigation a:hover,
+.site-navigation a:focus {
+    background-color: #293449;
+}
+
+/*позже
+
+.services h2 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+*/
+
+/*заголовок выглядит толще, чем в макете*/
+.about h2,
+.main-page-footer h2 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+/*текст на всю ширину тянется, нужен бр в разметке ?*/
+.about p,
+.main-page-footer p {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.about li {
+    list-style: none;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.about .button,
+.modal-write-us .button {
+    list-style: none;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    background-color: #ee3643;
+}
+
+/*каталог*/
+.container {    
+    background-color: #ffffff;
+}
+
+.breadcrumbs a {
+    list-style: none;
+    text-decoration: none;
+    color: #000000;
+}
+
+.breadcrumbs,
+.breadcrumbs-current {
+    list-style: none;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;  
+    line-height: 1.38;
+    text-align: left;
+    text-transform: uppercase;
+    color: #32425c;
+}
+
+.container h1 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    line-height: 30px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.filter legend {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.76;
+    text-align: left;
+    color: #000000;
+}
+
+.filter p {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.38;
+    text-align: left;
+    color: #000000;
+}
+
+.brands li,
+.supply li {
+    list-style: none;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.33;
+    text-align: left;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.filter-button {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.38;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+
+/*---------карточка товара-----------*/
+
+.catalog-item {
+    border: 1px solid #e5e5e5;
+}
+
+.catalog-item h3 {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;  
+    font-weight: bold; 
+    line-height: 1.11; 
+    text-align: center;  
+    color: #000000;
+}
+
+.old {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.06;
+    color: #999999;
+    text-decoration: line-through;
+}
+
+.button-price {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 17px;  
+    font-weight: bold;  
+    line-height: 1.06;  
+    text-align: center;
+    color: #ffffff;
+    background: #ee3643;/*пока так*/
+}
+
+.buy-item {
+    background-color: #63a63e;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.29;  
+    text-align: center;
+    color: #ffffff;
+}
+
+.in-bookmark {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    color: #32425c;
+    background-color: #ffffff;
+}
+
+/*--------кнопки страниц-----------*/
+
+.pagination-item {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.38;
+    text-align: center;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #e5e5e5;
+    text-transform: uppercase;
+}
+
+.pagination-list li {
+    list-style: none;
+}
+
+.pagination-item-current {
+    background-color: #ee3643;
+}
+
+/*футер*/
+/*верхняя часть футера*/
+.footer-links {
+    background-color: #32425c; /*цвет проверить в фотошопе*/
+}
+
+/*по стайлгайду это не ссылка*/
+.main-footer-logo {
+    background-color: #ee3643;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 23px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    width: 220px;
+    height: 68px;
+}
+
+.adress-footer {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.footer-navigation-short a {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    color: #f1f5f7;
+}
+
+.footer-navigation-short li,
+.footer-catalog-links li {
+    list-style: none;
+}
+.footer-navigation-short a:hover,
+.footer-navigation-short a:focus {
+    text-decoration: underline;
+}
+
+.footer-catalog-links a {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    color: #ffd180;
+}
+
+.footer-catalog-links a:hover,
+.footer-catalog-links a:focus {
+    text-decoration: underline;
+}
+
+/*нижний футер*/
+.footer-copyright-social {
+    background-color: #293449;
+}
+
+.footer-copyright-social p {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.13;
+    text-align: left;
+    color: #ffffff;
+}
+
+.footer-copyright-social a {
+    color: #ffd180;
+}
+
+.footer-copyright-social a:hover,
+.footer-copyright-social a:focus {
+    text-decoration: underline;
+}
+
+.footer-social {
+    list-style: none;
+    font-size: 0; /*правильно ?*/    
+}
+
+.social-button {
+    background-color: #212a3a;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+    background-color: #ee3643;
+}
+
+/*конец нижнего футера*/
+
+/*модальные окна*/
+.modal {
+    background-color: #ffffff;
+}
+
+.modal-write-us .write-form {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 17.5px;
+    line-height: 17.5px;
+    text-align: left;
+    color: #000000;
+}
+
+.modal-write .button {
+    color: #ffffff;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 17.5px;
+    text-align: center;
+    background-color: #ee3643;
+}
+
+.modal-close {
+    background-image: url("img/svg/icon-close.svg");
+}
+
+.modal-add-cart p {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.add-product-button {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.add-product-button a:first-child {
+    background-color: #ee3643;
+    color: #ffffff;
+}
+
+.add-product-button a:last-child {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.modal-add-cart p::before {
+    content: "";
+    background-image: url("img/svg/icon-mark.svg");  /*доработать*/
+}
+
+.write-form input[type="text"],
+.write-form textarea {
+    border: 2px solid #dee3e4; /*не работает*/
+}
+
+.write-form input:focus {
+    border-color: #ee3643; /*не работает*/
+}
