@@ -330,6 +330,39 @@ h1 {
     text-transform: uppercase;
 }
 
+.services-credit .button {
+    background-color: #ff5357;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.25;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+/*------слайдер сервисов---------*/
+
+.services-slider li {
+    text-decoration: none;
+}
+
+.button-service {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.43;
+    text-align: left;
+    color: #ffffff;
+    box-shadow: inset 0px -1px 0 0 #33445a;
+    background-color: #32425c; 
+}
+
+.button-service:hover,
+.button-service:focus {
+    background-color: #ffffff;
+    color: #32425c;
+}
+
 /*заголовок выглядит толще, чем в макете*/
 .about h2,
 .main-page-footer h2 {
@@ -573,6 +606,11 @@ h1 {
 
 /*--------кнопки страниц-----------*/
 
+.pagination-list li {
+    list-style: none;
+    text-decoration: none;
+}
+
 .pagination-item {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
@@ -584,8 +622,8 @@ h1 {
     text-transform: uppercase;
 }
 
-.pagination-list li {
-    list-style: none;
+.pagination-list a {
+    color: #000000;
 }
 
 .pagination-item-current {
