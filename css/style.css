@@ -176,7 +176,135 @@ h1 {
     background-color: #293449;
 }
 
-/*позже
+/*--------основной контент на главной-------*/
+
+.main-tile .categories-block {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold; 
+    line-height: 1.25;
+    text-align: left;
+    color: #ffffff;
+    /*временно наверное*/
+    display: block;
+    width: 300px;
+    height: 123px;
+}
+
+.main-tile .button-categories-block {
+    background: rgba(0, 0, 0, 0.1);
+    /*временно наверное*/
+    display: block;
+    width: 135px;
+    height: 38px;
+}
+
+.main-tile .button-categories-block:hover,
+.main-tile .button-categories-block:focus {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.main-tile a {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;  
+    line-height: 1.25;  
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;    
+}
+
+.categories-material {
+    background-color: #ffbf47;
+    background-image: url("img/svg/material-icon.svg");
+    background-image: url("img/svg/new-flag.svg")/*картинка или рисовать ?*/
+}
+
+.categories-instrument {
+    background-color: #3bbce3;
+    background-image: url("img/svg/instrument-icon.svg");
+}
+
+.categories-technics {
+    background-color: #dc91d8;
+    background-image: url("img/svg/technics-icon.svg");
+}
+
+.categories-discount {
+    background-color: #8ed78f;
+    background-image: url("img/svg/discount-icon.svg");
+}
+
+.categories-delivery {
+    background-color: #ffc047;
+    background-image: url("img/svg/delivery-icon.svg");
+}
+
+.slider h3 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 36px;  
+    font-weight: bold;  
+    line-height: 1;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.slider p {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;  
+    line-height: 1.33;  
+    text-align: left;
+    color: #ffffff;
+}
+
+.perforators-slide {
+    background-image: url("img/slider-perf.jpg")
+}
+
+.drills-slide {
+    background-image: url("img/slider-drill.jpg")
+}
+
+.button-slider-categories {
+    background-color: #ee3643;   
+}
+
+.slider a:hover,
+.slider a:focus {
+    background-color: #ca2c37;
+}
+
+/*-----------популярные товары-----------------*/
+
+.popular-goods h3,
+.brand-list-popular h3 { 
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 1;
+    text-align: left;
+    color: #32425c;
+    text-transform: uppercase;
+}
+
+.popular-header {
+    background-color: #f9f5f0;
+}
+
+.popular-list li:last-child {
+    background-image: url("img/svg/new-flag.svg") /*или нарисовать*/
+
+}
+
+.popular-brands a {
+    background-color: #ffffff; /*в макете #e5e5e5*/
+    border: 1px solid #eaeaea;
+}
+
+.popular-brands a:hover,
+.popular-brands a:focus {
+    box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+/*--------сервисы--------------------------*/
 
 .services h2 {
     font-family: "Cuprum", Arial, sans-serif;
@@ -186,7 +314,21 @@ h1 {
     text-transform: uppercase;
 }
 
-*/
+.services p {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: left;
+    color: #000000;
+}
+
+.services h3 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    color: #32425c;
+    text-transform: uppercase;
+}
 
 /*заголовок выглядит толще, чем в макете*/
 .about h2,
@@ -216,7 +358,9 @@ h1 {
 }
 
 .about .button,
-.modal-write-us .button {
+.modal-write-us .button,
+.drills-slide a,
+.popular-header a {
     list-style: none;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
@@ -258,6 +402,42 @@ h1 {
     text-transform: uppercase;
 }
 
+/*---------фильтры-----------*/
+
+.filter fieldset {
+    border: none;
+}
+
+.filter-by-price h3 {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.76;
+    text-align: left;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.filter-price-range,
+.filter-price-control {
+    background-color: #f7f3ec;
+}
+
+.filter-price-control {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.06;
+    text-align: center;
+    color: #000000;
+}
+
+.filter-price-control span {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #444444;
+}
+
 .filter legend {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 17px;
@@ -267,12 +447,14 @@ h1 {
     color: #000000;
 }
 
-.filter p {
+.filter p,
+.sorting h3 {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 1.38;
     text-align: left;
     color: #000000;
+    background-color: #f7f3ec;
 }
 
 .brands li,
@@ -293,6 +475,34 @@ h1 {
     text-align: center;
     color: #000000;
     text-transform: uppercase;
+}
+
+/*-------------сортировка-----------*/
+
+.sorting-list a {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.38;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+}
+
+.sorting-list a:first-child {
+    color: #ee3643;
+}
+
+.sorting-list a:last-child,
+.sorting-list a:nth-child(4) {    
+    font-size: 0;
+}
+
+.sort-by-increase {
+    background-image: url("img/svg/icon-up-dir.svg");
+}
+
+.sort-by-decrease {
+    background-image: url("img/svg/icon-down-dir.svg");
 }
 
 
@@ -332,11 +542,18 @@ h1 {
 
 .buy-item {
     background-color: #63a63e;
+    box-shadow: inset 0px -3px 0 0 #367315;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
     line-height: 1.29;  
     text-align: center;
     color: #ffffff;
+}
+
+.buy-item:hover,
+.buy-item:focus {
+    box-shadow: inset 0px -3px 0 0 #367315;
+    background-color: #5fbb2d;
 }
 
 .in-bookmark {
@@ -346,6 +563,12 @@ h1 {
     text-align: center;
     color: #32425c;
     background-color: #ffffff;
+}
+
+.in-bookmark:hover,
+.in-bookmark:focus {
+    box-shadow: inset 0px -3px 0 0 #367315;
+    background-color: #5fbb2d;
 }
 
 /*--------кнопки страниц-----------*/
@@ -368,6 +591,26 @@ h1 {
 .pagination-item-current {
     background-color: #ee3643;
 }
+
+/*---------статья в каталоге----------------*/
+
+.about-perforators h3 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: left;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.about-perforators p {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: left;
+    color: #000000;
+}
+
 
 /*футер*/
 /*верхняя часть футера*/
