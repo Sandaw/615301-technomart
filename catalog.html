@@ -10,9 +10,7 @@
     <body>
         <header class="main-header">
             <div class="header-top">
-                <div class="main-header-logo">
-                    <a href="index.html">Техномарт</a>
-                </div>
+                <a class="main-header-logo" href="index.html">Техномарт</a>
                 <div class="search">
                     <form action="https://echo.htmlacademy.ru/" method="post" enctype="multipart/form-data">
                         <label class="search-label">
@@ -59,7 +57,7 @@
                 <h2 class="visually-hidden">Фильтр товаров</h2>                
                 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                     <fieldset>
-                        <legend>Фильтр:</legend>
+                        <legend><p>Фильтр:</p></legend>
                         <div class="filter-by-price">
                             <h3>Цена:</h3>
                             <div class="filter-price-range">
@@ -99,7 +97,7 @@
                     </fieldset>
                     <fieldset>
                         <legend>Питание:</legend>
-                        <ul>
+                        <ul class="supply">
                             <li>
                                 <input type="radio" name="supply-type" value="accu" id="accumulator" checked>
                                 <label for="accumulator">Аккумуляторные</label>
@@ -114,8 +112,8 @@
                 </form>  
             </section>
             <div class="sorting"><!--сортировка-->
-                <h3>Сортровка:</h3>
-                <div class="sorting-list"><!--списком сделать или так пойдет ?-->
+                <h3>Сортировка:</h3>
+                <div class="sorting-list">
                     <a class="active-sorting-list">По цене</a>
                     <a href="#">По типу</a>
                     <a href="#">По функционалу</a>
