@@ -9,6 +9,7 @@ body {
     text-align: left;
     color: #ffffff;
     background-color: #ffffff;
+    width: 1200px;
 }
 
 a {
@@ -17,16 +18,26 @@ a {
 
 .main-header {
     background-color: #f3f7f9;
+    /*----сетка-----*/
     display: flex;
     flex-direction: column;
-    
+    min-height: 320px;
+    align-items: center;
+}
+
+.header-top-wrapper {
+    width: 100%;
+    min-height: 42px;
+    background-color: #293449;
 }
 
 .header-top {      
     background-color: #293449;
+    /*-------------сетка------------------*/
     display: flex;
-    width: auto;
-    height: 42px;  
+    width: 940px;    
+    min-height: 42px;
+    justify-content: center;     
 }
 
 .header-top a {
@@ -63,6 +74,10 @@ a {
     font-weight: normal;
     text-transform: uppercase;
     color: #ffffff;
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+    /*-------------------сетка-----------------*/
+    width: 220px;
+    height: 47px;
 }
 
 .main-header-logo a {
@@ -80,6 +95,8 @@ a {
 
 .order {
     background-color: #63a63e;
+    min-height: 42px;
+    width: 150px;
 }
 
 .order:hover,
@@ -118,7 +135,6 @@ h1 {
 
 .user-navigation {
     list-style: none;
-    
 }
 
 .user-navigation a {
@@ -165,6 +181,18 @@ h1 {
 
 .main-navigation {    
     background-color: #32425c;
+    width: 940px;
+    min-height: 60px;
+    margin: 0 130px;
+}
+
+.main-navigation li {
+    list-style: none;
+}
+
+.site-navigation {
+    display: flex;
+    justify-content: space-between;
 }
 
 .site-navigation a {
@@ -174,9 +202,7 @@ h1 {
     color: #ffffff;
 }
 
-.site-navigation li {
-    list-style: none;
-}
+
 .site-navigation a:hover,
 .site-navigation a:focus {
     background-color: #293449;
