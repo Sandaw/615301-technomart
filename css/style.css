@@ -215,31 +215,36 @@ h1 {
 
 .categories-material {
     background-color: #ffbf47;
-    background-image: url("img/svg/material-icon.svg");
-    background-image: url("img/svg/new-flag.svg")/*картинка или рисовать ?*/
+    background-image: url("../img/svg/material-icon.svg");
+    background-repeat: no-repeat;
+    /*background-image: url("../img/svg/new-flag.svg");картинка или рисовать ?*/
 }
 
 .categories-instrument {
     background-color: #3bbce3;
-    background-image: url("img/svg/instrument-icon.svg");
+    background-image: url("../img/svg/instrument-icon.svg");
+    background-repeat: no-repeat;
 }
 
 .categories-technics {
     background-color: #dc91d8;
-    background-image: url("img/svg/technics-icon.svg");
+    background-image: url("../img/svg/technics-icon.svg");
+    background-repeat: no-repeat;
 }
 
 .categories-discount {
     background-color: #8ed78f;
-    background-image: url("img/svg/discount-icon.svg");
+    background-image: url("../img/svg/discount-icon.svg");
+    background-repeat: no-repeat;
 }
 
 .categories-delivery {
     background-color: #ffc047;
-    background-image: url("img/svg/delivery-icon.svg");
+    background-image: url("../img/svg/delivery-icon.svg");
+    background-repeat: no-repeat;
 }
 
-.slider h3 {
+.slide h3 {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 36px;  
     font-weight: bold;  
@@ -248,8 +253,8 @@ h1 {
     text-transform: uppercase;
 }
 
-.slider p {
-    font-family: "PT Sans", Arial, sans-serif;
+.slide p {
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;  
     line-height: 1.33;  
     text-align: left;
@@ -257,11 +262,11 @@ h1 {
 }
 
 .perforators-slide {
-    background-image: url("img/slider-perf.jpg")
+    background: url("../img/slider-perf.jpg") no-repeat;
 }
 
 .drills-slide {
-    background-image: url("img/slider-drill.jpg")
+    background: url("../img/slider-drill.jpg") no-repeat;
 }
 
 .button-slider-categories {
@@ -356,6 +361,10 @@ h1 {
     color: #ffffff;
     box-shadow: inset 0px -1px 0 0 #33445a;
     background-color: #32425c; 
+}
+
+.services-delivery {
+    background-image: url("/img/slider-delivery.jpg")
 }
 
 .button-service:hover,
@@ -810,4 +819,17 @@ h1 {
 
 .write-form input:focus {
     border-color: #ee3643; /*не работает*/
+}
+
+/*-------- временно для пострения сеток потом УБРАТЬ !!!!-------------*/
+
+div,
+section,
+a,
+ul,
+li,
+p,
+footer,
+header {
+    outline: 1px solid red;
 }
