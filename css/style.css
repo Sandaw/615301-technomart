@@ -17,10 +17,16 @@ a {
 
 .main-header {
     background-color: #f3f7f9;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .header-top {      
-    background-color: #293449;    
+    background-color: #293449;
+    display: flex;
+    width: auto;
+    height: 42px;  
 }
 
 .header-top a {
@@ -295,7 +301,7 @@ h1 {
 }
 
 .popular-list li:last-child {
-    background-image: url("img/svg/new-flag.svg") /*или нарисовать*/
+    background-image: url("..img/svg/new-flag.svg") /*или нарисовать*/
 
 }
 
@@ -541,11 +547,11 @@ h1 {
 }
 
 .sort-by-increase {
-    background-image: url("img/svg/icon-up-dir.svg");
+    background-image: url("..img/svg/icon-up-dir.svg");
 }
 
 .sort-by-decrease {
-    background-image: url("img/svg/icon-down-dir.svg");
+    background-image: url("..img/svg/icon-down-dir.svg");
 }
 
 
@@ -777,7 +783,7 @@ h1 {
 }
 
 .modal-close {
-    background-image: url("img/svg/icon-close.svg");
+    background-image: url("..img/svg/icon-close.svg");
 }
 
 .modal-add-cart p {
@@ -809,7 +815,7 @@ h1 {
 
 .modal-add-cart p::before {
     content: "";
-    background-image: url("img/svg/icon-mark.svg");  /*доработать*/
+    background-image: url("..img/svg/icon-mark.svg");  /*доработать*/
 }
 
 .write-form input[type="text"],
@@ -821,7 +827,7 @@ h1 {
     border-color: #ee3643; /*не работает*/
 }
 
-/*-------- временно для пострения сеток потом УБРАТЬ !!!!-------------*/
+/*-------- временно для пострения сеток, потом УБРАТЬ !!!!-------------*/
 
 div,
 section,
