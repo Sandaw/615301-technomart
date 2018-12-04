@@ -19,25 +19,17 @@ a {
 .main-header {
     background-color: #f3f7f9;
     /*----сетка-----*/
-    display: flex;
-    flex-direction: column;
-    min-height: 320px;
-    align-items: center;
 }
 
-.header-top-wrapper {
-    width: 100%;
-    min-height: 42px;
-    background-color: #293449;
+.main-header .container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .header-top {      
     background-color: #293449;
     /*-------------сетка------------------*/
-    display: flex;
-    width: 940px;    
-    min-height: 42px;
-    justify-content: center;     
 }
 
 .header-top a {
@@ -76,8 +68,8 @@ a {
     color: #ffffff;
     box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
     /*-------------------сетка-----------------*/
-    width: 220px;
-    height: 47px;
+    min-width: 220px;
+    min-height: 47px;
 }
 
 .main-header-logo a {
@@ -96,7 +88,7 @@ a {
 .order {
     background-color: #63a63e;
     min-height: 42px;
-    width: 150px;
+    min-width: 150px;
 }
 
 .order:hover,
@@ -106,7 +98,7 @@ a {
 
 /*средняя часть хедера*/
 
-h1 {
+ .main-header h1 {
     font-family: "Cuprum", Arial, sans-serif;
     font-style: italic;
     font-size: 16px;
@@ -164,12 +156,12 @@ h1 {
 
 .logged-in::before {
     content: "";
-    background-image: url("img.svg/icon-login.svg")
+    background-image: url("/img.svg/icon-login.svg")
 }
 
 .logged-in::after {
     content: "";
-    background-image: url("img.svg/icon-logout.svg")
+    background-image: url("/img/svg/icon-logout.svg")
 }
 
 .user-navigation .logged-in:hover,
@@ -181,9 +173,6 @@ h1 {
 
 .main-navigation {    
     background-color: #32425c;
-    width: 940px;
-    min-height: 60px;
-    margin: 0 130px;
 }
 
 .main-navigation li {
@@ -191,8 +180,7 @@ h1 {
 }
 
 .site-navigation {
-    display: flex;
-    justify-content: space-between;
+    
 }
 
 .site-navigation a {
@@ -447,7 +435,7 @@ h1 {
 }
 
 /*каталог*/
-.container {    
+.index-content {    
     background-color: #ffffff;
 }
 
@@ -468,7 +456,7 @@ h1 {
     color: #32425c;
 }
 
-.container h1 {
+.catalog-content h1 {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
     font-style: normal;
