@@ -17,19 +17,24 @@ a {
 }
 
 .main-header {
-    background-color: #f3f7f9;
+    /*background-color: #f3f7f9;*/
     /*----сетка-----*/
 }
 
 .main-header .container {
-    width: 940px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 10px;
+    background-color: #293449;
 }
 
 .header-top {      
     background-color: #293449;
     /*-------------сетка------------------*/
+    display: flex;
+    justify-content: center;
+    min-width: 940px;
+    height: 42px;/*при 47 - логотип расширяет контейнер*/
 }
 
 .header-top a {
@@ -48,6 +53,15 @@ a {
     line-height: 18px;
     font-family: "Cuprum", Arial, sans-serif;
     color: #ffffff;/*как убрать прозрачность с placeholder*/
+    width: 
+}
+
+.bookmark {
+    min-width: 120px;
+}
+
+.cart {
+    min-width: 120px;
 }
 
 .bookmark:hover,
@@ -97,6 +111,15 @@ a {
 }
 
 /*средняя часть хедера*/
+
+.container2 {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+}
 
  .main-header h1 {
     font-family: "Cuprum", Arial, sans-serif;
@@ -173,6 +196,7 @@ a {
 
 .main-navigation {    
     background-color: #32425c;
+    width: 940px;
 }
 
 .main-navigation li {
@@ -180,7 +204,8 @@ a {
 }
 
 .site-navigation {
-    
+    display: flex;
+    justify-content: space-around;
 }
 
 .site-navigation a {
