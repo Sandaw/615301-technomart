@@ -9,7 +9,6 @@ body {
     text-align: left;
     color: #ffffff;
     background-color: #ffffff;
-    width: 1200px;
 }
 
 a {
@@ -22,13 +21,12 @@ a {
 }
 
 .main-header .container {
-    width: 100%;
+    width: 940px;
     margin: 0 auto;
     padding: 0 10px;
-    background-color: #293449;
 }
 
-.header-top {      
+.header-top {
     background-color: #293449;
     /*-------------сетка------------------*/
     display: flex;
@@ -112,11 +110,10 @@ a {
 
 /*средняя часть хедера*/
 
-.container2 {
+.container {
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
-    background-color: #ffffff;
     display: flex;
     flex-wrap: wrap;
 }
