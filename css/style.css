@@ -116,15 +116,6 @@ a {
 
 /*средняя часть хедера*/
 
-.container {
-    width: 940px;
-    margin: 0 auto;
-    padding: 0 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
  .main-header h1 {
     font-family: "Cuprum", Arial, sans-serif;
     font-style: italic;
@@ -251,6 +242,10 @@ a {
 
 /*--------основной контент на главной-------*/
 
+.main-tile li {
+    list-style: none;
+}
+
 .main-tile .categories-block {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 24px;
@@ -258,10 +253,8 @@ a {
     line-height: 1.25;
     text-align: left;
     color: #ffffff;
-    /*временно наверное*/
-    display: block;
-    width: 300px;
-    height: 123px;
+    min-width: 300px;
+    min-height: 123px;
 }
 
 .main-tile .button-categories-block {
