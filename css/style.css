@@ -35,13 +35,13 @@ a {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-items: baseline;
 }
 
 .header-top {
     background-color: #293449;
     /*-------------сетка------------------*/
     margin-bottom: 46px;
+    min-height: 42px;
 }
 
 .header-top a {
@@ -60,7 +60,7 @@ a {
     line-height: 18px;
     font-family: "Cuprum", Arial, sans-serif;
     color: #ffffff;/*как убрать прозрачность с placeholder*/
-    width: 330px;
+    min-width: 330px;
 }
 
 .bookmark {
