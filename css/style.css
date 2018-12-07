@@ -276,10 +276,10 @@ a {
     margin-right: 20px;
 }
 
-.main-tile .categories-block:nth-child(3n) {
-    margin-right: 0;
-    
-  }
+.main-tile .categories-block:nth-child(3),
+.discount-delivery-block .categories-block  {
+    margin-right: 0;    
+}
 
 .main-tile .button-categories-block {
     background: rgba(0, 0, 0, 0.1);
@@ -308,6 +308,7 @@ a {
     background-image: url("../img/svg/material-icon.svg");
     background-repeat: no-repeat;
     /*background-image: url("../img/svg/new-flag.svg");картинка или рисовать ?*/
+    
 }
 
 .categories-instrument {
@@ -326,18 +327,17 @@ a {
     background-color: #8ed78f;
     background-image: url("../img/svg/discount-icon.svg");
     background-repeat: no-repeat;
-    margin-right: 0;
 }
 
 .categories-delivery {
     background-color: #ffc047;
     background-image: url("../img/svg/delivery-icon.svg");
     background-repeat: no-repeat;
-    margin-right: 0;
 }
 
-.discount-delivery-block {    
-    margin-right: 0;
+.discount-delivery-block {
+    display: flex;
+    flex-direction: column;
 }
 
 .slide h3 {
@@ -357,12 +357,14 @@ a {
     color: #ffffff;
 }
 
-.slider .slide {
-    margin: 0;
-    padding: 0;
-    margin-right: 0px;
+.slider {
+    display: flex;
+}
+
+.slider .slide {   
     min-width: 620px;
     min-height: 266px;
+    margin-right: 20px;
 }
 
 .perforators-slide {
