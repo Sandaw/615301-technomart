@@ -211,15 +211,20 @@ a {
 
 /*нижняя часть хедера главные ссылки*/
 
-.main-navigation {    
-    background-color: #32425c;
-    width: 940px;
-    min-height: 60px;
+.main-navigation {
+    margin: 0;
+    padding: 0;    
+    background-color: #32425c;  
+    
 }
 
-.main-navigation li {
+.main-navigation ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
+    
 }
+
 /*
 .main-navigation li:first-child {
     margin-left: 52px;
@@ -232,17 +237,17 @@ a {
 .site-navigation {
     display: flex;
     justify-content: space-between;
-    flex-grow: 1;
+    width: 940px;
+    height: 60px;
 }
 
-.site-navigation a {
+.site-navigation li {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     text-align: left;
     color: #ffffff;
-    flex-grow: 1;
+    padding-top: 20px;
 }
-
 
 .site-navigation a:hover,
 .site-navigation a:focus {
@@ -398,15 +403,24 @@ a {
 
 .popular-header {
     background-color: #f9f5f0;
-}
-
-.popular-header .button {
-    min-width: 253px;
-    min-height: 38px;
+    margin-bottom: 20px;
+    
 }
 
 .popular-goods > .container {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular-goods h3 {
+    margin-left: 30px;
+}
+
+.popular-header .button {
+    margin-right: 24px;
+    min-width: 253px;
+    height: 38px;
 }
 
 .popular-list li:last-child {
@@ -541,6 +555,7 @@ a {
     line-height: 1.25;
     text-transform: uppercase;
     text-align: center;
+    vertical-align: middle;/*не работает*/
     color: #ffffff;
     background-color: #ee3643;
 }
