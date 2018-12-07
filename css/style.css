@@ -411,6 +411,23 @@ a {
     background-image: url("..img/svg/new-flag.svg") /*или нарисовать*/
 }
 
+.popular-brands {
+    height: 280px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.popular-brands .brand {
+    width: 220px;
+    min-height: 145px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.popular-brands .brand:nth-last-child(4n) {
+    margin-right: 0;
+}
+
 .popular-brands a {
     background-color: #ffffff; /*в макете #e5e5e5*/
     border: 1px solid #eaeaea;
