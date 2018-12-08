@@ -440,6 +440,7 @@ a {
     text-align: left;
     color: #32425c;
     text-transform: uppercase;
+    padding-left: 30px;
 }
 
 .popular-header {
@@ -448,37 +449,48 @@ a {
     
 }
 
-.popular-goods > .container {
+.popular-goods > .container,
+.brand-list-popular > .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.popular-goods h3 {
-    margin-left: 30px;
 }
 
 .popular-header .button {
     margin-right: 24px;
     min-width: 253px;
     height: 38px;
+    box-sizing: border-box;
+    padding-top: 13px; /*текст кнопки не по центру по вертикали*/
+    padding-bottom: 13px;
 }
 
 .popular-list li:last-child {
     background-image: url("..img/svg/new-flag.svg") /*или нарисовать*/
 }
 
-.popular-brands {
-    height: 280px;
+.brand-list-popular .popular-brands {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
-.popular-brands .brand {
-    width: 220px;
-    min-height: 145px;
+.popular-brands a {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    
+    width: 219px;
+    height: 144px;
+    border: 1px solid #eaeaea;
     margin-right: 20px;
     margin-bottom: 20px;
+}
+
+.popular-brands img {
+    
 }
 
 .popular-brands .brand:nth-last-child(4n) {
@@ -486,8 +498,7 @@ a {
 }
 
 .popular-brands a {
-    background-color: #ffffff; /*в макете #e5e5e5*/
-    border: 1px solid #eaeaea;
+        
 }
 
 .popular-brands a:hover,
@@ -496,6 +507,10 @@ a {
 }
 
 /*--------сервисы--------------------------*/
+
+.sevices {
+    background-color: #f4f7f9;
+}
 
 .services h2 {
     font-family: "Cuprum", Arial, sans-serif;
@@ -596,7 +611,6 @@ a {
     line-height: 1.25;
     text-transform: uppercase;
     text-align: center;
-    vertical-align: middle;/*не работает*/
     color: #ffffff;
     background-color: #ee3643;
 }
