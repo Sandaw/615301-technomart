@@ -40,13 +40,13 @@ a {
 
 .header-top > .container {
     display: flex;
+    min-height: 42px;
 }
 
 .header-top {
     background-color: #293449;
     /*-------------сетка------------------*/
-    margin-bottom: 46px;
-    min-height: 42px;
+    
 }
 
 .header-top a {
@@ -55,7 +55,10 @@ a {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     line-height: 18px;
-    text-align: left;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 11px;
+    padding-bottom: 14px;
 }
 
 .search-label input {
@@ -65,15 +68,18 @@ a {
     line-height: 18px;
     font-family: "Cuprum", Arial, sans-serif;
     color: #ffffff;/*как убрать прозрачность с placeholder*/
-    min-width: 330px;
+    min-width: 270px;
+    min-height: 42px;
 }
 
 .bookmark {
-    min-width: 120px;
+    width: 150px;
+    min-height: 42px;
 }
 
 .cart {
-    min-width: 120px;
+    width: 150px;
+    min-height: 42px;
 }
 
 .bookmark:hover,
@@ -85,11 +91,17 @@ a {
     background-color: #212a3a;
 }
 
-.main-header-logo {    
-    background-color: #ee3643;    
-    /*-------------------сетка-----------------*/
-    min-width: 220px;
-    min-height: 47px;
+.header-top .main-header-logo {    
+    background-color: #ee3643;
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+    font-size: 24px;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 220px;
+    text-align: center;
+    padding-top: 10px;  
 }
 
 .main-header-logo a {
@@ -98,7 +110,7 @@ a {
     font-weight: normal;
     text-transform: uppercase;
     color: #ffffff;
-    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+    text-align: center;    
 }
 
 .main-header-logo:hover,
@@ -108,7 +120,6 @@ a {
 
 .order {
     background-color: #63a63e;
-    min-height: 42px;
     min-width: 150px;
 }
 
@@ -122,6 +133,7 @@ a {
 .main-header > .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
  .main-header h1 {
@@ -131,6 +143,15 @@ a {
     font-weight: normal;
     line-height: 23px;
     color: #ee3643;
+    padding: 0;
+    margin: 0;
+    padding-left: 53px;
+    margin-top: 46px;
+    padding-bottom: 44px; 
+}
+
+.container .header-adress-phone {
+    margin-top: 46px;
 }
 
 .header-phone {
@@ -140,6 +161,10 @@ a {
     line-height: 21px;
     border-color: white;
     color: #ee3643;
+    box-sizing: border-box;
+    width: 270px;
+    height: 45px;
+    padding: 13px 52px 11px 74px;
 }
 
 .header-adress {
@@ -156,8 +181,8 @@ a {
     text-align: center;
     display: flex;
     justify-content: flex-end; 
-    align-items: center; 
-    min-height: 45px;      
+    align-items: flex-start; 
+    margin-top: 46px;    
 }
 
 .user-navigation a {
@@ -167,12 +192,18 @@ a {
     min-width: 121px;   
 }
 
-.user-navigation a:first-child {
-    margin-right: 10px;
+.user-navigation .enter {
+    box-sizing: border-box;
+    width: 121px;
+    height: 45px;
+    padding: 14px 27px 15px 48px;
 }
 
-.user-navigation .a:last-child {
-    padding: 0 25px;
+.user-navigation .registraton {
+    box-sizing: border-box;
+    width: 150px;
+    height: 45px;
+    padding: 14px 25px 11px 25px;
 }
 
 .user-navigation .my-orders,
@@ -214,16 +245,15 @@ a {
 .main-navigation {
     margin: 0;
     padding: 0;    
-    background-color: #32425c;  
-    
+    background-color: #32425c;
+    box-shadow: inset 0px -5px 0 0 var(--dark);/*не работает*/
 }
 
 .main-navigation ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    text-decoration: none;
-        
+    text-decoration: none;        
 }
 
 /*
@@ -235,6 +265,7 @@ a {
     margin-right: 55px;
 }
 */
+
 .site-navigation {
     display: flex;
     justify-content: space-between;
@@ -251,8 +282,12 @@ a {
 }
 
 .site-navigation a {
-    list-style: none;
     text-decoration: none;
+    color: #ffffff;
+    padding-top: 19px;
+    padding-bottom: 22px;
+    padding-left: 31px;
+    padding-right: 31px;
 }
 
 .site-navigation a:hover,
