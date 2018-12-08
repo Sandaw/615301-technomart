@@ -222,7 +222,8 @@ a {
     margin: 0;
     padding: 0;
     list-style: none;
-    
+    text-decoration: none;
+        
 }
 
 /*
@@ -241,12 +242,17 @@ a {
     height: 60px;
 }
 
-.site-navigation li {
+.site-navigation li {    
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     text-align: left;
     color: #ffffff;
     padding-top: 20px;
+}
+
+.site-navigation a {
+    list-style: none;
+    text-decoration: none;
 }
 
 .site-navigation a:hover,
