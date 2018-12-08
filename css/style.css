@@ -866,6 +866,7 @@ a {
 
 /*футер*/
 /*верхняя часть футера*/
+
 .footer-links {
     background-color: #32425c; /*цвет проверить в фотошопе*/
 }
@@ -890,6 +891,10 @@ a {
     color: #ffffff;
 }
 
+.footer-navigation .footer-navigation-short {
+    display: flex;
+}
+
 .footer-navigation-short a {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
@@ -905,6 +910,10 @@ a {
 .footer-navigation-short a:hover,
 .footer-navigation-short a:focus {
     text-decoration: underline;
+}
+
+.footer-catalog-navigation .footer-catalog-links {
+    display: flex;
 }
 
 .footer-catalog-links a {
