@@ -469,28 +469,23 @@ a {
     background-image: url("..img/svg/new-flag.svg") /*или нарисовать*/
 }
 
-.brand-list-popular .popular-brands {
+.brand-list-popular .popular-brands.container {
     display: flex;
-    flex-wrap: wrap;    
-    width: 940px;
-    margin: 0 auto;
-    padding: 0 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;    
 }
 
 .popular-brands a {
     margin: 0;
     padding: 0;
     background-color: #ffffff;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 219px;
     height: 144px;
     border: 1px solid #eaeaea;
-    margin-right: 20px;
     margin-bottom: 20px;
-}
-
-.popular-brands img {
-    
 }
 
 .popular-brands .brand:nth-last-child(4n) {
