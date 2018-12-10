@@ -44,9 +44,7 @@ a {
 }
 
 .header-top {
-    background-color: #293449;
-    /*-------------сетка------------------*/
-    
+    background-color: #293449;    
 }
 
 .header-top a {
@@ -247,16 +245,6 @@ a {
     list-style: none;
     text-decoration: none;        
 }
-
-/*
-.main-navigation li:first-child {
-    margin-left: 52px;
-}
-
-.main-navigation li:last-child {
-    margin-right: 55px;
-}
-*/
 
 .site-navigation {
     display: flex;
@@ -603,15 +591,35 @@ a {
     background-color: #ee3643;
 }
 
-/*каталог*/
-.index-content {    
-    background-color: #ffffff;
+/*-----------catalog--------------------*/
+/*
+.catalog-content .container {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+*/
+
+/*отрицательный маргин что бы попасть в 
+область маргина хедера главной или абсолют. позишн ?*/
+.catalog-content .breadcrumbs {
+    display: flex;
 }
 
 .breadcrumbs a {
     list-style: none;
     text-decoration: none;
     color: #000000;
+    margin-right: 40px;
+}
+
+.breadcrumbs li:first-child {
+    font-size: 0;
+}
+
+.catalog-content .breadcrumbs {
+    margin: 0;
+    padding: 0;
 }
 
 .breadcrumbs,
@@ -625,16 +633,34 @@ a {
     color: #32425c;
 }
 
+.container .page-title {
+    background-color: #f2f6f8;
+    min-height: 89px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    padding-top: 32px;
+    padding-left: 30px;
+}
+
 .catalog-content h1 {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
     font-style: normal;
     line-height: 30px;
-    color: #000000;
+    color: #32425c;
     text-transform: uppercase;
+    background-color: #f2f6f8;
 }
 
 /*---------фильтры-----------*/
+
+.filters {
+    margin: 0;
+    padding: 0;
+    width: 220px;
+    min-height: 745px;
+    margin-right: 20px;
+}
 
 .filter fieldset {
     border: none;
@@ -711,6 +737,14 @@ a {
 
 /*-------------сортировка-----------*/
 
+.sorting {
+    margin: 0;
+    padding: 0;
+    width: 700px;
+    min-height: 40px;
+    background-color: #f7f3ec;
+}
+
 .sorting-list a {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
@@ -737,14 +771,41 @@ a {
     background-image: url("..img/svg/icon-down-dir.svg");
 }
 
+/*сам каталог*/
+
+.catalog-content .catalog {
+    margin: 0;
+    padding: 0;
+    width: 700px;
+    min-height: 995px;
+}
+
+.catalog-list {
+    margin-bottom: 52px;
+}
+
+.catalog ul,
+.catalog-list li {
+    margin: 0;
+    padding: 0;
+}
+
+.catalog .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /*---------карточка товара-----------*/
 
 .catalog-item {
     border: 1px solid #e5e5e5;
-    width: 219px;
-    min-height: 317px;
+    width: 220px;
+    min-height: 318px;
     margin-right: 20px;
+}
+
+.catalog-item:nth-child(3n) {
+    margin-right: 0;
 }
 
 .catalog-item h3 {
@@ -807,6 +868,13 @@ a {
 }
 
 /*--------кнопки страниц-----------*/
+
+.pagination-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    min-height: 38px;
+}
 
 .pagination-list li {
     list-style: none;
