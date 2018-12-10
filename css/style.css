@@ -91,26 +91,18 @@ a {
     background-color: #212a3a;
 }
 
-.header-top .main-header-logo {    
+.header-top .main-header-logo {
+    display: inline-block;    
     background-color: #ee3643;
-    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 5px 0 0 rgba(0, 0, 0, 0.24);
     font-size: 24px;
     font-family: "Cuprum", Arial, sans-serif;
     font-weight: normal;
     text-transform: uppercase;
     color: #ffffff;
-    width: 220px;
+    min-width: 220px;
     text-align: center;
-    padding-top: 10px;  
-}
-
-.main-header-logo a {
-    font-size: 18px;
-    font-family: "Cuprum", Arial, sans-serif;
-    font-weight: normal;
-    text-transform: uppercase;
-    color: #ffffff;
-    text-align: center;    
+    vertical-align: middle;  
 }
 
 .main-header-logo:hover,
@@ -490,10 +482,6 @@ a {
 
 .popular-brands .brand:nth-last-child(4n) {
     margin-right: 0;
-}
-
-.popular-brands a {
-        
 }
 
 .popular-brands a:hover,
