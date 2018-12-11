@@ -499,11 +499,12 @@ a {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    max-width: 240px;
+    width: 240px;
 }
 
 .services-slider li {
     width: 240px;
+    min-height: 61px;
 }
 
 .services h2 {
@@ -561,7 +562,7 @@ a {
 }
 
 .services-delivery {
-    background-image: url("/img/slider-delivery.jpg")
+    background-image: url("/img/slider-delivery.png")
 }
 
 .button-service:hover,
