@@ -681,6 +681,17 @@ a {
     background-color: #f7f3ec;
 }
 
+.filter-by-price .filter-price-control {
+    display: flex;
+    align-items: center;
+}
+
+.filter-price-control .filter-price-min,
+.filter-price-control .filter-price-max {
+    width: 95px;
+    height: 38px;
+}
+
 .filter-price-control {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 17px;
