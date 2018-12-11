@@ -677,8 +677,13 @@ a {
 }
 
 .filter-price-range,
-.filter-price-control {
+.filter-price-control .filter-price-min,
+.filter-price-control .filter-price-max {
     background-color: #f7f3ec;
+}
+
+.filter-price-range {
+    height: 80px;
 }
 
 .filter-by-price .filter-price-control {
