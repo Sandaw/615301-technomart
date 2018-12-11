@@ -484,6 +484,28 @@ a {
     min-height: 522px;
 }
 
+.services-title {
+    margin: 0;
+    padding: 0;
+    width: 398px;
+    min-height: 96px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 74px;
+}
+
+.services-slider {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 240px;
+}
+
+.services-slider li {
+    width: 240px;
+}
+
 .services h2 {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
@@ -493,6 +515,8 @@ a {
 }
 
 .services p {
+    margin: 0;
+    padding: 0;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
@@ -984,7 +1008,6 @@ ul.pagination-list {
     text-align: left;
     color: #000000;
 }
-
 
 /*футер*/
 
