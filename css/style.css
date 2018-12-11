@@ -664,6 +664,8 @@ a {
 
 .filter fieldset {
     border: none;
+    margin: 0;
+    padding: 0;
 }
 
 .filter-by-price h3 {
@@ -757,7 +759,7 @@ a {
     margin: 0;
     padding: 0;
     width: 700px;
-    min-height: 40px;
+    height: 40px;
     background-color: #f7f3ec;
 }
 
@@ -788,6 +790,11 @@ a {
 }
 
 /*сам каталог*/
+
+.container .catalog {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .catalog-content .catalog {
     margin: 0;
