@@ -561,12 +561,23 @@ a {
     background-color: #32425c; 
 }
 
+.service-slider-block {
+    display: none;
+}
+
 .services-delivery {
-    background-image: url("/img/slider-delivery.png")
+    width: 275px;
+    height: 147px;
+    background: url("/img/slider-delivery.png") no-repeat;
 }
 
 .button-service:hover,
 .button-service:focus {
+    background-color: #293449;
+    color: #ffffff;
+}
+
+.button-service:active {
     background-color: #ffffff;
     color: #32425c;
 }
@@ -575,7 +586,6 @@ a {
     display: flex;
 }
 
-/*заголовок выглядит толще, чем в макете*/
 .about h2,
 .main-page-footer h2 {
     font-family: "Cuprum", Arial, sans-serif;
