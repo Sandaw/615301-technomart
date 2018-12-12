@@ -156,7 +156,7 @@ a {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 21px;
     line-height: 21px;
-    border-color: white;
+    border-color: 1px solid #ffffff;
     color: #ee3643;
     box-sizing: border-box;
     width: 270px;
