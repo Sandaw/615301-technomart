@@ -40,7 +40,8 @@ a {
 
 .header-top > .container {
     display: flex;
-    min-height: 42px;
+    align-items: center;
+    height: 42px;
 }
 
 .header-top {
@@ -55,8 +56,8 @@ a {
     line-height: 18px;
     box-sizing: border-box;
     text-align: center;
-    padding-top: 11px;
-    padding-bottom: 14px;
+    padding-top: 13px;
+    padding-bottom: 13px;
 }
 
 .search-label input {
@@ -71,13 +72,15 @@ a {
 }
 
 .bookmark {
-    width: 150px;
+    min-width: 150px;
     min-height: 42px;
+    padding-left: 19px;
 }
 
 .cart {
-    width: 150px;
+    min-width: 150px;
     min-height: 42px;
+    padding-left: 20px;
 }
 
 .bookmark:hover,
@@ -89,8 +92,7 @@ a {
     background-color: #212a3a;
 }
 
-.header-top .main-header-logo {
-    display: inline-block;    
+.header-top .main-header-logo {   
     background-color: #ee3643;
     box-shadow: 0px 5px 0 0 rgba(0, 0, 0, 0.24);
     font-size: 24px;
@@ -99,8 +101,8 @@ a {
     text-transform: uppercase;
     color: #ffffff;
     min-width: 220px;
-    text-align: center;
-    vertical-align: middle;  
+    height: 42px;
+    text-align: center; 
 }
 
 .main-header-logo:hover,
@@ -136,12 +138,17 @@ a {
     padding: 0;
     margin: 0;
     padding-left: 53px;
-    margin-top: 46px;
+    margin-top: 48px;
     padding-bottom: 44px; 
 }
 
 .container .header-adress-phone {
     margin-top: 46px;
+}
+
+.container ul.header-adress-phone {
+    list-style: none;
+    padding: 0;
 }
 
 .header-phone {
@@ -154,25 +161,29 @@ a {
     box-sizing: border-box;
     width: 270px;
     height: 45px;
-    padding: 13px 52px 11px 74px;
+    padding: 13px 54px 11px 70px;
 }
 
 .header-adress {
-    list-style: none;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
-    text-align: center;
+    text-align: left;
     color: #32425c;
+    padding-top: 4px;
+    padding-left: 5px;
 }
 
 .user-navigation {
     list-style: none;
     text-align: center;
     display: flex;
-    justify-content: flex-end; 
-    align-items: flex-start; 
-    margin-top: 46px;    
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    max-width: 299px;
+    min-height: 45px;
+    
 }
 
 .user-navigation a {
@@ -186,14 +197,22 @@ a {
     box-sizing: border-box;
     width: 121px;
     height: 45px;
-    padding: 14px 27px 15px 48px;
+    align-self: center;
 }
 
 .user-navigation .registraton {
     box-sizing: border-box;
     width: 150px;
     height: 45px;
-    padding: 14px 25px 11px 25px;
+    align-self: center;
+    /*padding: 14px 25px 11px 25px;*/
+}
+
+.user-navigation .logged-in {
+    margin: 0;
+    padding: 0;
+    width: 299px;
+    min-height: 45px;
 }
 
 .user-navigation .my-orders,
@@ -236,7 +255,7 @@ a {
     margin: 0;
     padding: 0;    
     background-color: #32425c;
-    box-shadow: inset 0px -5px 0 0 var(--dark);/*не работает*/
+    box-shadow: inset 0px -5px 0 0 #293449;
 }
 
 .main-navigation ul {
@@ -261,13 +280,21 @@ a {
     padding-top: 20px;
 }
 
+.site-navigation li:first-child {
+    margin-left: 52px;
+}
+
+.site-navigation li:last-child {
+    margin-right: 55px;
+}
+
 .site-navigation a {
     text-decoration: none;
     color: #ffffff;
-    padding-top: 19px;
-    padding-bottom: 22px;
-    padding-left: 31px;
-    padding-right: 31px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    /*padding-left: 31px;
+    padding-right: 31px;*/
 }
 
 .site-navigation a:hover,
