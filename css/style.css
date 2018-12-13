@@ -45,7 +45,8 @@ a {
 }
 
 .header-top {
-    background-color: #293449;    
+    background-color: #293449; 
+    margin-bottom: 46px;   
 }
 
 .header-top a {
@@ -141,7 +142,6 @@ a {
     width: 320px;
     box-sizing: border-box;
     padding-left: 53px;
-    margin-top: 48px;
     padding-bottom: 44px; 
 }
 
@@ -149,7 +149,6 @@ a {
     margin: 0;
     padding: 0;
     width: 320px;
-    margin-top: 46px;
 }
 
 .container ul.header-adress-phone {
@@ -186,8 +185,7 @@ a {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
-    align-items: center;
+    justify-content: center;
     width: 300px;
     min-height: 45px;    
 }
@@ -195,29 +193,23 @@ a {
 .user-navigation a {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 21px;
-    color: #000000;
-    min-width: 121px;   
+    color: #000000;   
 }
 
 .user-navigation .enter {
-    box-sizing: border-box;
     width: 121px;
-    height: 45px;
-    align-self: center;
+    /*height: 45px;*/
 }
 
 .user-navigation .registraton {
-    box-sizing: border-box;
     width: 150px;
-    height: 45px;
-    align-self: center;
+     /*height: 45px;*/
     /*padding: 14px 25px 11px 25px;*/
 }
 
 .user-navigation .logged-in {
     margin: 0;
     padding: 0;
-    width: 299px;
     min-height: 45px;
 }
 
