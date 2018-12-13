@@ -513,6 +513,9 @@ a {
 .sevices {
     background-color: #f4f7f9;
     min-height: 522px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .services-title {
@@ -531,6 +534,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     width: 240px;
+    /*margin-right: 80px;*/
 }
 
 .services-slider li {
@@ -593,7 +597,10 @@ a {
 }
 
 .service-slider-block {
-    display: none;
+    margin: 0;
+    padding: 0;
+    width: 620px;
+    /*display: none;*/
 }
 
 .services-delivery {
