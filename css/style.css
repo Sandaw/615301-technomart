@@ -1234,7 +1234,37 @@ ul.pagination-list {
 
 /*модальные окна*/
 .modal {
+    position: fixed;
+
+    display: none;
+
     background-color: #ffffff;
+    color: #000000;
+}
+
+.modal-write {
+    box-sizing: border-box;
+    width: 620px;
+    min-height: 430px;
+    padding: 55px 80px 37px 80px;
+    box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+    border-top: 7px solid #ee3643;
+    top: 5%;
+    left: 50%;
+}
+
+.write-form input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 220px;
+    height: 38px;
+    border: 2px solid #dee3e4;
+    margin-right: 20px;
+}
+
+.write-form input:last-child {
+    margin-right: 0;
 }
 
 .modal-write-us .write-form {
@@ -1254,8 +1284,39 @@ ul.pagination-list {
     background-color: #ee3643;
 }
 
-.modal-close {
-    background-image: url("..img/svg/icon-close.svg");
+.modal-close {    
+    width: 21px;
+    height: 21px;
+
+    font-size: 0;
+    border: 0;
+    cursor: pointer;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.modal-close::before,
+.modal-close::after {
+    content: "";
+
+    position: absolute;
+    top: 9px;
+    right: 1px;
+
+    width: 19px;
+    height: 3px;
+
+    background-color: #ee3643;
+}
+
+.modal-close::before {
+    transform: rotate(45deg);
+}
+  
+.modal-close::after {
+    transform: rotate(-45deg);
 }
 
 .modal-add-cart p {
@@ -1290,9 +1351,9 @@ ul.pagination-list {
     background-image: url("..img/svg/icon-mark.svg");  /*доработать*/
 }
 
-.write-form input[type="text"],
 .write-form textarea {
-    border: 2px solid #dee3e4; /*не работает*/
+    border: 2px solid #dee3e4;/*не работает*/
+    
 }
 
 .write-form input:focus {
