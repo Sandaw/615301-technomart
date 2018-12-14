@@ -130,7 +130,7 @@ input[type="radio"].visually-hidden {
     background-position: 0 0;
     width: 15px;
     height: 15px;
-  }
+}
 
 .bookmark:hover,
 .bookmark:focus,
@@ -222,20 +222,37 @@ input[type="radio"].visually-hidden {
 
 .container ul.header-adress-phone {
     list-style: none;
-    padding: 0;
+}
+
+.header-adress-phone li {
+    list-style: none;
+    display: block;
 }
 
 .header-phone {
-    list-style: none;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 21px;
-    line-height: 21px;
-    border-color: 1px solid #ffffff;
+    line-height: 21px;    
     color: #ee3643;
     box-sizing: border-box;
-    width: 270px;
+
+    position: relative;
+
     min-height: 45px;
-    padding: 13px 54px 11px 70px;
+    border: 3px solid #ffffff;
+    padding: 13px 45px 11px 74px;
+}
+
+.header-phone::before {
+    content: "";
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    background-image: url("../img/svg/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .header-adress {
@@ -253,7 +270,7 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    width: 300px;
+    min-width: 280px;
     min-height: 45px;    
 }
 
