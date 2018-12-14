@@ -352,7 +352,6 @@ input[type="radio"].visually-hidden {
 
 .enter:hover::before,
 .enter:focus::before {
-    color: #32425c;
   /*цвет меняется на синий (посмотреть в фотошопе)*/
 }
 
@@ -635,7 +634,6 @@ input[type="radio"].visually-hidden {
     background-color: #f4f7f9;
     min-height: 522px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
