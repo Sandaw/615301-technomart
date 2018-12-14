@@ -97,14 +97,40 @@ input[type="radio"].visually-hidden {
 }
 
 .bookmark {
+    position: relative;
     min-width: 150px;    
     padding-left: 20px;
 }
 
+.bookmark::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 18px;
+    background-image: url("../img/svg/icon-bookmark.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 15px;
+    height: 15px;
+}
+
 .cart {
+    position: relative;
     min-width: 150px;    
     padding-left: 20px;
 }
+
+.cart::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 18px;
+    background-image: url("../img/svg/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 15px;
+    height: 15px;
+  }
 
 .bookmark:hover,
 .bookmark:focus,
@@ -114,6 +140,23 @@ input[type="radio"].visually-hidden {
 .search-label input:focus {
     background-color: #212a3a;
 }
+
+.bookmark:active,
+.cart:active {
+    background-color: #161d29;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.cart::before:hover,
+.bookmark::before:hover {
+    /*белый*/
+}
+
+.cart::before:active,
+.bookmark::before:active {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
 
 .header-top .main-header-logo {   
     background-color: #ee3643;
@@ -140,6 +183,11 @@ input[type="radio"].visually-hidden {
 .order:hover,
 .order:focus {
     background-color: #5fbb2d;
+}
+
+.order:active {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #518534;
 }
 
 /*средняя часть хедера*/
@@ -215,6 +263,7 @@ input[type="radio"].visually-hidden {
     display: block;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 21px;
+    line-height: 1;
     color: #000000;
     box-sizing: border-box;
 }
@@ -248,9 +297,9 @@ input[type="radio"].visually-hidden {
 .user-navigation .registraton {
     background-color: #f4f7f9;
     width: 150px;
-    min-height: 45px;
+    height: 45px;
     padding-top: 14px;
-    padding-bottom: 15px;
+    padding-left: 25px;
 }
 
 .user-navigation .logged-in {
@@ -279,9 +328,23 @@ input[type="radio"].visually-hidden {
     color: #ee3643;
 }
 
+.user-navigation a:active {
+    color: rgba (0, 0, 0, 0.3);
+}
+
+.enter:hover::before,
+.enter:focus::before {
+    color: #32425c;
+  /*цвет меняется на синий (посмотреть в фотошопе)*/
+}
+
+.enter:active::before {
+    /*цвет как при покое*/
+}
+
 .logged-in::before {
     content: "";
-    background-image: url("/img.svg/icon-login.svg")
+    background-image: url("../img/svg/icon-login.svg")
 }
 
 .logged-in::after {
