@@ -217,7 +217,8 @@ input[type="radio"].visually-hidden {
 .container .header-adress-phone {
     margin: 0;
     padding: 0;
-    width: 320px;
+    width: 270px;
+    margin-right: 50px;
 }
 
 .container ul.header-adress-phone {
@@ -240,7 +241,7 @@ input[type="radio"].visually-hidden {
 
     min-height: 45px;
     border: 3px solid #ffffff;
-    padding: 13px 45px 11px 74px;
+    padding: 13px 45px 5px 74px;
 }
 
 .header-phone::before {
