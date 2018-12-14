@@ -201,7 +201,6 @@ input[type="radio"].visually-hidden {
 .user-navigation {
     margin: 0;
     padding: 0;
-    text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -222,12 +221,29 @@ input[type="radio"].visually-hidden {
 
 .user-navigation .enter {
     background-color: #f4f7f9;
+
+    position: relative;
+    
     width: 121px;
     min-height: 45px;
+    box-sizing: border-box;
     margin-right: 10px;
     padding-top: 14px;
     padding-left: 48px;
 }
+
+.enter::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 16px;
+  
+    width: 20px;
+    height: 17px;
+    background-image: url("../img/svg/icon-login.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 
 .user-navigation .registraton {
     background-color: #f4f7f9;
