@@ -81,8 +81,8 @@ input[type="radio"].visually-hidden {
     line-height: 18px;
     box-sizing: border-box;
     text-align: center;
-    padding-top: 14px;
-    padding-bottom: 13px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .search-label input {
@@ -381,44 +381,33 @@ input[type="radio"].visually-hidden {
     padding: 0;    
     background-color: #32425c;
     box-shadow: inset 0px -5px 0 0 #293449;
+    width: 100%;
 }
 
 .main-navigation ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    text-decoration: none;        
+    text-decoration: none;           
 }
 
 .site-navigation {
     display: flex;
-    justify-content: space-between;
-    width: 940px;
+    justify-content: flex-start;
     height: 60px;
 }
 
-.site-navigation li {    
+
+.site-navigation a {
+    text-decoration: none;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     text-align: left;
     color: #ffffff;
-}
-/*
-.site-navigation a:first-child {
-    padding-left: 52px;
-}
-
-.site-navigation a:last-child {
-    padding-right: 55px;
-}
-*/
-.site-navigation a {
-    display: block;
-    text-decoration: none;
-    color: #ffffff;
     box-sizing: border-box;
-    padding: 21px 31px;
+    line-height: 60px;
     vertical-align: middle;
+    padding: 20px 31px 20px 30px;
 }
 
 .site-navigation a:hover,
@@ -576,11 +565,10 @@ input[type="radio"].visually-hidden {
 
 .popular-header {
     background-color: #f9f5f0;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;   
 }
 
-.popular-goods > .container,
+.popular-goods .popular-header,
 .brand-list-popular > .container {
     display: flex;
     align-items: center;
@@ -596,8 +584,9 @@ input[type="radio"].visually-hidden {
     padding-bottom: 13px;
 }
 
-.popular-list li:last-child {
-    background-image: url("..img/svg/new-flag.svg") /*или нарисовать*/
+
+.popular-goods .popular-list {
+    display: flex;
 }
 
 .brand-list-popular .popular-brands.container {
@@ -1024,12 +1013,14 @@ input[type="radio"].visually-hidden {
     border: 1px solid #e5e5e5;
     width: 220px;
     min-height: 318px;
-    margin-right: 20px;
+    /*margin-right: 20px;*/
 }
 
+/*
 .catalog-item:nth-child(3n) {
     margin-right: 0;
 }
+*/
 
 .catalog-item h3 {
     font-family: "PT Sans", Arial, sans-serif;
