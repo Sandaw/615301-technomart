@@ -991,63 +991,98 @@ input[type="radio"].visually-hidden {
     min-height: 995px;
 }
 
-.catalog-list {
-    margin-bottom: 52px;
-}
-
 .catalog ul,
 .catalog-list li {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
-.catalog .catalog-list {
-    margin: 0;
+.catalog-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    width: 700px;
+    margin: 20px auto;
 }
 
 /*---------карточка товара-----------*/
 
 .catalog-item {
-    border: 1px solid #e5e5e5;
-    width: 220px;
-    min-height: 318px;
-    /*margin-right: 20px;*/
+    position: relative;
+    width: 218px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
 }
 
-/*
-.catalog-item:nth-child(3n) {
-    margin-right: 0;
+.catalog-item .flag {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 60px;
+    height: 60px;
+    text-indent: -1000px;
+    overflow: hidden;
+    z-index: 20;
 }
-*/
+.catalog-item .flag-new{
+    background: url("../img/new-flag.png") no-repeat 0 0;
+}
 
-.catalog-item h3 {
+.catalog-item .title {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 18px;  
     font-weight: bold; 
     line-height: 1.11; 
     text-align: center;  
     color: #000000;
+    min-height: 40px;
+    padding: 0 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
-.old {
+.catalog-item .old {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 17px;
     font-weight: bold;
     line-height: 1.06;
     color: #999999;
     text-decoration: line-through;
+    min-height: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
-.button-price {
+.catalog-item .button-price {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 17px;  
     font-weight: bold;  
     line-height: 1.06;  
     text-align: center;
     color: #ffffff;
-    background: #ee3643;/*пока так*/
+    background: #ee3643;
+    position: relative;
+    width: 80px;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    border-radius: 3px;
+}
+
+.catalog-item .button-price::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 0;
+    height: 0;
+    border: 20px solid white;
+    border-left-color: #ee3643;
 }
 
 .buy-item {
@@ -1058,6 +1093,26 @@ input[type="radio"].visually-hidden {
     line-height: 1.29;  
     text-align: center;
     color: #ffffff;
+}
+
+.catalog-item .item-action {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 218px;
+    height: 88px;
+    padding: 40px 0;
+    background-color: rgba(255,255,255,0.9);
+    z-index: 10;
+}
+
+.catalog-item .catalog-item-image {
+    width: 218px;
+    height: 168px;
+}
+
+.catalog-item .catalog-item-image img { 
+    max-width: 100%;
 }
 
 .buy-item:hover,
