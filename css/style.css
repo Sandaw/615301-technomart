@@ -1085,16 +1085,6 @@ input[type="radio"].visually-hidden {
     border-left-color: #ee3643;
 }
 
-.buy-item {
-    background-color: #63a63e;
-    box-shadow: inset 0px -3px 0 0 #367315;
-    font-family: "Cuprum", Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.29;  
-    text-align: center;
-    color: #ffffff;
-}
-
 .catalog-item .item-action {
     position: absolute;
     top: 0;
@@ -1115,25 +1105,58 @@ input[type="radio"].visually-hidden {
     max-width: 100%;
 }
 
+.item-action .buy-item,
+.item-action .in-bookmark {
+    display: block;
+    width: 129px;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    padding: 7px 0;
+    color: #ffffff;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.29;
+    text-decoration: none;
+    text-transform: uppercase; 
+    text-align: center;   
+    border-radius: 3px;
+    box-shadow: inset 0px -3px 0 0 #367315;
+    background-color: #63a63e;
+}
+
 .buy-item:hover,
 .buy-item:focus {
     box-shadow: inset 0px -3px 0 0 #367315;
     background-color: #5fbb2d;
 }
 
-.in-bookmark {
-    font-family: "Cuprum", Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.29;
-    text-align: center;
+.buy-item:active {
+    background-color: #518534;
+}
+
+.catalog-item .in-bookmark {
     color: #32425c;
-    background-color: #ffffff;
+    background: #ffffff;
+    box-shadow: none;
 }
 
 .in-bookmark:hover,
 .in-bookmark:focus {
-    box-shadow: inset 0px -3px 0 0 #367315;
-    background-color: #5fbb2d;
+    border: 3px solid #32425c;
+}
+
+.in-bookmark:active {
+    color: rgba(50, 66, 92, 0.3);
+    opacity: 0.3;
+}
+
+
+.catalog-item .item-action {
+    display: none;
+}
+.catalog-item:hover .item-action {
+    display: block;
 }
 
 /*--------кнопки страниц-----------*/
