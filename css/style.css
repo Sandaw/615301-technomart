@@ -584,8 +584,9 @@ input[type="radio"].visually-hidden {
     padding-bottom: 13px;
 }
 
-
 .popular-goods .popular-list {
+    margin: 0;
+    padding: 0;
     display: flex;
 }
 
@@ -816,16 +817,6 @@ input[type="radio"].visually-hidden {
     margin-left: 36px;
 }
 
-.breadcrumbs li::before:first-child {
-    content: "";
-    position: absolute;
-    top: 2px;
-    right: -25px;
-    width: 14px;
-    height: 12px; 
-    background: url("../img/svg/icon-home.svg") no-repeat;
-}
-
 .breadcrumbs li:last-child {
     margin-right: 0;
 }
@@ -842,6 +833,16 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs-current::after {
     display: none;
+}
+
+.breadcrumbs .home-breadcrumbs::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 0;
+    width: 14px;
+    height: 12px; 
+    background: url("../img/svg/icon-home.svg") no-repeat;
 }
 
 .container .page-title {
