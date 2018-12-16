@@ -780,37 +780,68 @@ input[type="radio"].visually-hidden {
 }
 */
 
-/*отрицательный маргин что бы попасть в 
-область маргина хедера главной или абсолют. позишн ?*/
-.catalog-content .breadcrumbs {
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .breadcrumbs a {
-    list-style: none;
     text-decoration: none;
     color: #000000;
-    margin-right: 40px;
+}
+
+.breadcrumbs li {
+    list-style: none;
+    position: relative;
+    margin-right: 40px;/*усредненное значение*/
+}
+
+.breadcrumbs li::after {
+    content: "";
+  
+    position: absolute;
+    top: 2px;
+    right: -25px;
+  
+    width: 8px;
+    height: 12px;
+  
+    background-image: url("../img/svg/icon-right-small.svg");
 }
 
 .breadcrumbs li:first-child {
-    font-size: 0;
+    margin-left: 36px;
 }
 
-.catalog-content .breadcrumbs {
-    margin: 0;
-    padding: 0;
+.breadcrumbs li::before:first-child {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: -25px;
+    width: 14px;
+    height: 12px; 
+    background: url("../img/svg/icon-home.svg") no-repeat;
+}
+
+.breadcrumbs li:last-child {
+    margin-right: 0;
 }
 
 .breadcrumbs,
 .breadcrumbs-current {
-    list-style: none;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;  
     line-height: 1.38;
     text-align: left;
     text-transform: uppercase;
     color: #32425c;
+}
+
+.breadcrumbs-current::after {
+    display: none;
 }
 
 .container .page-title {
@@ -840,6 +871,19 @@ input[type="radio"].visually-hidden {
     width: 220px;
     min-height: 745px;
     margin-right: 20px;
+}
+
+.filters p {
+    margin-left: 18px;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.38;
+    font-weight: normal;
+    text-align: left;
+    color: #000000;
+    text-transform: uppercase;
+    background-color: #f7f3ec;
 }
 
 .filter fieldset {
@@ -903,7 +947,16 @@ input[type="radio"].visually-hidden {
     color: #000000;
 }
 
-.filter p,
+.filter .brand-filter {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 17px;  
+    font-weight: bold;  
+    font-style: normal;  
+    line-height: 1.76;
+    text-align: left;  
+    color: #000000;
+}
+
 .sorting h3 {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
