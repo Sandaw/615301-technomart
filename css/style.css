@@ -569,8 +569,10 @@ input[type="radio"].visually-hidden {
 }
 
 .popular-goods .popular-header,
-.brand-list-popular > .container {
+.brand-list-popular .popular-header,
+.brand-list-popular .popular-brands {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -618,11 +620,17 @@ input[type="radio"].visually-hidden {
     box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
+.popular-brands {
+    margin-bottom: 85px;
+}
+
 /*--------сервисы--------------------------*/
 
 .services {
+    margin: 0;
+    padding: 0;
     background-color: #f4f7f9;
-    min-height: 522px;
+    
     display: flex;
     flex-wrap: wrap;
 }
@@ -641,13 +649,18 @@ input[type="radio"].visually-hidden {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     width: 240px;
     margin-right: 80px;
 }
 
 .services-slider li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
     width: 240px;
-    min-height: 61px;
+    height: 61px;
 }
 
 .services h2 {
@@ -669,11 +682,15 @@ input[type="radio"].visually-hidden {
 }
 
 .services h3 {
+    margin: 0;
+    padding: 0;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 36px;
     line-height: 36px;
     color: #32425c;
     text-transform: uppercase;
+
+    margin-bottom: 25px;/*примерно. Отступ до текста*/
 }
 
 .services-credit .button {
@@ -687,11 +704,6 @@ input[type="radio"].visually-hidden {
 }
 
 /*------слайдер сервисов---------*/
-
-.services li {
-    list-style: none;
-    text-decoration: none;
-}
 
 .button-service {
     font-family: "Cuprum", Arial, sans-serif;
@@ -707,14 +719,20 @@ input[type="radio"].visually-hidden {
 .service-slider-block {
     margin: 0;
     padding: 0;
+    display: flex;
     width: 620px;
     /*display: none;*/
 }
 
 .services-delivery {
+    margin: 0;
+    padding: 0;
+    width: 750px;
+    background: url("../img/slider-delivery.png") 468 261 no-repeat;
+}
+
+.services-delivery p {
     width: 275px;
-    height: 147px;
-    background: url("../img/slider-delivery.png") no-repeat;
 }
 
 .button-service:hover,
