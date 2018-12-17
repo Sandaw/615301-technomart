@@ -449,10 +449,8 @@ input[type="radio"].visually-hidden {
 
 .main-tile .button-categories-block {
     background: rgba(0, 0, 0, 0.1);
-    /*временно наверное*/
-    display: block;
     width: 135px;
-    height: 38px;
+    min-height: 38px;
 }
 
 .main-tile .button-categories-block:hover,
@@ -507,6 +505,8 @@ input[type="radio"].visually-hidden {
 }
 
 .slide h3 {
+    margin: 0;
+    padding: 0;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 36px;  
     font-weight: bold;  
@@ -545,6 +545,16 @@ input[type="radio"].visually-hidden {
     background-color: #ee3643;   
 }
 
+.slider a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 195px;
+    height: 38px;
+    margin-left: 25px;
+    margin-top: 80px;
+}
+
 .slider a:hover,
 .slider a:focus {
     background-color: #ca2c37;
@@ -581,9 +591,9 @@ input[type="radio"].visually-hidden {
     margin-right: 24px;
     min-width: 253px;
     height: 38px;
-    box-sizing: border-box;
-    padding-top: 13px; /*текст кнопки не по центру по вертикали*/
-    padding-bottom: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .popular-goods .popular-list {
@@ -629,8 +639,13 @@ input[type="radio"].visually-hidden {
 .services {
     margin: 0;
     padding: 0;
-    background-color: #f4f7f9;
-    
+    background-color: #f4f7f9;    
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 522px;
+}
+
+.services .container {
     display: flex;
     flex-wrap: wrap;
 }
@@ -651,7 +666,7 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;
     flex-direction: column;
     width: 240px;
-   /* margin-right: 80px;*/
+    margin-right: 80px;
 }
 
 .services-slider li {
@@ -694,6 +709,9 @@ input[type="radio"].visually-hidden {
 }
 
 .services-credit .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #ff5357;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
@@ -701,6 +719,9 @@ input[type="radio"].visually-hidden {
     text-align: center;
     color: #ffffff;
     text-transform: uppercase;
+    width: 195px;
+    min-height: 38px;
+    margin-top: 31px;
 }
 
 /*------слайдер сервисов---------*/
@@ -728,11 +749,39 @@ input[type="radio"].visually-hidden {
     margin: 0;
     padding: 0;
     width: 750px;
-    background: url("../img/slider-delivery.png") 468 261 no-repeat;
+    background-image: url("../img/slider-delivery.png");
+    background-repeat: no-repeat;
+    background-position: 150px 30px;
+}
+
+.services-garantee {
+    margin: 0;
+    padding: 0;
+    width: 750px;
+    background-image: url("../img/slider-garant.png");
+    background-repeat: no-repeat;
+    background-position: 150px 30px;
+}
+
+.services-credit {
+    margin: 0;
+    padding: 0;
+    width: 750px;
+    background-image: url("../img/slider-credit.png");
+    background-repeat: no-repeat;
+    background-position: 150px 30px;
 }
 
 .services-delivery p {
     width: 275px;
+}
+
+.services-garantee p {
+    width: 379px;
+}
+
+.services-credit p {
+    width: 279px;
 }
 
 .button-service:hover,
