@@ -227,7 +227,6 @@ input[type="radio"].visually-hidden {
 
 .header-adress-phone li {
     list-style: none;
-    display: block;
 }
 
 .header-phone {
@@ -393,10 +392,15 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     height: 60px;
 }
 
+.site-navigation li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .site-navigation a {
     text-decoration: none;
@@ -404,10 +408,9 @@ input[type="radio"].visually-hidden {
     font-size: 17px;
     text-align: left;
     color: #ffffff;
-    box-sizing: border-box;
-    line-height: 60px;
+    line-height: 17px;
     vertical-align: middle;
-    padding: 20px 31px 20px 30px;
+    padding: 20px 31px;
 }
 
 .site-navigation a:hover,
@@ -966,7 +969,7 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs li:first-child {
-    margin-left: 36px;
+    margin-left: 0;
 }
 
 .breadcrumbs li:last-child {
