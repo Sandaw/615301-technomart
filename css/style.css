@@ -1307,6 +1307,9 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item .catalog-item-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 218px;
     height: 168px;
 }
