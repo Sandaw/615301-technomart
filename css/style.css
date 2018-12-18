@@ -1239,20 +1239,6 @@ input[type="radio"].visually-hidden {
     background: url("../img/new-flag.png") no-repeat 0 0;
 }
 
-.catalog-item .flag {
-    position: absolute;
-    top: -1px;
-    right: -1px;
-    width: 60px;
-    height: 60px;
-    text-indent: -1000px;
-    overflow: hidden;
-    z-index: 20;
-}
-.catalog-item .flag-new{
-    background: url("../img/new-flag.png") no-repeat 0 0;
-}
-
 .catalog-item .title {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 18px;  
@@ -1292,6 +1278,10 @@ input[type="radio"].visually-hidden {
     margin-bottom: 20px;
     padding: 10px 30px;
     border-radius: 3px;
+}
+
+.bfg2000 .button-price {
+    margin-top: 45px;
 }
 
 .catalog-item .button-price::after {
