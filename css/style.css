@@ -1813,7 +1813,7 @@ ul.pagination-list {
 }
 
 /*-------- временно для пострения сеток, потом УБРАТЬ !!!!-------------*/
-
+/*
 div,
 section,
 a,
@@ -1824,3 +1824,4 @@ footer,
 header {
     outline: 1px solid red;
 }
+*/
