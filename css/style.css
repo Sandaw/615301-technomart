@@ -1628,19 +1628,29 @@ ul.pagination-list {
 .footer-copyright-social .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 105px;
 }
 
 .footer-copyright {
-    width: 310px;
+    width: 390px;
 }
 
 .container ul.footer-social {
+    list-style: none;
+    width: 138px;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
+    margin-right: 112px;
 }
 
 .footer-copyright-social p {
+    margin: 0;
+    padding: 0;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.13;
@@ -1648,7 +1658,14 @@ ul.pagination-list {
     color: #ffffff;
 }
 
+.footer-copyright-social p {
+    margin: 0;
+    padding: 0;
+}
+
 .footer-copyright-social a {
+    margin: 0;
+    padding: 0;
     color: #ffd180;
 }
 
@@ -1657,29 +1674,29 @@ ul.pagination-list {
     text-decoration: underline;
 }
 
-.footer-copyright-social .footer-social {
-    list-style: none;
-    font-size: 0; /*правильно ?*/
-    width: 310px;    
-    display: flex;
-}
-
 .social-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
     background-color: #212a3a;
 }
 
-.footer-social a:hover,
-.footer-social a:focus {
+.social-button:hover,
+.social-button:focus,
+.social-button:active {
     background-color: #ee3643;
 }
 
 .container .feedback {
-    width: 170px;
+    width: 150px;
 }
 
 .container .developer {
     width: 150px;
-    margin-left: auto;
+    box-sizing: border-box;
+    padding-left: 40px;
 }
 
 /*конец нижнего футера*/
@@ -1813,7 +1830,7 @@ ul.pagination-list {
 }
 
 /*-------- временно для пострения сеток, потом УБРАТЬ !!!!-------------*/
-/*
+
 div,
 section,
 a,
@@ -1824,4 +1841,3 @@ footer,
 header {
     outline: 1px solid red;
 }
-*/
