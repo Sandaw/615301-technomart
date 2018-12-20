@@ -1267,6 +1267,10 @@ input[type="radio"].visually-hidden {
     margin-bottom: 10px;
 }
 
+.catalog-item .title + .button-price {
+    margin-top: 45px;
+}
+
 .catalog-item .button-price {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 17px;  
@@ -1281,10 +1285,6 @@ input[type="radio"].visually-hidden {
     margin-bottom: 20px;
     padding: 10px 30px;
     border-radius: 3px;
-}
-
-.bfg2000 .button-price {
-    margin-top: 45px;
 }
 
 .catalog-item .button-price::after {
