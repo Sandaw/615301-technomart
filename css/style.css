@@ -423,8 +423,9 @@ input[type="radio"].visually-hidden {
 .main-block > .container {
     display: flex;
     flex-wrap: wrap;
-    min-height: 410px;
+    
 }
+
 
 .main-tile li {
     margin: 0;
@@ -432,13 +433,21 @@ input[type="radio"].visually-hidden {
     list-style: none;
 }
 
-.main-tile .categories-block {
+.main-tile p {
+    margin: 0;
+    padding: 0;
+    margin-top: 26px;
+    margin-left: 23px;
+
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 24px;
     font-weight: bold; 
     line-height: 1.25;
     text-align: left;
     color: #ffffff;
+}
+
+.main-tile .categories-block {    
     min-width: 300px;
     min-height: 123px;
     margin-bottom: 20px;
@@ -451,6 +460,12 @@ input[type="radio"].visually-hidden {
 }
 
 .main-tile .button-categories-block {
+    margin: 0;
+    padding: 0;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: rgba(0, 0, 0, 0.1);
     width: 135px;
     min-height: 38px;
@@ -473,33 +488,37 @@ input[type="radio"].visually-hidden {
 .categories-material {
     background-color: #ffbf47;
     background-image: url("../img/svg/material-icon.svg");
-    background-repeat: no-repeat;
-    /*background-image: url("../img/svg/new-flag.svg");картинка или рисовать ?*/
-    
+    background-repeat: no-repeat; 
+    background-position: 83% 50%; 
+    position: relative;  
 }
 
 .categories-instrument {
     background-color: #3bbce3;
     background-image: url("../img/svg/instrument-icon.svg");
     background-repeat: no-repeat;
+    background-position: 87% 50%;
 }
 
 .categories-technics {
     background-color: #dc91d8;
     background-image: url("../img/svg/technics-icon.svg");
     background-repeat: no-repeat;
+    background-position: 85% 50%;
 }
 
 .categories-discount {
     background-color: #8ed78f;
     background-image: url("../img/svg/discount-icon.svg");
     background-repeat: no-repeat;
+    background-position: 81% 50%;
 }
 
 .categories-delivery {
     background-color: #ffc047;
     background-image: url("../img/svg/delivery-icon.svg");
     background-repeat: no-repeat;
+    background-position: 85% 50%;
 }
 
 .discount-delivery-block {
@@ -507,9 +526,15 @@ input[type="radio"].visually-hidden {
     flex-direction: column;
 }
 
+.discount-delivery-block .categories-delivery {
+    margin: 0;
+}
+
 .slide h3 {
     margin: 0;
     padding: 0;
+    margin-top: 27px;
+    margin-left: 24px;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 36px;  
     font-weight: bold;  
@@ -518,7 +543,11 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
 }
 
-.slide p {
+.slider p {
+    margin: 0;
+    padding: 0;
+    margin-top: 8px;
+    margin-left: 25px;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;  
     line-height: 1.33;  
@@ -544,23 +573,24 @@ input[type="radio"].visually-hidden {
     background: url("../img/slider-drill.jpg") no-repeat;
 }
 
-.button-slider-categories {
-    background-color: #ee3643;   
-}
-
-.slider a {
+.slider .button-slider-categories {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ee3643;
     width: 195px;
     height: 38px;
     margin-left: 25px;
-    margin-top: 80px;
+    margin-top: 110px;
 }
 
 .slider a:hover,
 .slider a:focus {
     background-color: #ca2c37;
+}
+
+.main-block {
+    margin-bottom: 53px;
 }
 
 /*-----------популярные товары-----------------*/
@@ -603,6 +633,14 @@ input[type="radio"].visually-hidden {
     margin: 0;
     padding: 0;
     display: flex;
+}
+
+.popular-list li {
+    margin-bottom: 0;
+}
+
+.popular-goods {
+    margin-bottom: 21px;
 }
 
 .brand-list-popular .popular-brands.container {
@@ -798,6 +836,10 @@ input[type="radio"].visually-hidden {
     color: #32425c;
 }
 
+.main-page-footer {
+    margin-bottom: 106px;
+}
+
 .main-page-footer .container {
     display: flex;
 }
@@ -819,7 +861,6 @@ input[type="radio"].visually-hidden {
     line-height: 30px;
     color: #000000;
     text-transform: uppercase;
-    margin-bottom: 25px;
 }
 
 .about p,
@@ -883,12 +924,11 @@ input[type="radio"].visually-hidden {
     align-items: center;
 }
 
-.contacts-map {
+.container .contacts-map {
     margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
     width: 430px;
 }
 
@@ -902,7 +942,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts-map .big-map {
-    margin-bottom: 40px;
+    
 }
 
 .contacts-map .button {
@@ -1226,7 +1266,7 @@ input[type="radio"].visually-hidden {
     line-height: 20px;
     font-weight: bold;
     text-align: center;
-    /*background: #e5e5e5;*/
+    box-sizing: border-box;
 }
 
 .new::after {
