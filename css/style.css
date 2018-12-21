@@ -468,7 +468,6 @@ input[type="radio"].visually-hidden {
     
 }
 
-
 .main-tile li {
     margin: 0;
     padding: 0;
@@ -478,7 +477,7 @@ input[type="radio"].visually-hidden {
 .main-tile p {
     margin: 0;
     padding: 0;
-    margin-top: 26px;
+    margin-top: 18px;
     margin-left: 23px;
 
     font-family: "Cuprum", Arial, sans-serif;
@@ -505,6 +504,7 @@ input[type="radio"].visually-hidden {
     margin: 0;
     padding: 0;
     margin-left: 25px;
+    margin-top: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
