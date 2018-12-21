@@ -39,9 +39,12 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-    background-color: #f3f7f9;
-    margin-bottom: 60px;
+    background-color: #f3f7f9;    
     padding-bottom: 60px;
+}
+
+.main-header + .index-content {
+    margin-bottom: 60px;
 }
 
 .container {
@@ -1010,13 +1013,6 @@ input[type="radio"].visually-hidden {
 }
 
 /*-----------catalog--------------------*/
-/*
-.catalog-content .container {
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-*/
 
 .breadcrumbs {
     margin: 0;
@@ -1024,6 +1020,8 @@ input[type="radio"].visually-hidden {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    align-items: center;
+    min-height: 60px;
 }
 
 .breadcrumbs a {
@@ -1072,35 +1070,35 @@ input[type="radio"].visually-hidden {
     display: none;
 }
 
-.breadcrumbs .home-breadcrumbs::before {
-    content: "";
-    position: absolute;
-    top: 1px;
-    right: 0;
-    width: 14px;
-    height: 12px; 
+.breadcrumbs .home-breadcrumbs {    
+    width: 16px;
+    height: 16px; 
     background: url("../img/svg/icon-home.svg") no-repeat;
-}
-
-.container .page-title {
-    background-color: #f2f6f8;
-    min-height: 89px;
-    box-sizing: border-box;
-    vertical-align: middle;
-    padding-top: 32px;
-    padding-left: 30px;
 }
 
 .catalog-content h1 {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
     font-style: normal;
-    line-height: 30px;
+    font-stretch: normal;
+    letter-spacing: normal;
+    line-height: 1;
+    text-align: left;
     color: #32425c;
     text-transform: uppercase;
     background-color: #f2f6f8;
-}
 
+    margin: 0;
+    padding: 0;
+    background-color: #f2f6f8;
+    min-height: 89px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
 /*---------фильтры-----------*/
 
 .filters {
