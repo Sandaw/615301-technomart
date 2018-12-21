@@ -20,17 +20,6 @@ img {
     height: auto;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -266,7 +255,7 @@ input[type="radio"].visually-hidden {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     width: 300px;
     min-height: 45px;    
@@ -311,6 +300,7 @@ input[type="radio"].visually-hidden {
     background-color: #f4f7f9;
     width: 150px;
     height: 45px;
+    box-sizing: border-box;
     padding-top: 14px;
     padding-left: 25px;
 }
@@ -318,8 +308,55 @@ input[type="radio"].visually-hidden {
 .user-navigation .logged-in {
     margin: 0;
     padding: 0;
+    background-color: #f4f7f9;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
+    box-sizing: border-box;
+    padding-left: 47px;
+    margin-bottom: 7px;
     min-height: 45px;
+    position: relative;
+}
+
+.user-navigation .logged-in::after {
+    content: "";
+    width: 24px;
+    height: 21px;
+    background: url(../img/svg/icon-logout.svg) no-repeat;
+    position: absolute;
+    top: 14px;
+    right: 8px;
+}
+
+.user-navigation .logged-in::before {
+    content: "";
+    width: 24px;
+    height: 21px;
+    background: url(../img/svg/icon-user.svg) no-repeat;
+    position: absolute;
+    top: 14px;
+    right: 262px;
+}
+
+.user-navigation .sub-user-nav {
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 18px;
+    position: relative;
+}
+
+.sub-user-nav::after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #32425c;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    left: 90px;
 }
 
 .user-navigation .my-orders,
@@ -329,10 +366,19 @@ input[type="radio"].visually-hidden {
     text-decoration: underline;
     color: #32425c;
 }
-
-.user-navigation .log-out {
-    font-size: 0;
+/*
+.point {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5px;
+    height: 5px;
+    margin-left: 15px;
+    margin-top: 7px;
+    background: #32425c;
+    border-radius: 50px;
 }
+*/
 
 .user-navigation a:hover,
 .user-navigation a:focus,
