@@ -1196,6 +1196,7 @@ input[type="radio"].visually-hidden {
     font-size: 13px;
     line-height: 1.38;
     text-align: left;
+    font-weight: normal;
     color: #000000;
     text-transform: uppercase;
     background-color: #f7f3ec;
