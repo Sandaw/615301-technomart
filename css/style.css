@@ -1134,7 +1134,7 @@ input[type="radio"].visually-hidden {
     width: 220px;
     height: 38px;
     padding-left: 18px;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px; большой отступ у "Цена"*/
 }
 
 /*
@@ -1151,42 +1151,83 @@ input[type="radio"].visually-hidden {
 .filter-by-price h3 {
     margin: 0;
     padding: 0;
+
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 17px;
     font-weight: bold;
     line-height: 1.76;
+    letter-spacing: -2px;
     text-align: left;
     color: #000000;
     text-transform: uppercase;
 }
 
-.filter-price-range,
-.filter-price-control .filter-price-min,
-.filter-price-control .filter-price-max {
+.filter-price-range {
+    position: relative;
+    height: 80px;
     background-color: #f7f3ec;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    padding-top: 39px;
+    box-sizing: border-box;
 }
 
-.filter-price-range {
-    height: 80px;
+.filter-price-range .scale {
+    height: 2px;
+    background-color: #d7dcde;/*цвет уточнить в ФШ*/
+}
+
+.filter-price-range .bar {
+    width: 70%;
+    height: 2px;
+  
+    background: #00ca74;
+}
+
+.filter-price-range .filter-toggle {
+    position: absolute;
+    top: 31px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    padding: 0;
+  
+    border: 8px solid #ffffff;
+    background-color: #ababab;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.filter-price-range .filter-min-toggle {
+    left: 18px;
+}
+  
+.filter-price-range .filter-max-toggle {
+    left: 160px;
 }
 
 .filter-by-price .filter-price-control {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;   
 }
 
-.filter-price-control .filter-price-min,
-.filter-price-control .filter-price-max {
+.filter-price-control label {   
+    font-size: 17px;    
+}
+
+.filter-price-control input {
     width: 95px;
     height: 38px;
-}
 
-.filter-price-control {
     font-family: "PT Sans", Arial, sans-serif;
-    font-size: 17px;
     line-height: 1.06;
     text-align: center;
     color: #000000;
+    border: none;
+    background-color: #f7f3ec;
 }
 
 .filter-price-control span {
@@ -1195,7 +1236,6 @@ input[type="radio"].visually-hidden {
     text-align: center;
     color: #444444;
 }
-
 
 .filter .brand-filter {
     font-family: "PT Sans", Arial, sans-serif;
@@ -1888,7 +1928,7 @@ ul.pagination-list {
 }
 
 /*-------- временно для пострения сеток, потом УБРАТЬ !!!!-------------*/
-
+/*
 div,
 section,
 a,
@@ -1899,3 +1939,4 @@ footer,
 header {
     outline: 1px solid red;
 }
+*/

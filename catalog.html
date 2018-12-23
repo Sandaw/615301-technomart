@@ -72,12 +72,20 @@
                             <div class="filter-by-price">
                                 <h3>Цена:</h3>
                                 <div class="filter-price-range">
+                                    <div class="scale">
+                                        <div class="bar" style="margin-left: 0%; width: 80%"></div>
+                                    </div>
                                     <div class="filter-toggle filter-min-toggle"></div>
                                     <div class="filter-toggle filter-max-toggle"></div>
                                 </div>
                                 <div class="filter-price-control">
-                                    <input class="filter-price-min" type="text" name="price-min" value="0"><span>-</span>
-                                    <input class="filter-price-max" type="text" name="price-max" value="30000">
+                                    <label class="filter-price-min">
+                                        <input name="price-min" type="text" value="0">
+                                    </label>
+                                    <span>-</span>
+                                    <label class="filter-price-max">
+                                        <input name="price-max" type="text" value="30000">
+                                    </label>
                                 </div>
                             </div>
                         </fieldset>
