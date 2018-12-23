@@ -1082,13 +1082,13 @@ input[type="radio"].visually-hidden {
     font-style: normal;
     line-height: 1;
     text-align: left;
+    letter-spacing: -0.8px;
     color: #32425c;
     text-transform: uppercase;
     background-color: #f2f6f8;
 
     margin: 0;
     padding: 0;
-    background-color: #f2f6f8;
     min-height: 89px;
     box-sizing: border-box;
     display: flex;
@@ -1107,9 +1107,18 @@ input[type="radio"].visually-hidden {
     margin-right: 20px;
 }
 
-.filters p {
-    margin-left: 18px;
+.filter fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
 
+.filter legend {
+    margin: 0;
+    padding: 0;
+}
+
+.filter .filter-name {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 1.38;
@@ -1118,15 +1127,30 @@ input[type="radio"].visually-hidden {
     color: #000000;
     text-transform: uppercase;
     background-color: #f7f3ec;
+
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 220px;
+    height: 38px;
+    padding-left: 18px;
+    margin-bottom: 20px;
 }
 
-.filter fieldset {
-    border: none;
-    margin: 0;
-    padding: 0;
+/*
+.filter legend {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.76;
+    text-align: left;
+    color: #000000;
 }
+*/
 
 .filter-by-price h3 {
+    margin: 0;
+    padding: 0;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 17px;
     font-weight: bold;
@@ -1172,14 +1196,6 @@ input[type="radio"].visually-hidden {
     color: #444444;
 }
 
-.filter legend {
-    font-family: "PT Sans", Arial, sans-serif;
-    font-size: 17px;
-    font-weight: bold;
-    line-height: 1.76;
-    text-align: left;
-    color: #000000;
-}
 
 .filter .brand-filter {
     font-family: "PT Sans", Arial, sans-serif;
@@ -1199,6 +1215,8 @@ input[type="radio"].visually-hidden {
     color: #000000;
     text-transform: uppercase;
     background-color: #f7f3ec;
+
+    padding-left: 19px;
 }
 
 .brands li,
