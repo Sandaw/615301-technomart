@@ -83,7 +83,8 @@ input[type="radio"].visually-hidden {
     font-size: 17px;
     line-height: 18px;
     font-family: "Cuprum", Arial, sans-serif;
-    color: #ffffff;/*как убрать прозрачность с placeholder*/
+    color: #ffffff;
+    background-color: transparent; /*наверное не надо*/
     min-width: 270px;
     min-height: 42px;
 }
@@ -166,6 +167,11 @@ input[type="radio"].visually-hidden {
 .main-header-logo:focus {
     background-color: #ca2c37;
 }
+
+.main-header-logo:active {
+    background: #ba2732;
+}
+#ba2732
 
 .order {
     background-color: #63a63e;
