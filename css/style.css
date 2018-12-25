@@ -1566,12 +1566,6 @@ ul.pagination-list {
     box-sizing: border-box;
 }
 
-.pagination-item-current {
-    margin: 0;
-    padding: 0;
-    background-color: #ee3643;
-}
-
 .pagination-list li:last-child {
     min-width: 140px;
 }
@@ -1585,6 +1579,15 @@ ul.pagination-list {
     border: 1px solid #ee3643;  
 }
 
+.pagination-item-current a {
+    margin: 0;
+    padding: 0;
+    background-color: #ee3643;
+}
+
+.pagination-item-current a:hover {
+    border: none;
+}
 /*---------статья в каталоге----------------*/
 
 .about-perforators h3 {
