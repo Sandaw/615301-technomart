@@ -1253,19 +1253,6 @@ input[type="radio"].visually-hidden {
     color: #000000;
 }
 
-.sorting h3 {
-    font-family: "PT Sans", Arial, sans-serif;
-    font-size: 13px;
-    line-height: 1.38;
-    text-align: left;
-    font-weight: normal;
-    color: #000000;
-    text-transform: uppercase;
-    background-color: #f7f3ec;
-
-    padding-left: 19px;
-}
-
 .brands li,
 .supply li {
     list-style: none;
@@ -1300,7 +1287,6 @@ input[type="radio"].visually-hidden {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-
 }
 
 .sorting-list a {
@@ -1312,21 +1298,63 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
 }
 
+.sorting h3 {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.38;
+    text-align: left;
+    font-weight: normal;
+    letter-spacing: -0.8px;
+    color: #000000;
+    text-transform: uppercase;
+    background-color: #f7f3ec;
+
+    padding-left: 18px;
+}
+
+.active-sorting-list {
+    margin-left: 140px;
+    letter-spacing: -0.8px;
+}
+
+.sorting-list a:nth-child(2) {
+    margin-left: 65px;
+    letter-spacing: -0.8px;
+}
+
+.sorting-list a:nth-child(3) {
+    margin-left: 62px;
+    letter-spacing: -0.8px;
+}
+
+.sort-by-increase {
+    margin-left: 45px;
+    width: 11px;
+    height: 11px;
+    opacity: 0.2;
+}
+
+.active-sort-by-increase {    
+    fill:#ee3643;
+}
+
+.sort-by-decrease {
+    margin-left: 18px;
+    opacity: 0.2;
+}
+
 .sorting-list a:first-child {
     color: #ee3643;
 }
 
-.sorting-list a:last-child,
-.sorting-list a:nth-child(4) {    
-    font-size: 0;
+.sort-by-increase:hover,
+.sort-by-decrease:hover {
+    opacity: 1;
 }
 
-.sort-by-increase {
-    background-image: url("..img/svg/icon-up-dir.svg");
-}
-
-.sort-by-decrease {
-    background-image: url("..img/svg/icon-down-dir.svg");
+.sort-by-increase:active,
+.sort-by-decrease:active {
+    fill: ee3643;
 }
 
 /*сам каталог*/
