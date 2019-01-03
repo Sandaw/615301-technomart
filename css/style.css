@@ -1302,6 +1302,38 @@ fieldset .supply {
     margin-bottom: 79px;
 }
 
+.brands label {
+    position: relative;
+
+    display: block;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: 0;
+  
+    width: 27px;
+    height: 23px;
+    background: url("../img/svg/checkbox-off.svg") no-repeat;
+}
+
+.filter-input-checkbox:checked + label::after {
+    content: "";  
+    position: absolute;
+    left: -42px;
+    top: 0;
+  
+    width: 27px;
+    height: 23px;
+    
+    background: url("../img/svg/checkbox-on.svg") no-repeat;
+}
+
 .filter-button {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
