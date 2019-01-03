@@ -1140,7 +1140,7 @@ input[type="radio"].visually-hidden {
     width: 220px;
     height: 38px;
     padding-left: 18px;
-    /*margin-bottom: 20px; большой отступ у "Цена"*/
+    margin-bottom: 12px;
 }
 
 /*
@@ -1162,17 +1162,18 @@ input[type="radio"].visually-hidden {
     font-size: 17px;
     font-weight: bold;
     line-height: 1.76;
-    letter-spacing: -2px;
     text-align: left;
     color: #000000;
     text-transform: uppercase;
+
+    margin-bottom: 15px;
 }
 
 .filter-price-range {
     position: relative;
     height: 80px;
     background-color: #f7f3ec;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     padding: 0 20px;
     padding-top: 39px;
     box-sizing: border-box;
@@ -1217,7 +1218,19 @@ input[type="radio"].visually-hidden {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;   
+    width: 100%;
+    margin-bottom: 45px;  
+    position: relative; 
+}
+
+.filter-price-control::after {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 220px;
+    height: 1px;
+    background-color: #e5e5e5;
 }
 
 .filter-price-control label {   
@@ -1243,14 +1256,17 @@ input[type="radio"].visually-hidden {
     color: #444444;
 }
 
-.filter .brand-filter {
+.filter .brand-filter,
+.filter .filter-supply {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 17px;  
     font-weight: bold;  
     font-style: normal;  
     line-height: 1.76;
-    text-align: left;  
+    text-align: left;
+    text-transform: uppercase;  
     color: #000000;
+    margin-bottom: 14px;
 }
 
 .brands li,
@@ -1261,7 +1277,29 @@ input[type="radio"].visually-hidden {
     line-height: 1.33;
     text-align: left;
     color: #000000;
-    text-transform: uppercase;
+    text-transform: uppercase;    
+}
+
+.brands li,
+.supply li {
+    margin-bottom: 21px;
+    padding-left: 17px;
+}
+
+.brands li:last-child {
+    margin-bottom: 0;
+}
+
+fieldset .brands {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 42px;
+}
+
+fieldset .supply {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 79px;
 }
 
 .filter-button {
@@ -1271,6 +1309,15 @@ input[type="radio"].visually-hidden {
     text-align: center;
     color: #000000;
     text-transform: uppercase;
+
+    width: 140px;
+    height: 38px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
 }
 
 /*-------------сортировка-----------*/
@@ -1304,7 +1351,7 @@ input[type="radio"].visually-hidden {
     line-height: 1.38;
     text-align: left;
     font-weight: normal;
-    letter-spacing: -0.8px;
+    
     color: #000000;
     text-transform: uppercase;
     background-color: #f7f3ec;
@@ -1314,17 +1361,17 @@ input[type="radio"].visually-hidden {
 
 .active-sorting-list {
     margin-left: 140px;
-    letter-spacing: -0.8px;
+    
 }
 
 .sorting-list a:nth-child(2) {
     margin-left: 65px;
-    letter-spacing: -0.8px;
+    
 }
 
 .sorting-list a:nth-child(3) {
     margin-left: 62px;
-    letter-spacing: -0.8px;
+    
 }
 
 .sort-by-increase {
@@ -1334,7 +1381,7 @@ input[type="radio"].visually-hidden {
     opacity: 0.2;
 }
 
-.active-sort-by-increase {    
+.active-sort-by-increase path {    
     fill:#ee3643;
 }
 
@@ -1348,13 +1395,15 @@ input[type="radio"].visually-hidden {
 }
 
 .sort-by-increase:hover,
-.sort-by-decrease:hover {
+.sort-by-increase:focus,
+.sort-by-decrease:hover,
+.sort-by-decrease:focus {
     opacity: 1;
 }
 
-.sort-by-increase:active,
-.sort-by-decrease:active {
-    fill: ee3643;
+.sort-by-increase:active path,
+.sort-by-decrease:active path {
+    fill: #ee3643;
 }
 
 /*сам каталог*/
