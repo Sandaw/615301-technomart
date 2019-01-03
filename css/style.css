@@ -1283,7 +1283,7 @@ input[type="radio"].visually-hidden {
 .brands li,
 .supply li {
     margin-bottom: 21px;
-    padding-left: 17px;
+    padding-left: 34px;
 }
 
 .brands li:last-child {
@@ -1314,7 +1314,7 @@ fieldset .supply {
 .filter-input-checkbox + label::before {
     content: "";
     position: absolute;
-    left: -42px;
+    left: -35px;
     top: 0;
   
     width: 27px;
@@ -1325,7 +1325,7 @@ fieldset .supply {
 .filter-input-checkbox:checked + label::after {
     content: "";  
     position: absolute;
-    left: -42px;
+    left: -35px;
     top: 0;
   
     width: 27px;
