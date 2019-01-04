@@ -23,27 +23,27 @@ img {
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-  position: absolute;
+    position: absolute;
 
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
-  white-space: nowrap;
+    white-space: nowrap;
 
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .main-header {
-    background-color: #f3f7f9;    
-    padding-bottom: 60px;
+    background-color: #f3f7f9;  
+    min-height: 320px;      
 }
 
-.main-header + .index-content {
+.main-header-index {
     margin-bottom: 60px;
 }
 
@@ -77,15 +77,42 @@ input[type="radio"].visually-hidden {
     padding-bottom: 12px;
 }
 
-.search-label input {
-    background-color: #293449;
-    border: none;
+.search {
+    width: 270px;
+    position: relative;
+}
+
+.search::before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 11px;
+    left: 17px;
+    opacity: 0.3;
+    background: url("../img/svg/icon-search.svg") no-repeat;
+}
+
+.search:hover::before {
+    opacity: 1;
+}
+
+.search:active::before {
+    opacity: 0.5;
+}
+
+input[type=search] {
     font-size: 17px;
     line-height: 18px;
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum","Arial",sans-serif;
     color: #ffffff;
-    background-color: transparent; /*наверное не надо*/
-    width: 270px;
+    background-color: #293449;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    height: 42px;
+    padding-left: 49px;
+    cursor: pointer;
 }
 
 .bookmark {
@@ -308,15 +335,15 @@ input[type="radio"].visually-hidden {
     min-height: 45px;
     box-sizing: border-box;
     margin-right: 10px;
-    padding-top: 14px;
-    padding-left: 48px;
+    padding-top: 12px;
+    padding-left: 66px;
 }
 
 .enter::before {
     content: "";
     position: absolute;
     top: 14px;
-    left: 16px;
+    left: 33px;
   
     width: 20px;
     height: 17px;
@@ -330,8 +357,8 @@ input[type="radio"].visually-hidden {
     width: 150px;
     height: 45px;
     box-sizing: border-box;
-    padding-top: 14px;
-    padding-left: 25px;
+    padding-top: 12px;
+    padding-left: 43px
 }
 
 .user-navigation .logged-in {
@@ -604,7 +631,7 @@ input[type="radio"].visually-hidden {
 .slide h3 {
     margin: 0;
     padding: 0;
-    margin-top: 27px;
+    margin-top: 22px;
     margin-left: 24px;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 36px;  
@@ -617,13 +644,14 @@ input[type="radio"].visually-hidden {
 .slider p {
     margin: 0;
     padding: 0;
-    margin-top: 8px;
+    margin-top: 2px;
     margin-left: 25px;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;  
     line-height: 1.33;  
     text-align: left;
     color: #ffffff;
+    letter-spacing: -0.4px;
 }
 
 .slider {
@@ -652,7 +680,7 @@ input[type="radio"].visually-hidden {
     width: 195px;
     height: 38px;
     margin-left: 25px;
-    margin-top: 110px;
+    margin-top: 122px;
 }
 
 .slider a:hover,
@@ -675,6 +703,11 @@ input[type="radio"].visually-hidden {
     color: #32425c;
     text-transform: uppercase;
     padding-left: 30px;
+    letter-spacing: -1px;
+}
+
+.brand-list-popular h3 {
+    padding-left: 23px;
 }
 
 .popular-header {
