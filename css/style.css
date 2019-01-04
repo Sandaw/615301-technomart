@@ -85,14 +85,16 @@ input[type="radio"].visually-hidden {
     font-family: "Cuprum", Arial, sans-serif;
     color: #ffffff;
     background-color: transparent; /*наверное не надо*/
-    min-width: 270px;
-    min-height: 42px;
+    width: 270px;
 }
 
 .bookmark {
     position: relative;
     min-width: 150px;    
     padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bookmark::before {
@@ -109,8 +111,11 @@ input[type="radio"].visually-hidden {
 
 .cart {
     position: relative;
-    min-width: 150px;    
+    width: 150px;    
     padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cart::before {
@@ -123,6 +128,11 @@ input[type="radio"].visually-hidden {
     background-position: 0 0;
     width: 15px;
     height: 15px;
+}
+
+.cart-catalog {
+    background-color: #ee3643;
+    padding-left: 25px;
 }
 
 .bookmark:hover,
@@ -171,11 +181,13 @@ input[type="radio"].visually-hidden {
 .main-header-logo:active {
     background: #ba2732;
 }
-#ba2732
 
-.order {
+.container .order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #63a63e;
-    min-width: 150px;
+    width: 150px;
 }
 
 .order:hover,
@@ -207,36 +219,43 @@ input[type="radio"].visually-hidden {
     padding: 0;
     margin: 0;
     width: 300px;
+    letter-spacing: 0.7px;
     box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 44px; 
+    padding-left: 53px;
+    padding-top: 3px;
+    margin-bottom: 40px;
 }
 
-.container .header-adress-phone {
-    margin: 0;
-    padding: 0;
-    width: 340px;
-}
-
-.container ul.header-adress-phone,
+.header-adress-phone,
 .header-adress-phone li {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.header-phone {
+.header-adress-phone {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 270px;
+    margin-left: -10px;
+}
+
+.header-adress-phone .header-phone {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 21px;
     line-height: 21px;    
-    color: #ee3643;
+    color: #e9292a;
     box-sizing: border-box;
 
     position: relative;
-
+    width: 270px;
     min-height: 45px;
     border: 3px solid #ffffff;
-    padding: 13px 45px 5px 74px;
+    display: flex;
+    align-items: center;
+    padding-left: 77px;
+    margin-left: -15px;
 }
 
 .header-phone::before {
@@ -244,19 +263,20 @@ input[type="radio"].visually-hidden {
     width: 19px;
     height: 19px;
     position: absolute;
-    top: 10px;
-    left: 5px;
+    top: 11px;
+    left: 18px;
     background-image: url("../img/svg/icon-phone.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
 
-.header-adress {
+.header-adress-phone .header-adress {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     text-align: left;
     color: #32425c;
+    margin-top: 5px;
 }
 
 .user-navigation {
@@ -1046,16 +1066,16 @@ input[type="radio"].visually-hidden {
   
     position: absolute;
     top: 2px;
-    right: -25px;
+    right: -23px;
   
     width: 8px;
     height: 12px;
   
-    background-image: url("../img/svg/icon-right-small.svg");
+    background: url("../img/svg/icon-right-small.svg") no-repeat;
 }
 
 .breadcrumbs li:first-child {
-    margin-left: 0;
+    margin-left: -1px;
 }
 
 .breadcrumbs li:last-child {
@@ -1100,7 +1120,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 30px;
+    padding-left: 28px;
     margin-bottom: 20px;
 }
 /*---------фильтры-----------*/
@@ -1139,7 +1159,8 @@ input[type="radio"].visually-hidden {
     box-sizing: border-box;
     width: 220px;
     height: 38px;
-    padding-left: 18px;
+    padding-left: 20px;
+    padding-bottom: 4px;
     margin-bottom: 12px;
 }
 
@@ -1235,6 +1256,8 @@ input[type="radio"].visually-hidden {
 
 .filter-price-control label {   
     font-size: 17px;    
+    padding-left: 4px;
+    box-sizing: border-box;
 }
 
 .filter-price-control input {
@@ -1401,6 +1424,10 @@ fieldset .supply {
     margin-bottom: 20px;
 }
 
+.sorting-list {
+    padding-bottom: 6px;
+}
+
 .sorting-list a {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
@@ -1420,8 +1447,9 @@ fieldset .supply {
     color: #000000;
     text-transform: uppercase;
     background-color: #f7f3ec;
-
-    padding-left: 18px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-bottom: 6px;
 }
 
 .active-sorting-list {
@@ -1431,12 +1459,12 @@ fieldset .supply {
 
 .sorting-list a:nth-child(2) {
     margin-left: 65px;
-    
+    border-bottom: 1px dotted #ee3643;    
 }
 
 .sorting-list a:nth-child(3) {
     margin-left: 62px;
-    
+    border-bottom: 1px dotted #ee3643;    
 }
 
 .sort-by-increase {
