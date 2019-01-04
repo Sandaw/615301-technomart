@@ -1334,6 +1334,39 @@ fieldset .supply {
     background: url("../img/svg/checkbox-on.svg") no-repeat;
 }
 
+.supply label {
+    position: relative;
+    display: block;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.filter-input-radio + label::before {
+    content: "";
+  
+    position: absolute;
+    left: -35px;
+    top: -2px;
+  
+    width: 25px;
+    height: 25px;
+    background: url("../img/svg/radio-off.svg") no-repeat;
+}
+
+.filter-input-radio:checked + label::after {
+    content: "";
+  
+    position: absolute;
+    left: -35px;
+    top: -2px;
+  
+    width: 25px;
+    height: 25px;
+    background: url("../img/svg/radio-on.svg") no-repeat;
+}
+  
+
 .filter-button {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
@@ -1501,7 +1534,7 @@ fieldset .supply {
 
 .catalog-item .title {
     font-family: "PT Sans", Arial, sans-serif;
-    font-size: 16px;  
+    font-size: 18px;  
     font-weight: bold; 
     font-style: normal;
     font-stretch: normal;
