@@ -520,8 +520,7 @@ input[type=search] {
 
 .main-block > .container {
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;    
 }
 
 .main-tile li {
@@ -628,6 +627,67 @@ input[type=search] {
     margin: 0;
 }
 
+.slide {
+    display: none;
+}
+
+.slider .slide:nth-child(1) {
+    display: block;
+}
+
+.slider .slide:nth-child(1) {
+    background-image: url("../img/slider-perf.jpg");
+}
+
+.slider .slide:nth-child(2) {
+    background: url("../img/slider-drill.jpg") no-repeat;
+}
+
+.main-block .slider {
+    /*display: flex;*/
+    position: relative;
+    background-color: #6b2626;
+    min-width: 620px;
+    min-height: 266px;
+    margin-right: 20px;
+}
+
+.slider-controls .left {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    
+    /* Временно для демонстрации */
+    background-color: red;
+    background-image: url("../img/svg/slider1-icon-left.svg");
+    cursor: pointer;
+}
+
+.slider-controls .right {
+    position: absolute;
+    display: inline-block;
+    top: 30;
+    left: 50;
+    width: 18px;
+    height: 18px;
+    
+    /* Временно для демонстрации */
+    background-color: red;
+    background: url("../img/svg/slider1-icon-right.svg") no-repeat;
+    cursor: pointer;
+}
+
+.slider-controls i::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+  
+    background: #000000;
+}
+
 .slide h3 {
     margin: 0;
     padding: 0;
@@ -641,7 +701,7 @@ input[type=search] {
     text-transform: uppercase;
 }
 
-.slider p {
+.slide p {
     margin: 0;
     padding: 0;
     margin-top: 2px;
@@ -654,16 +714,7 @@ input[type=search] {
     letter-spacing: -0.4px;
 }
 
-.slider {
-    display: flex;
-}
-
-.slider .slide {   
-    min-width: 620px;
-    min-height: 266px;
-    margin-right: 20px;
-}
-
+/*
 .perforators-slide {
     background: url("../img/slider-perf.jpg") no-repeat;
 }
@@ -671,7 +722,7 @@ input[type=search] {
 .drills-slide {
     background: url("../img/slider-drill.jpg") no-repeat;
 }
-
+*/
 .slider .button-slider-categories {
     display: flex;
     justify-content: center;
@@ -943,7 +994,7 @@ input[type=search] {
 }
 
 .main-page-footer {
-    margin-bottom: 106px;
+    margin-bottom: 86px;
 }
 
 .main-page-footer .container {
@@ -971,6 +1022,11 @@ input[type=search] {
 
 .about h2 {
     margin-bottom: 26px;
+    letter-spacing: -0.9px;
+}
+
+.contacts-map h2 {
+    letter-spacing: -0.9px;
 }
 
 .about p,
@@ -1039,11 +1095,12 @@ input[type=search] {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     width: 430px;
 }
 
 .contacts-map h2 {
-    margin-bottom: 14px;
+    margin-bottom: 26px;
 }
 
 .contacts-map p {
@@ -1052,7 +1109,7 @@ input[type=search] {
 }
 
 .contacts-map .big-map {
-    
+    margin-bottom: 37px;    
 }
 
 .contacts-map .button {
