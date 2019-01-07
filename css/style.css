@@ -654,38 +654,40 @@ input[type=search] {
 
 .slider-controls .left {
     position: absolute;
-    display: inline-block;
-    top: 0;
-    left: 0;
-    width: 18px;
-    height: 18px;
-    
-    /* Временно для демонстрации */
-    background-color: red;
-    background-image: url("../img/svg/slider1-icon-left.svg");
+    width: 22px;
+    height: 40px;
     cursor: pointer;
+}
+
+.slider-controls .left::after {
+    content: "";
+    position: absolute;
+    top: 113px;
+    left: 25px;
+    width: 22px;
+    height: 40px;
+  
+    background: #000000;
+    background: url("../img/svg/slider1-icon-left.svg") no-repeat;
 }
 
 .slider-controls .right {
     position: absolute;
-    display: inline-block;
-    top: 30;
-    left: 50;
-    width: 18px;
-    height: 18px;
-    
-    /* Временно для демонстрации */
-    background-color: red;
-    background: url("../img/svg/slider1-icon-right.svg") no-repeat;
+    width: 22px;
+    height: 40px;
     cursor: pointer;
 }
 
-.slider-controls i::after {
+.slider-controls .right::after {
     content: "";
-    width: 18px;
-    height: 18px;
+    position: absolute;
+    top: 113px;
+    left: 578px;
+    width: 22px;
+    height: 40px;
   
     background: #000000;
+    background: url("../img/svg/slider1-icon-right.svg") no-repeat;
 }
 
 .slide h3 {
