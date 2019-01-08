@@ -627,39 +627,45 @@ input[type=search] {
     margin: 0;
 }
 
-.slide {
-    display: none;
-}
-
-.slider .slide:nth-child(1) {
-    display: block;
-}
-
-.slider .slide:nth-child(1) {
-    background-image: url("../img/slider-perf.jpg");
-}
-
-.slider .slide:nth-child(2) {
-    background: url("../img/slider-drill.jpg") no-repeat;
-}
-
 .main-block .slider {
-    /*display: flex;*/
     position: relative;
-    background-color: #6b2626;
     min-width: 620px;
     min-height: 266px;
     margin-right: 20px;
+    background-color: #6b2626;
 }
 
-.slider-controls .left {
+.slider input {
+    display: none;
+}
+
+.slider .slide {
+    display: none;
+}
+
+.slider .slide:nth-of-type(1) {
+    background: url("../img/slider-perf.jpg") no-repeat;
+    min-height: 266px;
+}
+
+.slider .slide:nth-of-type(2) {
+    background: url("../img/slider-drill.jpg") no-repeat;
+    min-height: 266px;
+}
+
+.slider input:nth-child(1):checked ~ .slide:nth-of-type(1),
+.slider input:nth-child(2):checked ~ .slide:nth-of-type(2) {
+    display: block;
+}
+
+.slider .slider-controls-left {
     position: absolute;
     width: 22px;
     height: 40px;
     cursor: pointer;
 }
 
-.slider-controls .left::after {
+.slider .slider-controls-left::after {
     content: "";
     position: absolute;
     top: 113px;
@@ -671,14 +677,14 @@ input[type=search] {
     background: url("../img/svg/slider1-icon-left.svg") no-repeat;
 }
 
-.slider-controls .right {
+.slider .slider-controls-right {
     position: absolute;
     width: 22px;
     height: 40px;
     cursor: pointer;
 }
 
-.slider-controls .right::after {
+.slider .slider-controls-right::after {
     content: "";
     position: absolute;
     top: 113px;
@@ -693,7 +699,7 @@ input[type=search] {
 .slide h3 {
     margin: 0;
     padding: 0;
-    margin-top: 22px;
+    padding-top: 22px;
     margin-left: 24px;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 36px;  
@@ -716,15 +722,6 @@ input[type=search] {
     letter-spacing: -0.4px;
 }
 
-/*
-.perforators-slide {
-    background: url("../img/slider-perf.jpg") no-repeat;
-}
-
-.drills-slide {
-    background: url("../img/slider-drill.jpg") no-repeat;
-}
-*/
 .slider .button-slider-categories {
     display: flex;
     justify-content: center;
