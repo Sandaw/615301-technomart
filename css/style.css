@@ -856,6 +856,7 @@ input[type=search] {
 .services-slider {
     margin: 0;
     padding: 0;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -873,6 +874,16 @@ input[type=search] {
     box-sizing: border-box;
     padding-left: 22px;
     padding-top: 14px;
+}
+
+.services-slider::after {
+    content: "";
+    position: absolute;
+    top: -45px;
+    left: 230px;
+    width: 15px;
+    height: 284px;
+    background: url("../img/slider-services-vertical-line.png") no-repeat;
 }
 
 .services h2 {
@@ -920,8 +931,6 @@ input[type=search] {
     min-height: 38px;
     margin-top: 31px;
 }
-
-/*------слайдер сервисов---------*/
 
 .button-service {
     font-family: "Cuprum", Arial, sans-serif;
