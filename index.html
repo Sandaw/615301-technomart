@@ -159,29 +159,29 @@
                     <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы
                         сделать ваши покупки приятными.</p>
                 </div>
-                <input type="radio" id="service-button-1" name="service-toggle" checked>
-                <input type="radio" id="service-button-2" name="service-toggle">
-                <input type="radio" id="service-button-3" name="service-toggle">
+                <input class="visually-hidden" type="radio" id="service-button-1" name="service-toggle" checked>
+                <input class="visually-hidden" type="radio" id="service-button-2" name="service-toggle">
+                <input class="visually-hidden" type="radio" id="service-button-3" name="service-toggle">
                 <ul class="services-slider">
-                    <li class="button-service"><label for="service-button-1">Доставка</label></li>
-                    <li class="button-service"><label for="service-button-2">Гарантия</label></li>
-                    <li class="button-service"><label for="service-button-3">Кредит</label></li>
+                    <li class="button-service"><label class="service-controls-1" for="service-button-1">Доставка</label></li>
+                    <li class="button-service"><label class="service-controls-2" for="service-button-2">Гарантия</label></li>
+                    <li class="button-service"><label class="service-controls-3" for="service-button-3">Кредит</label></li>
                 </ul>
                 <div class="service-slider-block">
-                    <div class="services-delivery">
+                    <div class="service-slide services-delivery">
                         <h3>Доставка</h3>
                         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
                             Ведь мы неплохо заработаем, поднимая его на ваш этаж!
                         </p>
                     </div>
-                    <div class="services-garantee visually-hidden">
+                    <div class="service-slide services-garantee visually-hidden">
                         <h3>Гарантия</h3>
                         <p>Если купленный у нас товар поломается или заискрит, 
                             а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
                             Дом уж восстановите как-нибудь сами.
                         </p>
                     </div>
-                    <div class="services-credit visually-hidden">
+                    <div class="service-slide services-credit visually-hidden">
                         <h3>Кредит</h3>
                         <p>Залезть в долговую яму стало проще!
                             Кредитные консультанты придут вам на помощь.

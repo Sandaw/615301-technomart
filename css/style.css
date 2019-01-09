@@ -886,6 +886,14 @@ input[type=search] {
     background: url("../img/slider-services-vertical-line.png") no-repeat;
 }
 
+.services input {
+    display: none;
+}
+
+.service-slider-block .service-slide {
+    display: none;
+}
+
 .services h2 {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
@@ -948,9 +956,40 @@ input[type=search] {
     padding: 0;
     display: flex;
     width: 620px;
-    /*display: none;*/
 }
 
+.services-delivery,
+.services-garantee,
+.services-credit {
+    margin: 0;
+    padding: 0;
+    width: 750px;
+}
+
+.service-slider-block .service-slide:nth-child(1) {
+    background-image: url("../img/slider-delivery.png");
+    background-repeat: no-repeat;
+    background-position: 150px 24px;
+}
+
+.service-slider-block .service-slide:nth-child(2) {
+    background-image: url("../img/slider-garant.png");
+    background-repeat: no-repeat;
+    background-position: 150px 30px;
+}
+
+.service-slider-block .service-slide:nth-child(3) {
+    background-image: url("../img/slider-credit.png");
+    background-repeat: no-repeat;
+    background-position: 150px 30px;
+}
+
+.services input:nth-child(1):checked ~ .service-slide:nth-child(1),
+.services input:nth-child(2):checked ~ .service-slide:nth-child(2),
+.services input:nth-child(3):checked ~ .service-slide:nth-child(3) {
+    display: block;
+}
+/*
 .services-delivery {
     margin: 0;
     padding: 0;
@@ -977,7 +1016,7 @@ input[type=search] {
     background-repeat: no-repeat;
     background-position: 150px 30px;
 }
-
+*/
 .services-delivery p {
     width: 275px;
 }
