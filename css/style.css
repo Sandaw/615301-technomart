@@ -945,6 +945,7 @@ input[type=search] {
     padding: 0;
     display: flex;
     width: 620px;
+    min-height: 326px;
 }
 
 .services-delivery,
