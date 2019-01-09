@@ -931,7 +931,7 @@ input[type=search] {
     line-height: 1.43;
     text-align: left;
     color: #ffffff;
-    box-shadow: inset 0px -1px 0 0 #33445a;
+    box-shadow: inset 0px 0px 0 0 #33445a;
     width: 240px;
     height: 61px;
     box-sizing: border-box;
