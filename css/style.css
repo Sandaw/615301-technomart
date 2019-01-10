@@ -2113,9 +2113,6 @@ ul.pagination-list {
 /*модальные окна*/
 .modal {
     position: fixed;
-
-    
-
     background-color: #ffffff;
     color: #000000;
 }
@@ -2131,33 +2128,17 @@ ul.pagination-list {
     left: 50%;
 }
 
-.wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    width: 460px;
-
-}
-
-.write-form label:first-child,
-.write-form .modal-write-mail {
-    width: 220px;
-}
-
-.modal-write-text {
-    width: 460px;
-}
-
 .write-form input {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*width: 220px;*/
+    width: 220px;
     height: 38px;
     border: 2px solid #dee3e4;
     margin-right: 20px;
 }
 
-.write-form input:last-child {
+.write-form label:last-child {
     margin-right: 0;
 }
 
