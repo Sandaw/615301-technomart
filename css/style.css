@@ -1004,6 +1004,13 @@ input[type=search] {
     color: #32425c;
 }
 
+#service-button-1:checked ~ .services-slider label[for="service-button-1"],
+#service-button-2:checked ~ .services-slider label[for="service-button-2"],
+#service-button-3:checked ~ .services-slider label[for="service-button-3"] {
+    background-color: #ffffff;
+    color: #32425c;
+}
+
 .main-page-footer {
     margin-bottom: 86px;
 }
