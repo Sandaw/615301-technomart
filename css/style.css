@@ -190,7 +190,7 @@ input[type=search] {
 
 .header-top .main-header-logo {   
     background-color: #ee3643;
-    box-shadow: 0px 5px 0 0 rgba(0, 0, 0, 0.24);
+    box-shadow: 0 5px 0 0 #b52933;
     font-size: 24px;
     font-family: "Cuprum", Arial, sans-serif;
     font-weight: normal;
@@ -2118,6 +2118,8 @@ ul.pagination-list {
 }
 
 .modal-write-us {
+    display: none;
+
     box-sizing: border-box;
     width: 620px;
     min-height: 430px;
@@ -2246,7 +2248,7 @@ ul.pagination-list {
 
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 5px;
 }
 
 .modal-close::before,
@@ -2270,6 +2272,21 @@ ul.pagination-list {
 .modal-close::after {
     transform: rotate(-45deg);
 }
+
+/*-----------модальная карта-----------*/
+
+.modal-map {
+    display: none;
+    top: 80px;
+    left: 204px;
+  
+    width: 940px;
+    height: 446px;
+
+    box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
+    background-color: #565656;
+  }
+  
 
 .modal-add-cart p {
     font-family: "Cuprum", Arial, sans-serif;
