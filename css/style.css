@@ -2288,12 +2288,12 @@ ul.pagination-list {
 }
 
 .modal-add-cart {
-    display: block;
+    display: none;
     width: 620px;
     height: 282px;
     box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
-    top: 286px;
-    left: 361px;
+    top: 413px;
+    left: 641px;
     border-top: 7px solid #ee3643;
     box-sizing: border-box;
 }
@@ -2305,10 +2305,11 @@ ul.pagination-list {
 }
 
 .modal-add-cart p {
+    position: relative;
     margin: 0;
     padding: 0;
-    
-    display: inline-block;
+    padding-top: 68px;
+    padding-left: 80px;    
     box-sizing: border-box;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
@@ -2318,6 +2319,9 @@ ul.pagination-list {
 }
 
 .add-product-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
@@ -2326,10 +2330,24 @@ ul.pagination-list {
     width: 620px;
     min-height: 112px;
     box-sizing: border-box;
-    background-color: #000000;
+    background-color: #f1f1f1;
+}
+
+.add-product-button .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 200px;
+    height: 38px;
 }
 
 .add-product-button a:first-child {
+    margin-right: 20px;
     background-color: #ee3643;
     color: #ffffff;
 }
@@ -2341,5 +2359,11 @@ ul.pagination-list {
 
 .modal-add-cart p::before {
     content: "";
-    background-image: url("..img/svg/icon-mark.svg");  /*доработать*/
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    top: 51px;
+    left: 105px;
+    background-image: url("../img/svg/modal-cart-in.svg");
+    background-repeat: no-repeat;
 }
