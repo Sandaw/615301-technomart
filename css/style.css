@@ -2273,8 +2273,6 @@ ul.pagination-list {
     transform: rotate(-45deg);
 }
 
-/*-----------модальная карта-----------*/
-
 .modal-map {
     display: none;
     top: 80px;
