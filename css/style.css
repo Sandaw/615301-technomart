@@ -123,6 +123,22 @@ input[type=search] {
     cursor: pointer;
 }
 
+input[type="search"]:focus {
+    color: #000000;
+    background: #ffffff;
+    outline: none;
+}
+
+input[type="search"]:focus::before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 11px;
+    left: 17px;
+    background: url("../img/icon-search-red.png") no-repeat;
+}
+
 .bookmark {
     position: relative;
     min-width: 150px;    
