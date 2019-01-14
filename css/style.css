@@ -2295,6 +2295,7 @@ ul.pagination-list {
     position: absolute;
     top: 9px;
     right: 1px;
+    z-index: 3;
 
     width: 25px;
     height: 4px;
@@ -2320,6 +2321,22 @@ ul.pagination-list {
 
     box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
     background-color: #565656;
+}
+
+.modal-map iframe {
+    position: relative;
+    z-index: 2;
+  
+    border: none;
+}
+
+.modal-map p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  
+    margin: 0;
 }
 
 .modal-add-cart {

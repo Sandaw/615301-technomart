@@ -7,7 +7,7 @@ var email = popup.querySelector("[name=email]");
 var text = popup.querySelector("[name=text-letter]");
 var isStorageSupport = true;
 var storage = "";
-  
+
 try {
     storage = localStorage.getItem("login");
     storage = localStorage.getItem("email");
@@ -54,5 +54,51 @@ window.addEventListener("keydown", function (evt) {
         popup.classList.remove("modal-show");
         popup.classList.remove("modal-error");
       }
+    }
+});
+
+var mapLink = document.querySelector(".contacts-button-map");
+var mapPopup = document.querySelector(".modal-map");
+var mapClose = mapPopup.querySelector(".modal-close");
+
+mapLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.add("modal-show");
+});
+
+mapClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.remove("modal-show");
+});
+
+window.addEventListener("keydown", function (evt) {
+    evt.preventDefault();
+    if (evt.keyCode === 27) {
+        if (mapPopup.classList.contains("modal-show")) {
+            mapPopup.classList.remove("modal-show");
+        }
+    }
+});
+
+var cartBuy = document.querySelector(".buy-item");
+var cartPopup = document.querySelector(".modal-add-cart");
+var cartClose = cartPopup.querySelector(".modal-close");
+
+cartBuy.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    cartPopup.classList.add("modal-show");
+});
+
+cartClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    cartPopup.classList.remove("modal-show");
+});
+
+window.addEventListener("keydown", function (evt) {
+    evt.preventDefault();
+    if (evt.keyCode === 27) {
+        if (cartPopup.classList.contains("modal-show")) {
+            cartPopup.classList.remove("modal-show");
+        }
     }
 });
