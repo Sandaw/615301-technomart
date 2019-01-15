@@ -81,3 +81,24 @@ window.addEventListener("keydown", function (evt) {
 });
 
 
+/*
+
+linkmap = document.querySelector(".js-map")
+linkbuy = document.querySelectorAll(".js-buy")
+map = document.querySelector(".modal-map")
+buy = document.querySelector(".modal-add-product")
+closemap = document.querySelector(".modal-content-close-map")
+closebuy = document.querySelector(".modal-content-close-buy")
+linklesson = document.querySelector(".js-lesson")
+closelesson = document.querySelector(".modal-content-close-lesson")
+form = lesson.querySelector("form")
+
+for (var i = 0; i < linkbuy.length; i++)
+    linkbuy[i].addEventListener("click", function (a) { a.preventDefault(), buy.classList.add("modal-content-show") });
+closebuy.addEventListener("click", function (a) {
+    a.preventDefault(),
+    buy.classList.remove("modal-content-show")
+}),
+    window.addEventListener("keydown", function (a) {
+    27 === a.keyCode && buy.classList.contains("modal-content-show") && buy.classList.remove("modal-content-show") })
+*/
