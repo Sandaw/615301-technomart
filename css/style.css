@@ -85,61 +85,55 @@ input[type="radio"].visually-hidden {
 }
 
 .search {
-    width: 270px;
-    position: relative;
-}
-
-.search::before {
-    content: "";
-    width: 17px;
-    height: 17px;
-    position: absolute;
-    top: 11px;
-    left: 17px;
-    opacity: 0.3;
-    background: url("../img/svg/icon-search.svg") no-repeat;
-}
-
-.search:hover::before {
-    opacity: 1;
-}
-
-.search:active::before {
-    opacity: 0.5;
+    position:relative;
+    width:270px
 }
 
 input[type=search] {
-    font-size: 17px;
-    line-height: 18px;
-    font-family: "Cuprum","Arial",sans-serif;
-    color: #ffffff;
-    background-color: #293449;
-    border: none;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    width: 100%;
-    height: 42px;
-    padding-left: 49px;
-    cursor: pointer;
+    width:100%;
+    padding:12px 0 12px 49px;
+    font-size:17px;
+    line-height:18px;
+    font-weight:400;
+    font-style:normal;
+    font-family:"Cuprum","Arial",sans-serif;
+    color:#fff;
+    background-color:#293449;
+    border:none;
+    cursor:pointer
 }
 
-input[type="search"]:focus {
-    color: #000000;
-    background: #ffffff;
+label.search-label {
+    position: absolute;
+    top: 12px;
+    left: 17px;
+    z-index: 20;
+    width: 20px;
+    height: 20px;
+    background: url(../img/svg/icon-search.svg) no-repeat;
+    opacity: 0.3;
+    cursor: pointer
+}
+
+input[type=search]:hover {
+    background:#212a3a;
+    border:none
+}
+
+input[type=search]:focus {
+    color:#000000;
+    background:#ffffff;
     outline: none;
 }
-/*
-input[type="search"]:focus::before {
-    content: "";
-    width: 17px;
-    height: 17px;
-    position: absolute;
-    top: 11px;
-    left: 17px;
-    background: url("../img/icon-search-red.png") no-repeat;
-    background-position: 17px 11px;
+
+input[type=search]:hover + label {
+    opacity: 1;
 }
-*/
+
+input[type=search]:focus + label {
+    background: url(../img/icon-search-red.png) no-repeat;
+}
+
 .bookmark {
     position: relative;
     min-width: 150px;    
@@ -163,6 +157,7 @@ input[type="search"]:focus::before {
     background-image: url("../img/svg/icon-bookmark.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    opacity: 0.3;
     width: 15px;
     height: 15px;
 }
@@ -190,6 +185,7 @@ input[type="search"]:focus::before {
     background-image: url("../img/svg/icon-cart.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    opacity: 0.3;
     width: 15px;
     height: 15px;
 }
@@ -214,14 +210,14 @@ input[type="search"]:focus::before {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.cart::before:hover,
-.bookmark::before:hover {
-    /*белый*/
+.cart:hover::before,
+.bookmark:hover::before {
+    opacity: 1;
 }
 
-.cart::before:active,
-.bookmark::before:active {
-    background-color: rgba(255, 255, 255, 0.6);
+.cart:active::before,
+.bookmark:active::before {
+    opacity: 0.5;
 }
 
 
@@ -420,7 +416,11 @@ input[type="search"]:focus::before {
     background-image: url("../img/svg/icon-login.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-  }
+}
+
+.enter:hover::before {
+    background: url("../img/icon-login-hover.png") no-repeat;
+}
 
 .user-navigation .registraton {
     background-color: #f4f7f9;
@@ -439,6 +439,7 @@ input[type="search"]:focus::before {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -451,10 +452,30 @@ input[type="search"]:focus::before {
     padding-left: 47px;
     margin-bottom: 7px;
     min-height: 45px;
-    position: relative;
 }
 
-.user-navigation .logged-in::after {
+.logged-in svg {
+    position: absolute;
+    top: 13px;
+    left: 14px;
+}
+
+.logged-in path:hover {
+    fill: #293449;
+}
+
+.log-out svg {
+    position: absolute;
+    top: 102px;
+    left: 1390px;
+}
+
+.log-out path:hover,
+.log-out g:hover {
+    fill: #293449;
+}
+/*
+.user-navigation .log-out::after {
     content: "";
     width: 24px;
     height: 21px;
@@ -464,6 +485,11 @@ input[type="search"]:focus::before {
     right: 8px;
 }
 
+.log-out:hover::after {
+    background: url(../img/icon-logout-hover.png) no-repeat;
+}
+*/
+/*
 .user-navigation .logged-in::before {
     content: "";
     width: 24px;
@@ -474,6 +500,10 @@ input[type="search"]:focus::before {
     right: 262px;
 }
 
+.logged-in:hover::before {
+    background: url(../img/icon-user-hover.png) no-repeat;
+}
+*/
 .user-navigation .sub-user-nav {
     width: 210px;
     display: -webkit-box;
