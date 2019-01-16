@@ -339,8 +339,8 @@ input[type=search]:focus + label {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-left: 77px;
-    margin-left: -15px;
+    padding-left: 71px;
+    margin-left: -10px;
 }
 
 .header-phone::before {
@@ -348,8 +348,8 @@ input[type=search]:focus + label {
     width: 19px;
     height: 19px;
     position: absolute;
-    top: 11px;
-    left: 18px;
+    top: 10px;
+    left: 12px;
     background-image: url("../img/svg/icon-phone.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -374,7 +374,7 @@ input[type=search]:focus + label {
         flex-wrap: wrap;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
-            justify-content: flex-start;
+            justify-content: flex-end;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -385,6 +385,8 @@ input[type=search]:focus + label {
 .user-navigation a {
     margin: 0;
     padding: 0;
+    display: block;
+    padding: 5px 0;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 21px;
     line-height: 1;
@@ -401,15 +403,15 @@ input[type=search]:focus + label {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin-right: 10px;
-    padding-top: 12px;
-    padding-left: 66px;
+    padding: 12px 0;
+    padding-left: 48px;
 }
 
 .enter::before {
     content: "";
     position: absolute;
     top: 14px;
-    left: 33px;
+    left: 15px;
   
     width: 20px;
     height: 17px;
@@ -435,8 +437,9 @@ input[type=search]:focus + label {
     height: 45px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding-top: 12px;
-    padding-left: 43px
+            box-sizing: border-box;
+    padding: 12px 0;
+    padding-left: 25px;
 }
 
 .user-navigation .logged-in {
@@ -584,6 +587,10 @@ input[type=search]:focus + label {
     line-height: 17px;
     vertical-align: middle;
     padding: 20px 31px;
+    padding-left: 30px;
+    padding-right: 31px;
+    box-sizing: border-box;
+    height: 100%;
 }
 
 .site-navigation a:hover,
@@ -610,8 +617,8 @@ input[type=search]:focus + label {
 .main-tile p {
     margin: 0;
     padding: 0;
-    margin-top: 18px;
-    margin-left: 23px;
+    margin-top: 19px;
+    margin-left: 22px;
 
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 24px;
@@ -632,12 +639,12 @@ input[type=search]:focus + label {
 .discount-delivery-block .categories-block  {
     margin-right: 0;    
 }
-/*   в ie11 криво
+/*   в ie11 криво   */
 .main-tile .button-categories-block {
     margin: 0;
     padding: 0;
-    margin-left: 25px;
-    margin-top: 12px;
+    margin-left: 24px;
+    margin-top: 13px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -651,7 +658,8 @@ input[type=search]:focus + label {
     width: 135px;
     height: 38px;
 }
-*/
+/*
+/* в хроме фона нет
 .main-tile .button-categories-block {
     display: inline-block;
     width: 135px;
@@ -666,7 +674,7 @@ input[type=search]:focus + label {
     border-radius: 3px;
     background: rgba(0,0,0.1);
 }
-
+*/
 
 .main-tile .button-categories-block:hover,
 .main-tile .button-categories-block:focus {
@@ -2839,4 +2847,9 @@ ul.pagination-list {
 .modal-error {
     -webkit-animation: shake 0.6s;
             animation: shake 0.6s;
+}
+
+
+div,section,a,ul,li,p,footer,header{
+    outline: 1px solid red;
 }
