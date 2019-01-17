@@ -930,10 +930,20 @@ input[type=search]:focus + label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
+}
+
+.popular-list ul {
+    list-style: none;
 }
 
 .popular-list li {
+    list-style: none;
     margin-bottom: 0;
+}
+
+.popular-list li:last-child {
+    margin-right: 0;
 }
 
 .popular-goods {
@@ -1219,6 +1229,7 @@ input[type=search]:focus + label {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    width: 519px;
     margin-right: 120px;
 }
 
@@ -1322,7 +1333,7 @@ input[type=search]:focus + label {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 430px;
+    width: 300px;
 }
 
 .contacts-map h2 {
