@@ -1724,6 +1724,13 @@ fieldset .supply {
     background: url("../img/svg/checkbox-on.svg") no-repeat;
 }
 
+
+
+.filter-input-checkbox:disabled + label::after,
+.filter-input-checkbox:disabled + label::before {
+    opacity: 0.3;
+}
+
 .supply label {
     position: relative;
     display: block;
@@ -1758,7 +1765,11 @@ fieldset .supply {
     height: 25px;
     background: url("../img/svg/radio-on.svg") no-repeat;
 }
-  
+
+.filter-input-radio:disabled + label::after,
+.filter-input-radio:disabled + label::before {
+    opacity: 0.3;
+}
 
 .filter-button {
     font-family: "PT Sans", Arial, sans-serif;
@@ -2351,6 +2362,11 @@ ul.pagination-list {
     text-decoration: underline;
 }
 
+.footer-navigation-short a:active,
+.footer-catalog-links a:active {
+    opacity: 0.5;
+}
+
 /*нижний футер*/
 .footer-copyright-social {
     margin: 0;
@@ -2418,6 +2434,8 @@ ul.pagination-list {
     text-decoration: underline;
 }
 
+
+
 .social-button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2438,6 +2456,11 @@ ul.pagination-list {
 .social-button:focus,
 .social-button:active {
     background-color: #ee3643;
+}
+
+.footer-copyright-social .mail-link:active,
+.footer-copyright-social .developer-link:active {
+    color: #ee3643;
 }
 
 .container .feedback {
