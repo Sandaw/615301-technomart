@@ -98,4 +98,4 @@ cartClose.addEventListener("click", function (a) {
 }),
     window.addEventListener("keydown", function (a) {
         27 === a.keyCode && cartPopup.classList.contains("modal-show") && cartPopup.classList.remove("modal-show")
-})
+});
