@@ -370,6 +370,7 @@ input[type=search]:focus + label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: start;
@@ -444,8 +445,7 @@ input[type=search]:focus + label {
 
 .user-navigation .logged-in {
     margin: 0;
-    padding: 0;
-    background-color: #f4f7f9;
+    padding: 0;    
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -456,12 +456,13 @@ input[type=search]:focus + label {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
+    width: 300px;
+    min-height: 45px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding-left: 47px;
-    margin-bottom: 3px;
-    min-height: 45px;
+    margin-bottom: 3px; 
+    background-color: #ffffff;   
 }
 
 .logged-in svg {
@@ -474,15 +475,26 @@ input[type=search]:focus + label {
     fill: #293449;
 }
 
-.log-out svg {
-    position: absolute;
-    top: 102px;
-    left: 1390px;
+.logged-in path:active {
+    fill: #c5c5c5;
 }
 
-.log-out path:hover,
-.log-out g:hover {
-    fill: #293449;
+.user-navigation .log-out {
+    position: absolute;
+    top: 0;
+    left: 269px;
+    width: 21px;
+    height: 17px;
+    background: url("../img/svg/icon-logout.svg") no-repeat;
+    margin-top: 14px;
+}
+
+.log-out:hover {
+    background: url("../img/icon-logout-hover.png") no-repeat;
+}
+
+.log-out:active {
+    background: url("../img/svg/icon-logout.svg") no-repeat;
 }
 
 .user-navigation .sub-user-nav {
@@ -667,23 +679,6 @@ a.my-orders {
     width: 135px;
     height: 38px;
 }
-/*
-/* в хроме фона нет
-.main-tile .button-categories-block {
-    display: inline-block;
-    width: 135px;
-    padding: 10px 0;
-    margin: 12px 0 0 24px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    border-radius: 3px;
-    background: rgba(0,0,0.1);
-}
-*/
 
 .main-tile .button-categories-block:hover,
 .main-tile .button-categories-block:focus {
@@ -967,8 +962,7 @@ a.my-orders {
 
 .popular-brands a {
     margin: 0;
-    padding: 0;
-    background-color: #ffffff;
+    padding: 0;    
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -981,6 +975,7 @@ a.my-orders {
     width: 219px;
     height: 144px;
     border: 1px solid #eaeaea;
+    background-color: #ffffff;
     margin-bottom: 20px;
 }
 
@@ -992,6 +987,11 @@ a.my-orders {
 .popular-brands a:focus {
     -webkit-box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
             box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.popular-brands a:active {
+    box-shadow: 0px 4px 10px 0 #29344980;
+    opacity: 0.3;
 }
 
 .popular-brands {
@@ -1525,21 +1525,10 @@ a.my-orders {
             box-sizing: border-box;
     width: 220px;
     height: 38px;
-    padding-left: 20px;
+    padding-left: 19px;
     padding-bottom: 4px;
     margin-bottom: 12px;
 }
-
-/*
-.filter legend {
-    font-family: "PT Sans", Arial, sans-serif;
-    font-size: 17px;
-    font-weight: bold;
-    line-height: 1.76;
-    text-align: left;
-    color: #000000;
-}
-*/
 
 .filter-by-price h3 {
     margin: 0;
@@ -1569,7 +1558,7 @@ a.my-orders {
 
 .filter-price-range .scale {
     height: 2px;
-    background-color: #d7dcde;/*цвет уточнить в ФШ*/
+    background-color: #d7dcde;
 }
 
 .filter-price-range .bar {
@@ -1825,7 +1814,6 @@ fieldset .supply {
     font-size: 13px;
     line-height: 1.38;
     text-align: left;
-    color: rgba(0, 0, 0, 0.3);
     text-transform: uppercase;
 }
 
@@ -1845,30 +1833,36 @@ fieldset .supply {
     padding-bottom: 6px;
 }
 
-.active-sorting-list {
-    margin-left: 140px;
-    
+.sorting-list a:first-child {
+    color: rgba(0, 0, 0, 0.18);
+}
+
+.sorting-list a.active-sorting-list {
+    color: #ee3643;
+    margin-left: 140px;    
 }
 
 .sorting-list a:nth-child(2) {
     margin-left: 65px;
-    border-bottom: 1px dotted #ee3643;    
+    border-bottom: 1px dotted #ee3643;
+    color: rgba(0, 0, 0, 0.3);    
 }
 
 .sorting-list a:nth-child(3) {
     margin-left: 62px;
-    border-bottom: 1px dotted #ee3643;    
+    border-bottom: 1px dotted #ee3643;
+    color: rgba(0, 0, 0, 0.3);    
 }
 
 .sort-by-increase {
     margin-left: 45px;
     width: 11px;
     height: 11px;
-    opacity: 0.2;
 }
 
 .active-sort-by-increase path {    
     fill:#ee3643;
+    opacity: 1;
 }
 
 .sort-by-decrease {
@@ -1876,8 +1870,11 @@ fieldset .supply {
     opacity: 0.2;
 }
 
-.sorting-list a:first-child {
-    color: #ee3643;
+.sorting-list a:first-child:hover,
+.sorting-list a:nth-child(2):hover,
+.sorting-list a:nth-child(3):hover {
+    color: #000000;
+    border-bottom: 1px solid #ee3643;
 }
 
 .sort-by-increase:hover,
@@ -2558,15 +2555,11 @@ ul.pagination-list {
 
 .modal-write-us {
     display: none;
-
     -webkit-box-sizing: border-box;
-
             box-sizing: border-box;
     width: 620px;
-    min-height: 430px;
-    
-    -webkit-box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
-    
+    min-height: 430px;    
+    -webkit-box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);    
             box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
     border-top: 7px solid #ee3643;
     top: 210px;
@@ -2608,8 +2601,7 @@ ul.pagination-list {
     margin: 0;
     padding: 0;
     
-    -webkit-box-sizing: border-box;
-    
+    -webkit-box-sizing: border-box;    
             box-sizing: border-box;
     border: 2px solid #dee3e4;
     width: 200px;
@@ -2748,8 +2740,7 @@ ul.pagination-list {
 
 .modal-map iframe {
     position: relative;
-    z-index: 2;
-  
+    z-index: 2;  
     border: none;
 }
 
@@ -2757,8 +2748,7 @@ ul.pagination-list {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
-  
+    z-index: 1;  
     margin: 0;
 }
 
@@ -2869,9 +2859,4 @@ ul.pagination-list {
 .modal-error {
     -webkit-animation: shake 0.6s;
             animation: shake 0.6s;
-}
-
-
-div,section,a,ul,li,p,footer,header{
-    outline: 1px solid red;
 }
