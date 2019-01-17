@@ -509,7 +509,7 @@ input[type=search]:focus + label {
     background-color: #32425c;
     border-radius: 50%;
     position: absolute;
-    top: 7px;
+    top: 11px;
     left: 90px;
 }
 
@@ -519,6 +519,10 @@ input[type=search]:focus + label {
     line-height: 1.13;
     text-decoration: underline;
     color: #32425c;
+}
+
+a.my-orders {
+    margin-right: 32px;
 }
 
 .user-navigation a:hover,
@@ -1075,6 +1079,7 @@ input[type=search]:focus + label {
     line-height: 30px;
     color: #000000;
     text-transform: uppercase;
+    letter-spacing: -1px;
 }
 
 .services p {
@@ -1252,6 +1257,7 @@ input[type=search]:focus + label {
 
 .contacts-map h2 {
     letter-spacing: -0.9px;
+    margin-bottom: 26px;
 }
 
 .about p,
