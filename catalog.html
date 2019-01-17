@@ -7,7 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext,cyrillic" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic" rel="stylesheet" type="text/css">
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet"> 
+        <link href="css/min.css" rel="stylesheet"> 
     </head>
 
     <body>
@@ -313,30 +313,7 @@
                 </div>
             </section>
         </footer>
-        <script>
-            var cartBuy = document.querySelector(".buy-item");
-            var cartPopup = document.querySelector(".modal-add-cart");
-            var cartClose = cartPopup.querySelector(".modal-close");
-            
-            cartBuy.addEventListener("click", function (evt) {
-                evt.preventDefault();
-                cartPopup.classList.add("modal-show");
-            });
-            
-            cartClose.addEventListener("click", function (evt) {
-                evt.preventDefault();
-                cartPopup.classList.remove("modal-show");
-            });
-            
-            window.addEventListener("keydown", function (evt) {
-                evt.preventDefault();
-                if (evt.keyCode === 27) {
-                    if (cartPopup.classList.contains("modal-show")) {
-                        cartPopup.classList.remove("modal-show");
-                    }
-                }
-            });
-        </script>
+        <script src="js/min.js"></script>
     </body>
 </html>
 
