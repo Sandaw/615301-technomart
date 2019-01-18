@@ -9,6 +9,7 @@ body {
     text-align: left;
     color: #ffffff;
     background-color: #ffffff;
+    min-width: 960px;
 }
 
 a {
@@ -116,13 +117,13 @@ label.search-label {
 }
 
 input[type=search]:hover {
-    background:#212a3a;
+    background-color:#212a3a;
     border:none
 }
 
 input[type=search]:focus {
     color:#000000;
-    background:#ffffff;
+    background-color:#ffffff;
     outline: none;
 }
 
@@ -154,9 +155,7 @@ input[type=search]:focus + label {
     position: absolute;
     top: 13px;
     left: 18px;
-    background-image: url("../img/svg/icon-bookmark.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    background: url("../img/svg/icon-bookmark.svg") no-repeat 0 0;
     opacity: 0.3;
     width: 15px;
     height: 15px;
@@ -182,9 +181,7 @@ input[type=search]:focus + label {
     position: absolute;
     top: 13px;
     left: 18px;
-    background-image: url("../img/svg/icon-cart.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    background: url("../img/svg/icon-cart.svg") no-repeat;
     opacity: 0.3;
     width: 15px;
     height: 15px;
@@ -240,7 +237,7 @@ input[type=search]:focus + label {
 }
 
 .main-header-logo:active {
-    background: #ba2732;
+    background-color: #ba2732;
 }
 
 .container .order {
@@ -350,9 +347,7 @@ input[type=search]:focus + label {
     position: absolute;
     top: 10px;
     left: 12px;
-    background-image: url("../img/svg/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    background: url("../img/svg/icon-phone.svg") no-repeat;
 }
 
 .header-adress-phone .header-adress {
@@ -550,12 +545,12 @@ a.my-orders {
 
 .logged-in::before {
     content: "";
-    background-image: url("../img/svg/icon-login.svg")
+    background: url("../img/svg/icon-login.svg") no-repeat;
 }
 
 .logged-in::after {
     content: "";
-    background-image: url("/img/svg/icon-logout.svg")
+    background: url("/img/svg/icon-logout.svg") no-repeat;
 }
 
 .user-navigation .logged-in:hover,
@@ -704,39 +699,24 @@ a.my-orders {
 }
 
 .categories-material {
-    background-color: #ffbf47;
-    background-image: url("../img/svg/material-icon.svg");
-    background-repeat: no-repeat; 
-    background-position: 83% 50%; 
+    background: #ffbf47 url("../img/svg/material-icon.svg") no-repeat 83% 50%;
     position: relative;  
 }
 
 .categories-instrument {
-    background-color: #3bbce3;
-    background-image: url("../img/svg/instrument-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 87% 50%;
+    background: #3bbce3 url("../img/svg/instrument-icon.svg") no-repeat 87% 50%;
 }
 
 .categories-technics {
-    background-color: #dc91d8;
-    background-image: url("../img/svg/technics-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 85% 50%;
+    background: #dc91d8 url("../img/svg/technics-icon.svg") no-repeat 85% 50%;
 }
 
 .categories-discount {
-    background-color: #8ed78f;
-    background-image: url("../img/svg/discount-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 81% 50%;
+    background: #8ed78f url("../img/svg/discount-icon.svg") no-repeat 81% 50%;
 }
 
 .categories-delivery {
-    background-color: #ffc047;
-    background-image: url("../img/svg/delivery-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 85% 50%;
+    background: #ffc047 url("../img/svg/delivery-icon.svg") no-repeat 85% 50%;
 }
 
 .discount-delivery-block {
@@ -797,9 +777,7 @@ a.my-orders {
     top: 113px;
     left: 25px;
     width: 22px;
-    height: 40px;
-  
-    background: #000000;
+    height: 40px;  
     background: url("../img/svg/slider1-icon-left.svg") no-repeat;
 }
 
@@ -817,8 +795,6 @@ a.my-orders {
     left: 578px;
     width: 22px;
     height: 40px;
-  
-    background: #000000;
     background: url("../img/svg/slider1-icon-right.svg") no-repeat;
 }
 
@@ -1171,22 +1147,16 @@ a.my-orders {
 }
 
 .service-slider-block .service-slide:nth-child(1) {
-    background-image: url("../img/slider-delivery.png");
-    background-size: 468px 261px; 
-    background-repeat: no-repeat;
-    background-position: 150px 24px;
+    background: url("../img/slider-delivery.png") no-repeat 150px 24px;
+    background-size: 468px 261px;
 }
 
 .service-slider-block .service-slide:nth-child(2) {
-    background-image: url("../img/slider-garant.png");
-    background-repeat: no-repeat;
-    background-position: 150px 30px;
+    background: url("../img/slider-garant.png") no-repeat 150px 30px;
 }
 
 .service-slider-block .service-slide:nth-child(3) {
-    background-image: url("../img/slider-credit.png");
-    background-repeat: no-repeat;
-    background-position: 150px 30px;
+    background: url("../img/slider-credit.png") no-repeat 150px 30px;
 }
 
 #service-button-1:checked ~ .service-slider-block .service-slide:nth-child(1),
@@ -1571,7 +1541,7 @@ a.my-orders {
     width: 70%;
     height: 2px;
   
-    background: #00ca74;
+    background-color: #00ca74;
 }
 
 .filter-price-range .filter-toggle {
@@ -2097,7 +2067,7 @@ fieldset .supply {
 
 .catalog-item .in-bookmark {
     color: #32425c;
-    background: #ffffff;
+    background-color: #ffffff;
     -webkit-box-shadow: none;
             box-shadow: none;
 }
@@ -2120,7 +2090,7 @@ fieldset .supply {
     display: block;
     -webkit-box-shadow: rgba(41, 52, 73, 0.5);
             box-shadow: rgba(41, 52, 73, 0.5);
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 /*--------кнопки страниц-----------*/
@@ -2876,8 +2846,7 @@ ul.pagination-list {
     height: 66px;
     top: 51px;
     left: 105px;
-    background-image: url("../img/svg/modal-cart-in.svg");
-    background-repeat: no-repeat;
+    background: url("../img/svg/modal-cart-in.svg") no-repeat;
 }
 
 .modal-show {

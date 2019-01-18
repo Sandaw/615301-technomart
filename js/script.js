@@ -87,15 +87,15 @@ window.addEventListener("keydown", function (evt) {
 };
 
 for (var i = 0; i < cartBuy.length; i++)
-    cartBuy[i].addEventListener("click", function (a) {
+    cartBuy[i].addEventListener("click", function (evt) {
         a.preventDefault(),
             cartPopup.classList.add("modal-show")
 });
 
-cartClose.addEventListener("click", function (a) {
+cartClose.addEventListener("click", function (evt) {
     a.preventDefault(),
         cartPopup.classList.remove("modal-show")
 }),
-    window.addEventListener("keydown", function (a) {
+    window.addEventListener("keydown", function (evt) {
         27 === a.keyCode && cartPopup.classList.contains("modal-show") && cartPopup.classList.remove("modal-show")
 });
