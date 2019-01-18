@@ -2,14 +2,13 @@ body {
     margin: 0;
     padding: 0;
   
-    font-family: "PT Sans", "Cuprum", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 17px;
     font-weight: 400;
     text-align: left;
     color: #ffffff;
     background-color: #ffffff;
-    min-width: 960px;
 }
 
 a {
