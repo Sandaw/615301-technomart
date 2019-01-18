@@ -1503,7 +1503,7 @@ a.my-orders {
     text-transform: uppercase;
     background-color: #f7f3ec;
 
-    display: -webkit-box;
+  /*  display: -webkit-box;
 
     display: -ms-flexbox;
 
@@ -1512,11 +1512,12 @@ a.my-orders {
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+            box-sizing: border-box;*/
     width: 220px;
     height: 38px;
     padding-left: 19px;    
     margin-bottom: 12px;
+    padding-top: 9px;
 }
 
 .filter-by-price h3 {
