@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
   
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 17px;
     font-weight: 400;
@@ -1067,7 +1067,7 @@ a.my-orders {
 .services p {
     margin: 0;
     /*padding: 0;*/
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
     text-align: left;
@@ -1240,7 +1240,7 @@ a.my-orders {
 .main-page-footer p {
     margin: 0;
     padding: 0;
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
     color: #000000;
@@ -1412,7 +1412,7 @@ a.my-orders {
 
 .breadcrumbs,
 .breadcrumbs-current {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;  
     line-height: 1.38;
     text-align: left;
@@ -1480,7 +1480,7 @@ a.my-orders {
 }
 
 .filter .filter-name {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 1.38;
     font-weight: normal;
@@ -1509,7 +1509,7 @@ a.my-orders {
     margin: 0;
     padding: 0;
 
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 17px;
     font-weight: bold;
     line-height: 1.76;
@@ -1603,7 +1603,7 @@ a.my-orders {
     width: 95px;
     height: 38px;
 
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     line-height: 1.06;
     text-align: center;
     color: #000000;
@@ -1612,7 +1612,7 @@ a.my-orders {
 }
 
 .filter-price-control span {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 16px;
     text-align: center;
     color: #444444;
@@ -1620,7 +1620,7 @@ a.my-orders {
 
 .filter .brand-filter,
 .filter .filter-supply {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 17px;  
     font-weight: bold;  
     font-style: normal;  
@@ -1634,7 +1634,7 @@ a.my-orders {
 .brands li,
 .supply li {
     list-style: none;
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 15px;
     line-height: 1.33;
     text-align: left;
@@ -1747,7 +1747,7 @@ fieldset .supply {
 }
 
 .filter-button {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 1.38;
     text-align: center;
@@ -1796,7 +1796,7 @@ fieldset .supply {
 }
 
 .sorting-list a {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 1.38;
     text-align: left;
@@ -1804,7 +1804,7 @@ fieldset .supply {
 }
 
 .sorting h3 {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 1.38;
     text-align: left;
@@ -1947,7 +1947,7 @@ fieldset .supply {
 }
 
 .catalog-item .title {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;  
     font-weight: bold; 
     font-style: normal;
@@ -1960,7 +1960,7 @@ fieldset .supply {
 }
 
 .catalog-item .old {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 17px;
     font-weight: bold;
     line-height: 1.06;
@@ -1976,7 +1976,7 @@ fieldset .supply {
 }
 
 .catalog-item .button-price {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 17px;  
     font-weight: bold;  
     line-height: 1.06;  
@@ -2121,7 +2121,7 @@ ul.pagination-list {
 .pagination-item {
     margin: 0;
     padding: 0;
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 1.38;
     text-align: center;
@@ -2188,7 +2188,7 @@ ul.pagination-list {
     margin: 0;
     padding: 0;
 
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 1.85;
     text-align: left;
