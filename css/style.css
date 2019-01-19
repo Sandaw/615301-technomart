@@ -865,25 +865,26 @@ a.my-orders {
 
 /*-----------популярные товары-----------------*/
 
-.popular-goods h3,
-.brand-list-popular h3 { 
+.popular-goods h2,
+.brand-list-popular h2 { 
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
     line-height: 1;
     text-align: left;
     color: #32425c;
     text-transform: uppercase;
-    padding-left: 30px;
+    padding: 7px 0;
+    padding-left: 29px;
     letter-spacing: -1px;
 }
 
-.brand-list-popular h3 {
-    padding-left: 23px;
+.brand-list-popular h2 {
+    padding-left: 25px;
 }
 
 .popular-header {
     background-color: #f9f5f0;
-    margin-bottom: 20px;   
+    margin-bottom: 16px;   
 }
 
 .popular-goods .popular-header,
@@ -928,20 +929,25 @@ a.my-orders {
 }
 
 .popular-list ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
 .popular-list li {
+    margin: 0;
+    padding: 0;
     list-style: none;
-    margin-bottom: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
-.popular-list li:last-child {
+.popular-list li:nth-child(4n) {
     margin-right: 0;
 }
 
 .popular-goods {
-    margin-bottom: 21px;
+    margin-bottom: 1px;
 }
 
 .brand-list-popular .popular-brands.container {
@@ -1601,7 +1607,11 @@ a.my-orders {
 
 .filter-price-control label {   
     font-size: 17px;    
-    padding-left: 4px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.filter-price-control .filter-price-max {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
@@ -1989,6 +1999,7 @@ fieldset .supply {
     text-align: center;  
     color: #000000;
     min-height: 33px;
+    margin: 0;
     padding: 9px 25px;
 }
 
