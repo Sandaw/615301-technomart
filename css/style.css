@@ -747,7 +747,7 @@ a.my-orders {
     min-width: 620px;
     min-height: 266px;
     margin-right: 20px;
-    background-color: #6b2626;
+    background-color: #75675d;
 }
 
 .slider input {
@@ -759,12 +759,12 @@ a.my-orders {
 }
 
 .slider .slide:nth-of-type(1) {
-    background: url("../img/slider-perf.jpg") no-repeat;
+    background: #75675d url("../img/slider-perf.jpg") no-repeat;
     min-height: 266px;
 }
 
 .slider .slide:nth-of-type(2) {
-    background: url("../img/slider-drill.jpg") no-repeat;
+    background: #918279 url("../img/slider-drill.jpg") no-repeat;
     min-height: 266px;
 }
 
