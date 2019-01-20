@@ -80,8 +80,7 @@ input[type="radio"].visually-hidden {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     text-align: center;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 12px 10px;
 }
 
 .search {
@@ -148,10 +147,10 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 0;
 }
 
-.bookmark {
+.header-top .bookmark {
     position: relative;
     min-width: 150px;    
-    padding-left: 20px;
+    padding-left: 26px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -174,11 +173,11 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 15px;
 }
 
-.cart,
+.header-top .cart,
 .cart-catalog {
     position: relative;
     width: 150px;    
-    padding-left: 20px;
+    padding-left: 29px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -201,9 +200,9 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 15px;
 }
 
-.cart-catalog {
+.header-top .cart-catalog {
     background-color: #ee3643;
-    padding-left: 25px;
+    padding-left: 34px;
 }
 
 .bookmark:hover,
@@ -834,19 +833,15 @@ a.my-orders {
     letter-spacing: -0.4px;
 }
 
-.slider .button-slider-categories {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+.slider .button-slider-categories {    
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 10px 18px;
     background-color: #ee3643;
     width: 195px;
-    height: 38px;
+    min-height: 38px;
     margin-left: 25px;
     margin-top: 122px;
 }
@@ -913,17 +908,7 @@ a.my-orders {
 
 .popular-header .button {
     margin-right: 24px;
-    min-width: 253px;
-    height: 38px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    width: 253px;
 }
 
 .popular-goods .popular-list {
@@ -1330,16 +1315,6 @@ a.my-orders {
 
 .about .button {
     width: 220px;
-    height: 38px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
 }
 
 .container .contacts-map {
@@ -1372,18 +1347,12 @@ a.my-orders {
 
 .contacts-map .button {
     width: 300px;
-    height: 38px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    min-height: 38px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
     box-sizing: border-box;
-    padding: 5px;
+    padding: 10px 18px;
 }
 
 .about .button,
@@ -1398,6 +1367,12 @@ a.my-orders {
     text-align: center;
     color: #ffffff;
     background-color: #ee3643;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 10px 18px;
+    min-height: 38px;
+    border: none;
 }
 
 /*-----------catalog--------------------*/
@@ -1497,7 +1472,11 @@ a.my-orders {
         -ms-flex-align: center;
             align-items: center;
     padding-left: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
+}
+
+.catalog-content {
+    margin-bottom: 60px;
 }
 /*---------фильтры-----------*/
 
@@ -1531,9 +1510,9 @@ a.my-orders {
     background-color: #f7f3ec;
     width: 220px;
     height: 38px;
-    padding: 9px 0;
-    padding-left: 19px;        
-    margin-bottom: 10px;    
+    padding: 11px 0;
+    padding-left: 19px;
+    margin-bottom: 12px;   
 }
 
 .filter .price-filter {
@@ -1763,15 +1742,25 @@ fieldset .supply {
     background: url("../img/svg/checkbox-on.svg") no-repeat;
 }
 
-.filter-input-checkbox:focus-visible + label::before {
+.filter-input-checkbox:focus + label {
+    outline: 1px solid lightgray;
+}
+
+.filter-input-checkbox:focus-visible + label {
+    outline: 1px solid lightgray;
+}
+
+.filter-input-checkbox::-moz-focusring + label {
     outline: 1px solid lightgray;
 }
 
 .filter-input-checkbox:hover + label::before {
     background: url("../img/checkbox-off-hover.png") no-repeat;
+    outline: none;
 }
 .filter-input-checkbox:hover + label::after {
     background: url("../img/checkbox-on-hover.png") no-repeat;
+    outline: none;
 }
 
 .filter-input-checkbox:disabled + label::after,
@@ -1814,6 +1803,18 @@ fieldset .supply {
     background: url("../img/svg/radio-on.svg") no-repeat;
 }
 
+.filter-input-radio:hover + label::before {
+    background: url("../img/radio-off-hover.png") no-repeat;
+}
+
+.filter-input-radio:hover + label::after {
+    background: url("../img/radio-on-hover.png") no-repeat;
+}
+
+.filter-input-radio:focus + label {
+    outline: 1px solid lightgray;
+}
+
 .filter-input-radio:focus-visible + label {
     outline: 1px solid lightgray;
 }
@@ -1853,23 +1854,18 @@ fieldset .supply {
 .sorting {
     margin: 0;
     padding: 0;
-    background-color: #f7f3ec;    
-}
-
-.catalog .sorting {
+     
     width: 700px;
-    height: 40px;
+    height: 38px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 16px;
-}
-
-.sorting-list {
-    padding-bottom: 6px;
+    margin-bottom: 21px;
+    box-sizing: border-box;  
+    background-color: #f7f3ec; 
 }
 
 .sorting-list a {
@@ -1893,7 +1889,6 @@ fieldset .supply {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding-left: 20px;
-    padding-bottom: 6px;
 }
 
 .sorting-list a:first-child {
@@ -2087,6 +2082,7 @@ fieldset .supply {
 }
 
 .catalog-item .item-action {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -2136,6 +2132,24 @@ fieldset .supply {
     background-color: #63a63e;
 }
 
+.item-action .buy-item {
+    position: relative;
+    box-sizing: border-box;
+    height: 38px;
+    padding: 11px 10px;
+}
+
+.item-action .buy-item::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 11px;
+    left: 13px;
+    background: url("../img/svg/icon-cart.svg") no-repeat;
+    opacity: 0.3;
+}
+
 .buy-item:hover,
 .buy-item:focus {
     -webkit-box-shadow: inset 0px -3px 0 0 #367315;
@@ -2150,13 +2164,15 @@ fieldset .supply {
 .catalog-item .in-bookmark {
     color: #32425c;
     background-color: #ffffff;
+    border: 3px solid #63a63e;
+    box-sizing: border-box;
     -webkit-box-shadow: none;
             box-shadow: none;
 }
 
 .in-bookmark:hover,
 .in-bookmark:focus {
-    outline: 3px solid #32425c;
+    border-color: #32425c;
 }
 
 .in-bookmark:active {
@@ -2164,15 +2180,12 @@ fieldset .supply {
     opacity: 0.3;
 }
 
-
-.catalog-item .item-action {
-    display: none;
+.catalog-item:hover {
+    box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
+
 .catalog-item:hover .item-action {
     display: block;
-    -webkit-box-shadow: rgba(41, 52, 73, 0.5);
-            box-shadow: rgba(41, 52, 73, 0.5);
-    background-color: #ffffff;
 }
 
 /*--------кнопки страниц-----------*/
@@ -2198,7 +2211,6 @@ ul.pagination-list {
     margin: 0;
     padding: 0;
     padding-top: 31px;
-    margin-bottom: 125px;
 }
 
 .pagination-item {
@@ -2248,12 +2260,23 @@ ul.pagination-list {
     margin: 0;
     padding: 0;
     background-color: #ee3643;
+    color: #ffffff;
 }
 
 .pagination-item-current a:hover {
     border: none;
 }
 /*---------статья в каталоге----------------*/
+
+.perf-block {
+    height: 261px;
+    width: 100%;
+    background-color: #f4f7f9;
+}
+
+.about-perforators {
+    padding-top: 65px;
+}
 
 .about-perforators h3 {
     font-family: "Cuprum", Arial, sans-serif;
@@ -2276,10 +2299,6 @@ ul.pagination-list {
     line-height: 1.85;
     text-align: left;
     color: #000000;
-}
-
-.about-perforators {
-    margin-bottom: 68px;
 }
 
 /*футер*/
@@ -2732,6 +2751,7 @@ ul.pagination-list {
     border: 2px solid #dee3e4;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    width: 440px;
     height: 114px;
     outline: none;
 }
