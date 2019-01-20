@@ -1360,6 +1360,8 @@ a.my-orders {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    box-sizing: border-box;
+    padding: 5px;
 }
 
 .about .button,
@@ -1739,7 +1741,16 @@ fieldset .supply {
     background: url("../img/svg/checkbox-on.svg") no-repeat;
 }
 
+.filter-input-checkbox:focus-visible + label::before {
+    outline: 1px solid lightgray;
+}
 
+.filter-input-checkbox:hover + label::before {
+    background: url("../img/checkbox-off-hover.png") no-repeat;
+}
+.filter-input-checkbox:hover + label::after {
+    background: url("../img/checkbox-on-hover.png") no-repeat;
+}
 
 .filter-input-checkbox:disabled + label::after,
 .filter-input-checkbox:disabled + label::before {
@@ -1779,6 +1790,10 @@ fieldset .supply {
     width: 25px;
     height: 25px;
     background: url("../img/svg/radio-on.svg") no-repeat;
+}
+
+.filter-input-radio:focus-visible + label {
+    outline: 1px solid lightgray;
 }
 
 .filter-input-radio:disabled + label::after,
@@ -1942,6 +1957,11 @@ fieldset .supply {
 
 .catalog-list li {
     margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.catalog-list li:nth-child(3n) {
+    margin-right: 0;
 }
 
 .catalog-list {
@@ -1950,9 +1970,12 @@ fieldset .supply {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        /*
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+            */
+    justify-content: flex-start;        
     width: 700px;
     margin: 20px auto;
 }
