@@ -2001,6 +2001,7 @@ fieldset .supply {
 }
 
 .catalog-item .old {
+    display: block;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 17px;
     font-weight: bold;
@@ -2017,6 +2018,7 @@ fieldset .supply {
 }
 
 .catalog-item .button-price {
+    display: block;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 17px;  
     font-weight: bold;  
