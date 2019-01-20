@@ -885,8 +885,7 @@ a.my-orders {
 }
 
 .popular-goods .popular-header,
-.brand-list-popular .popular-header,
-.brand-list-popular .popular-brands {
+.brand-list-popular .popular-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -898,6 +897,18 @@ a.my-orders {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+}
+
+.brand-list-popular .popular-brands {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-content: flex-start;
 }
 
 .popular-header .button {
@@ -946,7 +957,7 @@ a.my-orders {
 .popular-goods {
     margin-bottom: 1px;
 }
-
+/*
 .brand-list-popular .popular-brands.container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -956,6 +967,13 @@ a.my-orders {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;    
+}
+*/
+.brand-list-popular ul,
+.brand-list-popular li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .popular-brands a {
@@ -970,14 +988,19 @@ a.my-orders {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 219px;
+    width: 220px;
     height: 144px;
     border: 1px solid #eaeaea;
-    background-color: #ffffff;
+    background-color: #ffffff;    
+    box-sizing: border-box;
+}
+
+.popular-brands li {
+    margin-right: 20px;
     margin-bottom: 20px;
 }
 
-.popular-brands .brand:nth-last-child(4n) {
+.popular-brands li:nth-child(4n) {
     margin-right: 0;
 }
 
@@ -993,10 +1016,9 @@ a.my-orders {
     opacity: 0.3;
 }
 
-.popular-brands {
-    margin-bottom: 103px;
+.brand-list-popular {
+    margin-bottom: 108px;
 }
-
 /*--------сервисы--------------------------*/
 
 .services {
@@ -1970,11 +1992,6 @@ fieldset .supply {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        /*
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-            */
     justify-content: flex-start;        
     width: 700px;
     margin: 20px auto;
