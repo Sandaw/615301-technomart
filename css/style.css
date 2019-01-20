@@ -2289,34 +2289,31 @@ ul.pagination-list {
     margin-bottom: 28px;
 }
 
+.footer-navigation {
+    width: 620px;    
+}
+
 .footer-navigation ul,
 .footer-catalog-navigation ul {
     margin: 0;
     padding: 0;
 }
 
-.footer-navigation .footer-navigation-short {
+.footer-navigation ul  {    
+    padding: 8px 0;
+    text-align: right;
+}
+
+.footer-navigation .footer-navigation-short {    
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: flex-end;        
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding-top: 38px;
-}
-
-.adress-footer {
-    font-family: "Cuprum", Arial, sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: left;
-    color: #ffffff;
-    margin: 0;
-    padding-left: 3px;
 }
 
 .footer-navigation-short a {
@@ -2325,15 +2322,20 @@ ul.pagination-list {
     line-height: 24px;
     text-align: left;
     color: #f1f5f7;
+    padding: 0 30px;
+    padding-left: 29px;
+}
+
+.footer-navigation-short li:nth-child(5n) a {
+    padding-right: 0;
 }
 
 .footer-navigation-short li {
     padding: 0;
     margin: 0;
-    padding-right: 60px;
 }
 
-.footer-navigation-short li:last-child {
+.footer-navigation-short li:nth-child(5n) {
     padding-right: 0px;
 }
 
@@ -2346,23 +2348,27 @@ ul.pagination-list {
     text-decoration: underline;
 }
 
+.adress-footer {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    color: #ffffff;
+    margin: 0;
+    padding-left: 3px;
+}
+
+.footer-catalog-navigation {
+    width: 610px;
+}
+
 .footer-catalog-navigation .footer-catalog-links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-}
-
-.footer-catalog-links li {
-    padding-right: 60px;
-}
-
-.footer-catalog-links li:last-child {
-    padding-right: 0;
+    justify-content: flex-end;
 }
 
 .footer-catalog-links a {
@@ -2371,6 +2377,11 @@ ul.pagination-list {
     line-height: 24px;
     text-align: left;
     color: #ffd180;
+    padding: 5px 30px;
+}
+
+.footer-catalog-links li:nth-child(4n) a {
+    padding-right: 0;
 }
 
 .footer-catalog-links a:hover,
