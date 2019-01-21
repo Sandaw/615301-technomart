@@ -109,7 +109,7 @@ label.search-label {
     z-index: 20;
     width: 20px;
     height: 20px;
-    background: url(../img/svg/icon-search.svg) no-repeat;
+    background: url("../img/svg/icon-search.svg") no-repeat;
     opacity: 0.3;
     cursor: pointer
 }
@@ -130,7 +130,7 @@ input[type=search]:hover + label {
 }
 
 input[type=search]:focus + label {
-    background: url(../img/icon-search-red.png) no-repeat;
+    background: url("../img/icon-search-red.png") no-repeat;
 }
 
 input::-webkit-search-decoration,
@@ -2155,6 +2155,14 @@ fieldset .supply {
 
 .buy-item:active {
     background-color: #518534;
+}
+
+.buy-item:hover::before {
+    opacity: 1;
+}
+
+.buy-item:active::before {
+    opacity: 0.8;
 }
 
 .catalog-item .in-bookmark {
