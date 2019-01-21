@@ -125,7 +125,8 @@ input[type=search]:focus {
     outline: none;
 }
 
-input[type=search]:hover + label {
+input[type=search]:hover + label,
+input[type=search]:focus + label {
     opacity: 1;
 }
 
@@ -580,6 +581,7 @@ a.my-orders {
     -webkit-box-shadow: inset 0px -5px 0 0 #293449;
             box-shadow: inset 0px -5px 0 0 #293449;
     width: 100%;
+    min-height: 60px;
 }
 
 .main-navigation ul {
@@ -596,7 +598,7 @@ a.my-orders {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 60px;
+    flex-wrap: wrap;
 }
 
 .site-navigation li {
@@ -2202,7 +2204,8 @@ fieldset .supply {
     min-height: 38px;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;    
+    display: flex;  
+    padding-top: 31px;  
 }
 
 .pagination-list li {
@@ -2214,8 +2217,6 @@ fieldset .supply {
 }
 
 ul.pagination-list {
-    margin: 0;
-    padding: 0;
     padding-top: 31px;
 }
 
