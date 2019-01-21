@@ -1659,7 +1659,6 @@ a.my-orders {
 
 .brands li {
     margin-bottom: 20px;
-    padding-left: 35px;
 }
 
 .brands li,
@@ -1680,8 +1679,7 @@ a.my-orders {
 
 .supply li {
     margin-bottom: 21px;
-    padding-left: 34px;
-    margin-left: 1px;
+    margin-left: -1px;
 }
 
 .supply li:last-child {
@@ -1717,15 +1715,16 @@ fieldset .supply {
         -ms-user-select: none;
             user-select: none;
     height: 20px;
+    padding-left: 35px;
 }
 
 .filter-input-checkbox + label::before {
     content: "";
     position: absolute;
-    left: -35px;
+    left: 0;
     top: 0;
   
-    width: 36px;
+    width: 23px;
     height: 23px;
     background: url("../img/svg/checkbox-off.svg") no-repeat;
 }
@@ -1733,7 +1732,7 @@ fieldset .supply {
 .filter-input-checkbox:checked + label::after {
     content: "";  
     position: absolute;
-    left: -35px;
+    left: 0;
     top: 0;
   
     width: 27px;
@@ -1742,25 +1741,17 @@ fieldset .supply {
     background: url("../img/svg/checkbox-on.svg") no-repeat;
 }
 
-.filter-input-checkbox:focus + label {
-    outline: 1px solid lightgray;
-}
-
-.filter-input-checkbox:focus-visible + label {
-    outline: 1px solid lightgray;
-}
-
-.filter-input-checkbox::-moz-focusring + label {
-    outline: 1px solid lightgray;
+.filter-input-checkbox:focus + label::before {
+    outline: 1px solid cyan;
 }
 
 .filter-input-checkbox:hover + label::before {
     background: url("../img/checkbox-off-hover.png") no-repeat;
-    outline: none;
+    
 }
 .filter-input-checkbox:hover + label::after {
     background: url("../img/checkbox-on-hover.png") no-repeat;
-    outline: none;
+    
 }
 
 .filter-input-checkbox:disabled + label::after,
@@ -1777,16 +1768,17 @@ fieldset .supply {
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+    padding-left: 34px;
 }
 
 .filter-input-radio + label::before {
     content: "";
   
     position: absolute;
-    left: -35px;
+    left: 0;
     top: -2px;
   
-    width: 35px;
+    width: 27px;
     height: 25px;
     background: url("../img/svg/radio-off.svg") no-repeat;
 }
@@ -1795,7 +1787,7 @@ fieldset .supply {
     content: "";
   
     position: absolute;
-    left: -35px;
+    left: 0;
     top: -2px;
   
     width: 25px;
@@ -1811,8 +1803,8 @@ fieldset .supply {
     background: url("../img/radio-on-hover.png") no-repeat;
 }
 
-.filter-input-radio:focus + label {
-    outline: 1px solid lightgray;
+.filter-input-radio:focus + label::before {
+    outline: 1px solid cyan;
 }
 
 .filter-input-radio:focus-visible + label {
@@ -2348,6 +2340,15 @@ ul.pagination-list {
     height: 68px;
     padding-top: 25px;
     margin-bottom: 28px;
+}
+
+.container .main-footer-logo:hover,
+.container .main-footer-logo:focus {
+    background-color: #ca2c37;
+}
+
+.container .main-footer-logo:active {
+    background-color: #ba2732;
 }
 
 .footer-navigation {
