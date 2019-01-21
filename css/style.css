@@ -327,6 +327,10 @@ input[type=search]::-ms-reveal {
     margin-left: -10px;
 }
 
+.header-adress-phone p {
+    margin: 0;
+}
+
 .header-adress-phone .header-phone {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 21px;
